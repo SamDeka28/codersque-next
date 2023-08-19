@@ -14,9 +14,9 @@ const AboutSection = () => {
         <div className="row align-items-center justify-content-lg-between">
           <div className="col col-xxl-6 col-xl-6 col-lg-6 order-lg-last">
             <div className="about_image decoration_wrap mb-4 mb-lg-0 text-center">
-              <Image src={shape_circle} style={{ width: "100%", height: "100%" }} alt="Paradox Shape Image" />
+              <Image src={shape_circle} style={{ width: "100%", height: "100%" }} alt=" Shape Image" />
               <div className="deco_item shape_3">
-                <Image className="wow fadeInRight amin-up-down" data-wow-delay=".1s" src={about_image} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+                <Image className="wow fadeInRight amin-up-down" data-wow-delay=".1s" src={about_image} style={{ width: "100%", height: "100%" }} alt=" - About Image" />
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const AboutSection = () => {
                   <span>Get In Touch</span>
                 </h2>
                 <h3 className="heading_title">
-                  Subscribe to Paradox Newsletter
+                  Subscribe to  Newsletter
                 </h3>
                 <p className="heading_description mb-0">
                   Our action plan is focused and planned. We are result oriented organization and are committed.

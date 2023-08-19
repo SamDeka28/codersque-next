@@ -36,7 +36,7 @@ const ContactSection = () => {
                 </li>
                 <li>
                   <strong>Email:</strong>
-                  <span><Link href="mailto:contact@paradox.com">contact@paradox.com</Link></span>
+                  <span><Link href="mailto:contact@.com">contact@.com</Link></span>
                 </li>
                 <li>
                   <strong>Opening:</strong>
@@ -45,9 +45,9 @@ const ContactSection = () => {
                 <li>
                   <strong>Follow Us:</strong>
                   <ul className="social_icon unordered_list">
-                  <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                  <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
-                  <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
+                    <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
+                    <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
+                    <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
                   </ul>
                 </li>
               </ul>

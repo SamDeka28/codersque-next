@@ -36,7 +36,7 @@ const AboutSectionSix = () => {
                 <div className="col col-md-6">
                   <div className="iconbox_item">
                     <div className="item_icon">
-                      <Image src={icon_eye_primary} style={{ width: "auto", height: "auto" }} alt="Paradox Icon Eye White" />
+                      <Image src={icon_eye_primary} style={{ width: "auto", height: "auto" }} alt=" Icon Eye White" />
                     </div>
                     <div className="item_content">
                       <h3 className="item_title">Our Vision</h3>
@@ -49,7 +49,7 @@ const AboutSectionSix = () => {
                 <div className="col col-md-6">
                   <div className="iconbox_item">
                     <div className="item_icon">
-                      <Image src={icon_dart_board} style={{ width: "auto", height: "auto" }} alt="Paradox Icon Eye White" />
+                      <Image src={icon_dart_board} style={{ width: "auto", height: "auto" }} alt=" Icon Eye White" />
                     </div>
                     <div className="item_content">
                       <h3 className="item_title">Our Mission</h3>
@@ -65,7 +65,7 @@ const AboutSectionSix = () => {
         </div>
       </div>
       <div className="deco_item shape_6" data-parallax='{"y" : 200, "smoothness": 20}'>
-        <Image src={shape_close_icon} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+        <Image src={shape_close_icon} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
       </div>
     </section>
   );

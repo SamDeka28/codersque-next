@@ -4,18 +4,19 @@ import Header from '@layout/header/header';
 import React from 'react';
 import Breadcrumb from '@components/common/breadcrumb/breadcrumb';
 import dynamic from "next/dynamic";
+import FooterSix from '@layout/footer/footer-6';
 const PortfolioGridSection = dynamic(() => import('./portfolio-grid-section'), {
-  ssr: false
+    ssr: false
 })
 
 const Index = () => {
     return (
         <main>
             <Header />
-            <Breadcrumb title='Portfolio Grid' subTitle='Portfolio Grid' />
+            <Breadcrumb title='Our Recent Work' subTitle='Our Recent Work' />
             <PortfolioGridSection />
-            <CollectionSection />
-            <Footer />
+            {/* <CollectionSection /> */}
+            <FooterSix />
         </main>
     );
 };

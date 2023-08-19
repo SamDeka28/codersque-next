@@ -85,7 +85,7 @@ const ServiceSectionThere = () => {
                 <div className="col carousel_item" key={item.id} >
                   <div className="service_item style_2 bg-light">
                     <div className="item_icon">
-                      <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Paradox illustration Icon" />
+                      <Image src={item.image} style={{ width: "100%", height: "auto" }} alt=" illustration Icon" />
                     </div>
                     <div className="item_content">
                       <h3 className="item_title">
@@ -97,7 +97,7 @@ const ServiceSectionThere = () => {
                     </div>
                     <Link className="item_details_btn" href={`/service-details/${item.id}`}>
                       <span className="btn_icon">
-                        <Image src={item.btn_icon} style={{ width: "100%", height: "100%" }} alt="Paradox icons" />
+                        <Image src={item.btn_icon} style={{ width: "100%", height: "100%" }} alt=" icons" />
                       </span>
                     </Link>
                   </div>

@@ -97,7 +97,7 @@ const ServiceFour = () => {
               <div className="col col-xl-3 col-lg-4 col-md-6 col-sm-6" key={item.id}>
                 <div className="service_item style_4">
                   <div className="item_icon" style={{ backgroundImage: `url(${item?.bg_img.src})` }}>
-                    <Image src={item.icon} style={{ height: "100%" }} alt="Paradox Icon" />
+                    <Image src={item.icon} style={{ height: "100%" }} alt=" Icon" />
                   </div>
                   <div className="item_content">
                     <h3 className="item_title">
@@ -109,7 +109,7 @@ const ServiceFour = () => {
                   </div>
                   <Link className="item_details_btn" href={`/service-details/${item.id}`} data-magnetic data-cursor="-opaque">
                     <span className="btn_icon">
-                      <Image src={item.btn_icon} style={{ height: "100%" }} alt="Paradox icons" />
+                      <Image src={item.btn_icon} style={{ height: "100%" }} alt=" icons" />
                     </span>
                   </Link>
                 </div>

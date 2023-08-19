@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <Wrapper>
       <SEO pageTitle={'Codersque Technologies - Comming Soon'}></SEO>
-      {/* <HomeMain /> */}
-      <CommingSoon />
+      <HomeMain />
+      {/* <CommingSoon /> */}
     </Wrapper>
   )
 }

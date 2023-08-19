@@ -56,23 +56,23 @@ const HeroSectionSix = () => {
           </div>
           <div className="col col-lg-6">
             <div className="hero_banner_image wow fadeInUp" data-wow-delay=".2s">
-              <Image src={hero_banner_img} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+              <Image src={hero_banner_img} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
             </div>
           </div>
         </div>
       </div>
 
       <div className="deco_item shape_1">
-        {/* <Image src={shape_banner_1} alt="Paradox Illustration Image" /> */}
+        {/* <Image src={shape_banner_1} alt=" Illustration Image" /> */}
       </div>
       <div className="deco_item shape_2 wow fadeInUp" data-wow-delay=".2s">
-        <Image src={shape_banner_2} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+        <Image src={shape_banner_2} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
       </div>
       <div className="deco_item shape_3 wow fadeInUp" data-wow-delay=".4s">
-        <Image src={shape_banner_3} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+        <Image src={shape_banner_3} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
       </div>
       <div className="deco_item shape_4 wow fadeInUp" data-wow-delay=".6s">
-        <Image src={shape_circle_1} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+        <Image src={shape_circle_1} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
       </div>
     </section>
   );

@@ -54,16 +54,16 @@ const HeroSectionFive = () => {
             <div className="col col-lg-6">
               <div className="hero_banner_image decoration_wrap">
                 <div className="man_image">
-                  <Image className="wow fadeInRight" data-wow-delay=".2s" src={hero_banner} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+                  <Image className="wow fadeInRight" data-wow-delay=".2s" src={hero_banner} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
                 </div>
                 <div className="deco_item analyse_image">
-                  <Image className="wow fadeInUp" data-wow-delay=".4s" src={hero_banner_2} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+                  <Image className="wow fadeInUp" data-wow-delay=".4s" src={hero_banner_2} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
                 </div>
                 <div className="deco_item shape_1">
-                  <Image className="wow fadeInLeft" data-wow-delay=".6s" style={{ width: "100%", height: "100%" }} src={shape_5} alt="Paradox Blog Image" />
+                  <Image className="wow fadeInLeft" data-wow-delay=".6s" style={{ width: "100%", height: "100%" }} src={shape_5} alt=" Blog Image" />
                 </div>
                 <div className="deco_item shape_2">
-                  <Image className="wow fadeInRight" data-wow-delay=".7s" style={{ width: "100%", height: "100%" }} src={shape_6} alt="Paradox Illustration Image" />
+                  <Image className="wow fadeInRight" data-wow-delay=".7s" style={{ width: "100%", height: "100%" }} src={shape_6} alt=" Illustration Image" />
                 </div>
               </div>
             </div>
@@ -71,13 +71,13 @@ const HeroSectionFive = () => {
         </div>
 
         <div className="deco_item color_shadow_1">
-          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
         </div>
         <div className="deco_item color_shadow_2">
-          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
         </div>
         <div className="deco_item color_shadow_3">
-          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+          <Image className="wow fadeInRight" data-wow-delay=".7s" src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
         </div>
       </section>
 

@@ -33,30 +33,30 @@ const CounterSection = () => {
   return (
     <section className="counter_section section_space_lg decoration_wrap">
       <div className="container">
-          {
-            factList &&
-            <div className="row">
-              {
-                factList.map((item) => (
-                    <div className="col col-lg-4 col-md-6" data-parallax={item.data_parallax} key={item.id}>
-                      <div className="counter_item mb-5 mb-lg-0">
-                        <div className="counter_value d-flex justify-content-center">
-                          <Counter number={item.factNumber}></Counter><span className="odometer" data-count={item.data_count}></span>
-                          <sup>{item.adition}</sup>
-                        </div>
-                        <h3 className="counter_title mb-0">{item.factTitle}</h3>
-                      </div>
+        {
+          factList &&
+          <div className="row">
+            {
+              factList.map((item) => (
+                <div className="col col-lg-4 col-md-6" data-parallax={item.data_parallax} key={item.id}>
+                  <div className="counter_item mb-5 mb-lg-0">
+                    <div className="counter_value d-flex justify-content-center">
+                      <Counter number={item.factNumber}></Counter><span className="odometer" data-count={item.data_count}></span>
+                      <sup>{item.adition}</sup>
                     </div>
-                ))
-              }
-            </div>
-          }
+                    <h3 className="counter_title mb-0">{item.factTitle}</h3>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        }
       </div>
       <div className="deco_item shape_1">
-        <img src="assets/images/shapes/shape_line_flow.svg" alt="Paradox Shapes Image Line Flow" />
+        <img src="assets/images/shapes/shape_line_flow.svg" alt=" Shapes Image Line Flow" />
       </div>
       <div className="deco_item shape_2">
-        <img src="assets/images/shapes/shape_circle_2.svg" alt="Paradox Shapes Circle" />
+        <img src="assets/images/shapes/shape_circle_2.svg" alt=" Shapes Circle" />
       </div>
     </section>
   );

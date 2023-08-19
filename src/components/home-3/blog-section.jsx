@@ -45,7 +45,7 @@ const BlogSection = () => {
               <div className="col col-lg-4 col-md-6" key={item.id}>
                 <div className="blog_item bg-white">
                   <Link className="item_image" href={`blog-details/${item.id}`} data-cursor-text="VIEW">
-                    <Image src={item.img} style={{ width: "100%", height: "100%" }} alt="Paradox Blog Image" />
+                    <Image src={item.img} style={{ width: "100%", height: "100%" }} alt=" Blog Image" />
                   </Link>
                   <div className="item_content">
                     <div className="flex_wrap">
@@ -62,8 +62,8 @@ const BlogSection = () => {
                     <Link className="btn-link" href={`blog-details/${item.id}`}>
                       <span className="btn_text">Read More</span>
                       <span className="btn_icon">
-                        <Image src={item.btnIcon} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
-                        <Image src={item.btnIconTwo} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
+                        <Image src={item.btnIcon} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
+                        <Image src={item.btnIconTwo} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
                       </span>
                     </Link>
                   </div>

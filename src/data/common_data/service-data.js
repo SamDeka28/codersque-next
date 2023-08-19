@@ -253,22 +253,128 @@ const service_data = [
     }
   },
   {
-    id: 28,
+    id: 'custom-application-development',
     overlay_bg: shape_color_6,
     icon_svg: icon_code_4,
     title: "Custom Application Development",
     description: "We specialize in developing tailor-made software solutions that perfectly fit your unique business needs. Our custom applications are designed for efficiency and optimal performance.",
     btn_icon: icon,
     fullTitle: "Custom Application Development",
+    detailed: {
+      heading: "Customized Solutions for Your Business",
+      image: app,
+      description: ["Codersque Technologies provides custom application development services to address your unique business challenges. Our team crafts tailored software solutions that align with your goals and streamline your processes.",
+        "Our approach to custom application development is client-centric. We work closely with you to understand your business workflows and pain points. Our team then designs and develops scalable and efficient applications that improve productivity and enhance business outcomes."],
+      process: [
+        {
+          title: "Requirement Gathering",
+          description: "We conduct in-depth discussions to gather detailed requirements."
+        },
+        {
+          title: "Design and Prototyping",
+          description: "We create wireframes and prototypes to visualize the website layout and user interface."
+        },
+        {
+          title: "Development",
+          description: "Our skilled developers bring the designs to life, crafting a functional and high-performing website."
+        }, {
+          title: "Testing and QA",
+          description: "We conduct rigorous testing to ensure the website is bug-free and performs optimally."
+        }, {
+          title: "Deployment",
+          description: "Once approved, we deploy the website to a live server for public access."
+        },
+        {
+          title: "Support and Maintenance",
+          description: "We provide ongoing support and maintenance to keep your application running smoothly."
+        }
+      ],
+      reason: [{
+        icon: team,
+        title: "Expert Team",
+        description: "Our team of skilled developers has experience in diverse domains."
+      }, {
+        icon: custom_solution,
+        title: "Business-Oriented Solutions",
+        description: "We focus on delivering applications that align with your business goals."
+      }, {
+        icon: responsive_design,
+        title: "Scalable Architecture",
+        description: "Our solutions are designed to grow with your business."
+      }, {
+        icon: seo,
+        title: "Seamless Integration",
+        description: "We ensure smooth integration with existing systems and technologies."
+      }, {
+        icon: timely_delivery,
+        title: "Timely Delivery",
+        description: "We are committed to delivering projects on time and within budget."
+      }, {
+        icon: support,
+        title: "Excellent Support",
+        description: "Our dedicated support team is available to assist you at every step of the project and beyond."
+      }]
+    }
   },
   {
-    id: 29,
+    id: 'erp-development',
     overlay_bg: shape_color_8,
     icon_svg: icon_cog,
     title: "ERP Development",
     description: "Streamline your business processes and enhance productivity with our ERP development solutions. We integrate various modules to create a cohesive and efficient ERP system.",
     btn_icon: icon,
-    fullTitle: "Video Editing",
+    fullTitle: "ERP Development",
+    detailed: {
+      heading: "Customized ERP Solutions for Your Business",
+      image: app,
+      description: ["Codersque Technologies specializes in ERP development services that streamline business processes and enhance efficiency. Our tailored ERP solutions are designed to meet your specific needs and drive growth.",
+        "Our ERP development process is focused on understanding your business processes and delivering comprehensive solutions. We integrate various modules and features to create a centralized system that enhances collaboration and decision-making.<"],
+      process: [
+        {
+          title: "Business Analysis",
+          description: "We conduct a thorough analysis of your business requirements."
+        },
+        {
+          title: "ERP Customization",
+          description: "We tailor the ERP system to align with your specific needs."
+        },
+        {
+          title: "Implementation",
+          description: "Our team ensures smooth implementation and data migration."
+        }, {
+          title: "Testing and QA",
+          description: "We conduct rigorous testing to ensure the app is bug-free and performs optimally."
+        }, {
+          title: "Training and Support",
+          description: "We provide training and ongoing support to your team."
+        }
+      ],
+      reason: [{
+        icon: team,
+        title: "Domain Expertise",
+        description: "Our team has extensive experience in ERP development."
+      }, {
+        icon: custom_solution,
+        title: "Scalable Solutions",
+        description: "Our ERP systems can accommodate future business growth."
+      }, {
+        icon: responsive_design,
+        title: "Integration Capabilities",
+        description: "We ensure seamless integration with other business applications."
+      }, {
+        icon: seo,
+        title: "Security",
+        description: "We implement robust security measures to protect your app and user data."
+      }, {
+        icon: timely_delivery,
+        title: "Timely Delivery",
+        description: "We are committed to delivering projects on time and within budget."
+      }, {
+        icon: support,
+        title: "Excellent Support",
+        description: "Our dedicated support team is available to assist you at every step of the project and beyond."
+      }]
+    }
   },
 
 ];

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer_widget_grid">
             <div className="site_logo">
               <Link className="site_link" href="/">
-                <Image src={site_logo_white} style={{ width: "auto", height: "auto" }} alt="Site Logo - Paradox - Agency Template" />
+                <Image src={site_logo_white} style={{ width: "auto", height: "auto" }} alt="Site Logo -  - Agency Template" />
               </Link>
             </div>
             <div className="footer_widget">
@@ -23,9 +23,9 @@ const Footer = () => {
                 </h4>
                 <ul className="icon_list unordered_list_block">
                   <li>
-                    <Link href="mailto:contact@paradox.com">
+                    <Link href="mailto:contact@.com">
                       <span className="list_item_text">
-                        contact@paradox.com
+                        contact@.com
                       </span>
                     </Link>
                   </li>
@@ -75,9 +75,9 @@ const Footer = () => {
             </div>
             <div className="footer_social">
               <ul className="social_icon unordered_list_end">
-                    <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                    <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
-                    <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
+                <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
+                <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
+                <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
               </ul>
             </div>
           </div>

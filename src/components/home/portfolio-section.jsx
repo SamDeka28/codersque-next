@@ -17,35 +17,35 @@ const PortfolioSection = () => {
     slidesToScroll: 2,
     pauseOnHover: true,
     autoplaySpeed: 5000,
-  	responsive: [
-  		{
-  			breakpoint: 1200,
-  			settings: {
-  				slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
           slidesToShow: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 992,
-  			settings: {
-  				slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
           slidesToShow: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 767,
-  			settings: {
-  				slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
           slidesToShow: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 575,
-  			settings: {
-  				slidesToShow: 1,
           slidesToShow: 1,
-  			},
-  		},
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToShow: 1,
+        },
+      },
     ]
   };
   return (
@@ -84,32 +84,32 @@ const PortfolioSection = () => {
         </div>
 
         <div className="portfolio_carousel">
-        <div className="common_carousel_centered">
-          <Slider {...settings}>
-            {portfolio_data.slice(0, 5).map((item) => (
-              <div className="carousel_item" key={item.id}>
-                <div className="portfolio_item layout_fullimage">
-                  <div className="item_image">
-                    <Link href={`/portfolio-details/${item.id}`}>
-                      <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
-                    </Link>
-                  </div>
-                  <div className="item_content">
-                    <ul className="category_list unordered_list">
-                      <li><Link href="/portfolio-details">{item.catagory_list}</Link></li>
-                    </ul>
-                    <h3 className="item_title mb-0">
+          <div className="common_carousel_centered">
+            <Slider {...settings}>
+              {portfolio_data.slice(0, 5).map((item) => (
+                <div className="carousel_item" key={item.id}>
+                  <div className="portfolio_item layout_fullimage">
+                    <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        {item.title}
+                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                       </Link>
-                    </h3>
+                    </div>
+                    <div className="item_content">
+                      <ul className="category_list unordered_list">
+                        <li><Link href="/portfolio-details">{item.catagory_list}</Link></li>
+                      </ul>
+                      <h3 className="item_title mb-0">
+                        <Link href={`/portfolio-details/${item.id}`}>
+                          {item.title}
+                        </Link>
+                      </h3>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
         </div>
-      </div>
       </div>
 
       <div className="container d-block d-lg-none">

@@ -19,7 +19,7 @@ const ReviewSection = () => {
       sliderRef.current.slickNext();
     }
   };
-const settings = {
+  const settings = {
     dots: true,
     speed: 1000,
     arrows: false,
@@ -30,38 +30,38 @@ const settings = {
     pauseOnHover: true,
     autoplaySpeed: 5000,
     responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            }
-        }, 
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            }
-        }, 
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-            }
-        }, 
-        {
-            breakpoint: 575,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-            }
-        },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        }
+      },
     ]
-};
+  };
 
   return (
     <section className="review_section section_space_lg bg_dark_3">
@@ -98,7 +98,7 @@ const settings = {
                           <li><i className="fas fa-star"></i></li>
                         </ul>
                         <span className="quote_icon">
-                          <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Quote" />
+                          <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt=" Icon Quote" />
                         </span>
                       </div>
                       <div className="admin_item">

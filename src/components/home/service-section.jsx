@@ -2,8 +2,9 @@ import React, { useRef } from 'react';
 import services_data from '@data/common_data/service-data'
 import Link from 'next/link';
 import Slider from "react-slick";
+import Image from 'next/image';
 
-const ServiceSection = ({serviceBgg}) => {
+const ServiceSection = ({ serviceBgg }) => {
   const sliderRef = useRef(null);
 
   const handlePrevClick = () => {
@@ -28,35 +29,35 @@ const ServiceSection = ({serviceBgg}) => {
     pauseOnHover: true,
     autoplaySpeed: 5000,
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
       },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
       },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
       },
-    },
     ]
   };
   return (
@@ -78,11 +79,14 @@ const ServiceSection = ({serviceBgg}) => {
           <div className="row common_carousel_3col" data-slick='{"arrows": false, "autoplay:": false}'>
             <Slider {...settings} ref={sliderRef}>
               {
-                services_data.slice(7, 11).map((item) => (
+                services_data.map((item) => (
                   <div className="col carousel_item" key={item.id}>
                     <div className="service_item style_1">
-                      <div className="item_icon">
-                        {item.icon}
+                      <div
+                        className="item_icon"
+                        style={{ backgroundImage: `url(${item.overlay_bg.src})`, backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover", aspectRatio: 1 }}
+                      >
+                        <Image src={item.icon_svg} />
                       </div>
                       <div className="item_content">
                         <h3 className="item_title">
@@ -95,7 +99,7 @@ const ServiceSection = ({serviceBgg}) => {
                       <Link className="item_details_btn" href={`/service-details/${item.id}`}>
                         <span className="btn_text">View details</span>
                         <span className="btn_icon">
-                          {item.btn_icon}
+                          {/* {item.btn_icon} */}
                         </span>
                       </Link>
                     </div>

@@ -86,7 +86,7 @@ const ReviewSectionThere = () => {
                         {item.description}
                       </p>
                       <span className="quote_icon">
-                        <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Quote" />
+                        <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt=" Icon Quote" />
                       </span>
                       <div className="admin_item">
                         <div className="admin_thumbnail">

@@ -31,34 +31,34 @@ const PortfolioSection = () => {
     pauseOnHover: true,
     autoplaySpeed: 5000,
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
       },
-    },
-    {
-      breakpoint: 678,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 678,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
     ]
   };
   return (
@@ -101,7 +101,7 @@ const PortfolioSection = () => {
                     <div className="portfolio_item layout_grid text-center">
                       <div className="item_image">
                         <Link href={`/portfolio-details/${item.id}`}>
-                          <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                          <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                         </Link>
                       </div>
                       <div className="item_content">

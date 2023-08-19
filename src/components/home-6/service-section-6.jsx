@@ -80,7 +80,7 @@ const ServiceSectionSix = () => {
                   className="item_icon"
                   style={{ backgroundImage: `url(${item.overlay_bg.src})` }}
                 >
-                  <Image src={item.icon_svg} alt="Paradox icons" />
+                  <Image src={item.icon_svg} alt=" icons" />
                 </div>
                 <div className="item_content">
                   <h3 className="item_title">{item.title}</h3>
@@ -96,7 +96,7 @@ const ServiceSectionSix = () => {
                     <Image
                       src={item.btn_icon}
                       style={{ width: "10px", height: "10px" }}
-                      alt="Paradox icons"
+                      alt=" icons"
                     />
                   </span>
                 </Link>

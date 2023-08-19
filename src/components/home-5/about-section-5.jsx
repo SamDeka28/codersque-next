@@ -18,13 +18,13 @@ const AboutSectionFive = () => {
           <div className="col col-lg-6">
             <div className="about_image_2 decoration_wrap">
               <div className="image_wrap">
-                <Image className="wow fadeInLeft" data-wow-delay=".6s" src={about_image} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+                <Image className="wow fadeInLeft" data-wow-delay=".6s" src={about_image} style={{ width: "100%", height: "100%" }} alt=" - About Image" />
               </div>
               <div className="deco_item bg_image">
-                <Image className="wow fadeInLeft" data-wow-delay=".6s" src={about_image_2} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image className="wow fadeInLeft" data-wow-delay=".6s" src={about_image_2} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
               <div className="deco_item shape_3">
-                <Image data-parallax='{"y" : 100, "smoothness": 20}' src={shape_4} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image data-parallax='{"y" : 100, "smoothness": 20}' src={shape_4} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
               <div className="experience_year wow fadeInUp" data-wow-delay=".2s" style={{ backgroundImage: `url(${about_overlay.src})` }}>
                 <h3 className="experience_value">
@@ -44,7 +44,7 @@ const AboutSectionFive = () => {
                   <span>About Us</span>
                 </h2>
                 <h3 className="heading_title">
-                  Welcome to Paradox for Business Consulting
+                  Welcome to  for Business Consulting
                 </h3>
                 <p className="heading_description mb-0">
                   Our action plan is focused and planned. We are result oriented organization and are committed to invest in initiatives for newer expanded
@@ -86,10 +86,10 @@ const AboutSectionFive = () => {
         </div>
       </div>
       <div className="deco_item shape_4">
-        <Image src={shape_circle_4} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+        <Image src={shape_circle_4} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
       </div>
       <div className="deco_item shape_5">
-        <Image src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+        <Image src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
       </div>
       <div className="deco_dot"></div>
     </section>

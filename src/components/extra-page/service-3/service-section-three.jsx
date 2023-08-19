@@ -24,12 +24,12 @@ const ServiceSectionThree = () => {
                     <Image
                       src={item.icon}
                       style={{ width: "100%", height: "100%" }}
-                      alt="Paradox icons"
+                      alt=" icons"
                     />
                     <Image
                       src={item.primary_icon}
                       style={{ width: "100%", height: "100%" }}
-                      alt="Paradox icons"
+                      alt=" icons"
                     />
                   </span>
                 </Link>

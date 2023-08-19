@@ -1,6 +1,6 @@
 import React from 'react';
 import shape_9 from '@assets/images/shapes/shape_9.svg'
-import site_logo_dark from '@assets/images/logo/site_logo_dark.svg'
+import site_logo_dark from '@assets/images/logo/logo.svg'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -33,7 +33,7 @@ const FooterSix = () => {
               </div>
             </div>
             <div className="deco_item shape_2">
-              <Image className="wow fadeInUp" style={{ width: "100%", height: "auto" }} data-wow-delay=".2s" src={shape_9} alt="Paradox Illustration Image" />
+              <Image className="wow fadeInUp" style={{ width: "100%", height: "auto" }} data-wow-delay=".2s" src={shape_9} alt="Codersque cta background image" />
             </div>
           </div>
         </div>
@@ -41,14 +41,14 @@ const FooterSix = () => {
       <div className="footer_widget_area">
         <div className="container">
           <div className="row justify-content-lg-between">
-            <div className="col col-lg-4">
+            <div className="col col-lg-3">
               <div className="footer_widget mb-4 mb-lg-0">
                 <div className="site_logo">
                   <Link className="site_link" href="/">
-                    <Image className="wow fadeInUp" data-wow-delay=".2s" style={{ width: "100%", height: "auto" }} src={site_logo_dark} alt="Site Logo - Paradox - Agency Template" />
+                    <Image className="wow fadeInUp" data-wow-delay=".2s" style={{ width: "100%", height: "30px" }} src={site_logo_dark} alt="Site Logo - Codersque Technologies Pvt Ltd" />
                   </Link>
                 </div>
-                <p>
+                {/* <p>
                   Our action plan is focused and planned. We are result oriented organization
                 </p>
                 <div className="social_wrap d-block">
@@ -60,45 +60,39 @@ const FooterSix = () => {
                     <li><Link href="https://www.behance.net/" target="_blank"><i className="fab fa-behance"></i></Link></li>
                     <li><Link href="https://dribbble.com/" target="_blank"><i className="fab fa-dribbble"></i></Link></li>
                   </ul>
-                </div>
+                </div> */}
+              </div>
+            </div>
+            <div className="col col-lg-5">
+              <div className="footer_widget">
+                <h3 className="footer_widget_title">Links</h3>
+                <ul style={{ listStyle: "none", lineHeight: '2em' }}>
+                  <li><a href="/web-development">Web Development</a></li>
+                  <li><a href="/app-development">Mobile Applications</a></li>
+                  <li><a href="/ui-ux">UI/UX Design</a></li>
+                  <li><a href="/custom-application-development">Custom Application Development</a></li>
+                  <li><a href="/erp-development">ERP Development</a></li>
+                  <li><a href="/erp-development">Portfolio</a></li>
+                </ul>
               </div>
             </div>
             <div className="col col-lg-4">
-              <div className="footer_widget">
-                <h3 className="footer_widget_title">Newsletter</h3>
-                <form action="#">
-                  <div className="small_newsletter_form style_2">
-                    <label className="input_icon" htmlFor="input_newsletter"><i className="fas fa-envelope"></i></label>
-                    <input id="input_newsletter" type="email" placeholder="Email Adreess" />
-                    <button type="submit">
-                      <i className="far fa-arrow-right"></i>
-                    </button>
-                  </div>
-                  <div className="form-check">
-                    <input type="checkbox" id="checkMeOut" />
-                    <label htmlFor="checkMeOut">I accept with this Condition</label>
-                  </div>
-                </form>
-                <div className="icon_list_widget">
-                  <h4 className="widget_title mb-0">
-                    Email Me:
-                  </h4>
-                  <ul className="icon_list unordered_list_block">
-                    <li>
-                      <Link href="mailto:contact@paradox.com">
-                        <span className="list_item_text">
-                          contact@paradox.com
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+              <div className="footer_widget mb-4 mb-lg-0">
+                <h3 className="footer_widget_title">Contact</h3>
+                <p>
+                  <strong>Address</strong> : Hno 34, Ashirwaad Path, Sonai Mikir Path, Satgaon, Guwahati, Assam
+                </p>
+                <p>
+                  <strong>Email</strong> : sales@codersque.com
+                </p>
+                <p>
+                  <strong>Mobile</strong> : +91 76359 58420
+                </p>
               </div>
             </div>
           </div>
-
           <div className="copyright_widget copyright_space text-center">
-            Copyright © 2023 by <Link target="_blank" href="https://themeforest.net/user/bdevs/portfolio"><u>Bdevs</u></Link> All Rights Reserved.
+            Copyright © 2023 by <Link target="_blank" href="/"><u>Codersque Technologies Pvt Ltd</u></Link> All Rights Reserved.
           </div>
         </div>
       </div>

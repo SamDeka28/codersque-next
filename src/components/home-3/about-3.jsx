@@ -29,7 +29,7 @@ const AboutThere = () => {
                                             height: "100%"
                                         }
                                     }
-                                    alt="Paradox - Shape Image" />
+                                    alt=" - Shape Image" />
                                 <div className="deco_item shape_3">
                                     <Image className="wow fadeInUp amin-up-down" data-wow-delay=".1s"
                                         src={about_image}
@@ -39,7 +39,7 @@ const AboutThere = () => {
                                                 height: "100%"
                                             }
                                         }
-                                        alt="Paradox - About Image" />
+                                        alt=" - About Image" />
                                 </div>
                             </div>
                         </div>

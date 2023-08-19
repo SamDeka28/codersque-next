@@ -31,7 +31,7 @@ const PolicySection = () => {
           <div className="col col-lg-3 col-md-6 col-sm-6" data-parallax='{"y" : 30, "smoothness": 10}'>
             <div className="iconbox_item policy_item mb-4 mb-sm-0">
               <div className="item_icon">
-                <Image src={icon_development} alt="Paradox Icon Eye White" />
+                <Image src={icon_development} alt=" Icon Eye White" />
               </div>
               <div className="item_content">
                 <h3 className="item_title">Fast Development</h3>
@@ -44,7 +44,7 @@ const PolicySection = () => {
           <div className="col col-lg-3 col-md-6 col-sm-6" data-parallax='{"y" : -30, "smoothness": 10}'>
             <div className="iconbox_item policy_item">
               <div className="item_icon">
-                <Image src={icon_flexibility} alt="Paradox Icon Eye White" />
+                <Image src={icon_flexibility} alt=" Icon Eye White" />
               </div>
               <div className="item_content">
                 <h3 className="item_title">Full Flexibility</h3>
@@ -57,7 +57,7 @@ const PolicySection = () => {
           <div className="col col-lg-3 col-md-6 col-sm-6" data-parallax='{"y" : 30, "smoothness": 10}'>
             <div className="iconbox_item policy_item mb-4 mb-sm-0">
               <div className="item_icon">
-                <Image src={icon_design} alt="Paradox Icon Eye White" />
+                <Image src={icon_design} alt=" Icon Eye White" />
               </div>
               <div className="item_content">
                 <h3 className="item_title">Modern Design</h3>
@@ -70,7 +70,7 @@ const PolicySection = () => {
           <div className="col col-lg-3 col-md-6 col-sm-6" data-parallax='{"y" : -30, "smoothness": 10}'>
             <div className="iconbox_item policy_item">
               <div className="item_icon">
-                <Image src={icon_maintenance} alt="Paradox Icon Eye White" />
+                <Image src={icon_maintenance} alt=" Icon Eye White" />
               </div>
               <div className="item_content">
                 <h3 className="item_title">Simple Maintenance</h3>
@@ -84,10 +84,10 @@ const PolicySection = () => {
       </div>
 
       <div className="deco_item shape_1">
-        <Image src={shape_line_flow} style={{ width: "100%", height: "100%" }} alt="Paradox Shapes Image Line Flow" />
+        <Image src={shape_line_flow} style={{ width: "100%", height: "100%" }} alt=" Shapes Image Line Flow" />
       </div>
       <div className="deco_item shape_2">
-        <Image src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox Shapes Circle" />
+        <Image src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt=" Shapes Circle" />
       </div>
     </section>
   );

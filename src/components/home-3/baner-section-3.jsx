@@ -31,10 +31,10 @@ const BanerSectionThire = () => {
           <div className="col col-xxl-5 col-xl-6 col-lg-6">
             <div className="hero_banner_image_3 decoration_wrap">
               <div className="man_image wow fadeInUp" data-wow-delay=".4s">
-                <Image src={hero_banner_image} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+                <Image src={hero_banner_image} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
               </div>
               <div className="deco_item shape_1">
-                <Image className="wow zoomIn" data-wow-delay=".2s" src={shape_star_smooth} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration Image" />
+                <Image className="wow zoomIn" data-wow-delay=".2s" src={shape_star_smooth} style={{ width: "100%", height: "100%" }} alt=" Illustration Image" />
               </div>
             </div>
           </div>

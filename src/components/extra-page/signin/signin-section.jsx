@@ -21,19 +21,19 @@ const SigninSection = () => {
     <section className="register_section overflow-hidden">
       <div className="column decoration_wrap">
         <div className="inner"></div>
-        <Image src={banner_image} alt="Paradox Iillustration Image" />
+        <Image src={banner_image} alt=" Iillustration Image" />
         <div className="deco_item shape_1 wow fadeInDown" data-wow-delay=".1s">
-          <Image src={shape_circle_dashed_2} alt="Paradox - Shape Image" />
+          <Image src={shape_circle_dashed_2} alt=" - Shape Image" />
         </div>
         <div className="deco_item shape_2 wow fadeInUp" data-wow-delay=".1s">
-          <Image src={shape_circle_half_1} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+          <Image src={shape_circle_half_1} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
         </div>
       </div>
       <div className="column decoration_wrap">
         <div className="register_form_wrap ms-lg-0">
           <div className="site_logo">
             <Link className="site_link" href="/">
-              <Image src={site_logo_dark} alt="Site Logo - Paradox - Agency Template" />
+              <Image src={site_logo_dark} alt="Site Logo -  - Agency Template" />
             </Link>
           </div>
           <h2 className="form_title">Welcome Back!</h2>
@@ -73,10 +73,10 @@ const SigninSection = () => {
         </div>
 
         <div className="deco_item shape_3 wow fadeInRight" data-wow-delay=".1s">
-          <Image src={shape_1} alt="Paradox - Shape Image" />
+          <Image src={shape_1} alt=" - Shape Image" />
         </div>
         <div className="deco_item shape_4 wow zoomIn" data-wow-delay=".1s">
-          <Image src={shape_circle_2} alt="Paradox - Shape Image" />
+          <Image src={shape_circle_2} alt=" - Shape Image" />
         </div>
       </div>
     </section>

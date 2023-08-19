@@ -73,7 +73,7 @@ const TeamSection = () => {
                 <div className="team_item style_1 tilt">
                   <div className="admin_thumbnail">
                     <div className="thumbnail_wrap">
-                      <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Team Admin Image" />
+                      <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Team Admin Image" />
                     </div>
                   </div>
                   <div className="admin_info_content">

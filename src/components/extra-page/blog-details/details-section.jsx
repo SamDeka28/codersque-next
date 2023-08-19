@@ -28,7 +28,7 @@ const DetailsSection = ({ item }) => {
           <div className="row justify-content-center">
             <div className="col col-lg-8">
               <div className="details_image">
-                {item.img && <Image src={item.img.src} width={1170} height={751} style={{ width: "400", height: "100%" }} alt="Paradox Blog Details Image" />}
+                {item.img && <Image src={item.img.src} width={1170} height={751} style={{ width: "400", height: "100%" }} alt=" Blog Details Image" />}
               </div>
               <div className="details_content">
                 <div className="blog_post_meta">
@@ -85,7 +85,7 @@ const DetailsSection = ({ item }) => {
                 <div className="row mb-4">
                   <div className="col col-lg-6">
                     <div className="video_widget">
-                      <Image src={blog_details_image_2} style={{ width: "100%", height: "100%" }} alt="Paradox Video Poster Image" />
+                      <Image src={blog_details_image_2} style={{ width: "100%", height: "100%" }} alt=" Video Poster Image" />
                       <button type='submit' className="video_play_icon popup_video" onClick={openVideoModal}>
                         <span className="icon_wrap" data-magnetic>
                           <i className="fas fa-play"></i>
@@ -95,7 +95,7 @@ const DetailsSection = ({ item }) => {
                   </div>
                   <div className="col col-lg-6">
                     <div className="image_wrap">
-                      <Image src={blog_details_image_3} style={{ width: "100%", height: "100%" }} alt="Paradox Blog Details Image" />
+                      <Image src={blog_details_image_3} style={{ width: "100%", height: "100%" }} alt=" Blog Details Image" />
                     </div>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ const DetailsSection = ({ item }) => {
 
               <div className="post_admin">
                 <div className="admin_image">
-                  <Image src={avatar_5} style={{ width: "100%", height: "100%" }} alt="Paradox Blog Post Admin Image" />
+                  <Image src={avatar_5} style={{ width: "100%", height: "100%" }} alt=" Blog Post Admin Image" />
                 </div>
                 <div className="admin_content">
                   <h3 className="admin_name">Karen L. Head</h3>

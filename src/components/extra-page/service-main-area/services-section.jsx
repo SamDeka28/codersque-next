@@ -28,8 +28,8 @@ const ServicesSection = () => {
                   <Link className="item_details_btn" href={`/service-details/${item.id}`}>
                     <span className="btn_text">View Details</span>
                     <span className="btn_icon">
-                      <img src="assets/images/icons/icon_arrow_down_right_primary.svg" alt="Paradox icons" />
-                      <img src="assets/images/icons/icon_arrow_down_right_white.svg" alt="Paradox icons" />
+                      <img src="assets/images/icons/icon_arrow_down_right_primary.svg" alt=" icons" />
+                      <img src="assets/images/icons/icon_arrow_down_right_white.svg" alt=" icons" />
                     </span>
                   </Link>
                 </div>

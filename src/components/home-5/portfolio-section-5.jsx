@@ -22,8 +22,8 @@ const PortfolioSectionFive = () => {
               <Link className="btn-link text-white" href="/portfolio">
                 <span className="btn_text">View All Work</span>
                 <span className="btn_icon">
-                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
-                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
+                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
+                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
                 </span>
               </Link>
             </div>
@@ -34,7 +34,7 @@ const PortfolioSectionFive = () => {
             <div className="portfolio_inline_item" key={item.id}>
               <div className="item_image">
                 <Link href={`/portfolio-details/${item.id}`}>
-                  <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                  <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                 </Link>
               </div>
               <div className="item_content">

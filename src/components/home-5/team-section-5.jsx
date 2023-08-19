@@ -23,16 +23,16 @@ const TeamSectionFive = () => {
                 <div className="team_item style_2">
                   <div className="admin_thumbnail">
                     <div className="thumbnail_wrap">
-                      <Image src={item.person} style={{ width: "100%", height: "100%" }} alt="Paradox Team Admin Image" />
+                      <Image src={item.person} style={{ width: "100%", height: "100%" }} alt=" Team Admin Image" />
                     </div>
                   </div>
                   <div className="admin_info_content">
                     <h3 className="admin_name">{item.admin_name}</h3>
                     <p className="admin_designation mb-0">{item.designation}</p>
                     <ul className="admin_social unordered_list">
-                    <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
-                    <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
-                    <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
+                      <li><Link href="https://www.facebook.com/" target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
+                      <li><Link href="https://twitter.com/" target="_blank"><i className="fab fa-twitter"></i></Link></li>
+                      <li><Link href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></Link></li>
                     </ul>
                   </div>
                 </div>

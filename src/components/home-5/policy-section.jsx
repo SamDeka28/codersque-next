@@ -43,7 +43,7 @@ const PolicySection = () => {
         </div>
       </div>
       <div className="deco_item shape_3">
-        <Image data-parallax='{"y" : 150, "smoothness": 20}' src={shape_circle_7} alt="Paradox Illustration Image" />
+        <Image data-parallax='{"y" : 150, "smoothness": 20}' src={shape_circle_7} alt=" Illustration Image" />
       </div>
     </section>
   );

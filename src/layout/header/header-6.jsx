@@ -38,7 +38,7 @@ const HeaderSix = () => {
                 <Image
                   src={site_logo}
                   height={40}
-                  alt="Site Logo - Paradox - Agency Template"
+                  alt="Site Logo -  - Agency Template"
                 />
               </Link>
             </div>

@@ -53,7 +53,7 @@ const ReviewSectionFive = () => {
             {/* <div className="col col-xl-6 col-lg-6 p-0">
                 <div className="testimonial-player">
                   <div className="video_widget rounded-0">
-                    <Image src={video_poster_img} style={{ width: "100%", height: "100%" }} alt="Paradox Video Poster Image" />
+                    <Image src={video_poster_img} style={{ width: "100%", height: "100%" }} alt=" Video Poster Image" />
                     <button type='button' className="video_play_icon popup_video" onClick={() => { openVideoModal(); }}>
                       <span className="icon_wrap" data-magnetic>
                         <i className="fas fa-play"></i>
@@ -81,7 +81,7 @@ const ReviewSectionFive = () => {
                             {item.description}
                           </p>
                           <span className="quote_icon">
-                            <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Quote" />
+                            <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt=" Icon Quote" />
                           </span>
                           <div className="admin_item">
                             <div className="admin_thumbnail">

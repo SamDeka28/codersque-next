@@ -25,7 +25,7 @@ const HeaderThire = () => {
   };
 
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
-  const selectHandler = e => {}
+  const selectHandler = e => { }
 
   return (
     <>
@@ -36,7 +36,7 @@ const HeaderThire = () => {
               <Link className="site_link" href="/">
                 <Image
                   src={site_logo}
-                  alt="Site Logo - Paradox - Agency Template"
+                  alt="Site Logo -  - Agency Template"
                 />
               </Link>
             </div>

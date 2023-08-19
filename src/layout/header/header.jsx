@@ -65,7 +65,7 @@ const Header = () => {
             </div>
             <div className="header_right">
               <ul className="header_btns_group unordered_list_end d-none d-lg-flex">
-                <li>
+                {/* <li>
                   <div className="select_option m-0">
                     <div className="icon_wrap">
                       <Image
@@ -86,7 +86,7 @@ const Header = () => {
                       name="English"
                     />
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <Link href="/contact" className="bd-btn-link outline-dark">
                     <span className="bd-button-content-wrapper">

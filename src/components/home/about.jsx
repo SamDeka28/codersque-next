@@ -17,7 +17,7 @@ const About = () => {
                     <div className="row align-items-center">
                         <div className="col col-lg-6 order-last order-lg-first">
                             <div className="about_image decoration_wrap text-center">
-                                <Image className="amin-up-down" src={about_image} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+                                <Image className="amin-up-down" src={about_image} style={{ width: "100%", height: "100%" }} alt=" - About Image" />
                             </div>
                         </div>
                         <div className="col col-lg-6">
@@ -99,7 +99,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="deco_item shape_2">
-                    <Image src={shape2} style={{ width: "100%", height: "100%" }} alt="Paradox Shape Image" />
+                    <Image src={shape2} style={{ width: "100%", height: "100%" }} alt=" Shape Image" />
                 </div>
             </section>
         </>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const FaqSection = () => {
   return (
-    <section className="faq_section section_space_lg">
+    <section className="faq_section section_space_lg bg_light">
       <div className="container">
         <div className="row">
           <div className="col col-lg-4">

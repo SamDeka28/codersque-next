@@ -8,7 +8,7 @@ const ErrorSection = () => {
     <section className="error_section text-center mouse_move">
       <div className="container">
         <div className="error_image decoration_wrap text-center">
-          <Image src={error_img} style={{ width: "100%", height: "100%" }} alt="Paradox - Error Image" />
+          <Image src={error_img} style={{ width: "100%", height: "100%" }} alt=" - Error Image" />
         </div>
         <div className="error_content">
           <h1>Page not found</h1>

@@ -10,7 +10,7 @@ const AboutMeSection = () => {
       <div className="container">
         <div className="my_information_wrap">
           <div className="my_image_wrap position-relative">
-            <Image src={about_image} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration" />
+            <Image src={about_image} style={{ width: "100%", height: "100%" }} alt=" Illustration" />
 
             <div className="avadator_cv">
               <Link href="/about" className="bd-btn-link btn_warning">

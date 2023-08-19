@@ -25,7 +25,7 @@ const HeaderFour = () => {
   };
 
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
-  const selectHandler = e => {}
+  const selectHandler = e => { }
 
   return (
     <>
@@ -37,7 +37,7 @@ const HeaderFour = () => {
                 <Link className="site_link" href="/">
                   <Image
                     src={site_logo}
-                    alt="Site Logo - Paradox - Agency Template"
+                    alt="Site Logo -  - Agency Template"
                   />
                 </Link>
               </div>
@@ -72,16 +72,16 @@ const HeaderFour = () => {
                         />
                       </div>
                       <NiceSelect
-                      options={[
-                        { value: "English", text: "English" },
-                        { value: "Arabic", text: "Arabic" },
-                        { value: "Portuguese", text: "Portuguese" },
-                        { value: "French", text: "French" },
-                      ]}
-                      defaultCurrent={0}
-                      onChange={selectHandler}
-                      name="English"
-                    />
+                        options={[
+                          { value: "English", text: "English" },
+                          { value: "Arabic", text: "Arabic" },
+                          { value: "Portuguese", text: "Portuguese" },
+                          { value: "French", text: "French" },
+                        ]}
+                        defaultCurrent={0}
+                        onChange={selectHandler}
+                        name="English"
+                      />
                     </div>
                   </li>
                   <li>

@@ -3,7 +3,7 @@ const menu_data = [
     id: 1,
     hasDropdown: false,
     title: 'Home',
-    link: '/home',
+    link: '/',
     // submenus: [
     //   { title: 'IT Agency', link: '/' },
     //   { title: 'Personal Portfolio', link: '/home-2' },
@@ -22,8 +22,8 @@ const menu_data = [
       { title: 'Web Development', link: '/service-details/web-development' },
       { title: 'UI/UX Design', link: '/service-details/ui-ux' },
       { title: 'App Development', link: '/service-details/app-development' },
-      // { title: 'Service Layout 4', link: '/service-4' },
-      // { title: 'Service Details', link: '/service-details' },
+      { title: 'Custom Application', link: '/service-details/custom-application-development' },
+      { title: 'ERP Development', link: '/service-details/erp-development' },
     ]
   },
   {

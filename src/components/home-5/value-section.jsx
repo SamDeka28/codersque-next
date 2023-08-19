@@ -23,22 +23,22 @@ const ValueSection = () => {
           <div className="col col-lg-6 order-lg-last">
             <div className="our_value_image decoration_wrap mb-5 mb-lg-0">
               <div className="image_wrap">
-                <Image src={about_image_1} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+                <Image src={about_image_1} style={{ width: "100%", height: "100%" }} alt=" - About Image" />
               </div>
               <div className="deco_item bg_image">
-                <Image src={about_image_2} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image src={about_image_2} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
               <div className="deco_item shape_1">
-                <Image data-parallax='{"y" : 100, "smoothness": 20}' style={{ width: "100%", height: "100%" }} src={shape_circle_1} alt="Paradox - Shape Image" />
+                <Image data-parallax='{"y" : 100, "smoothness": 20}' style={{ width: "100%", height: "100%" }} src={shape_circle_1} alt=" - Shape Image" />
               </div>
               <div className="deco_item shape_2">
-                <Image data-parallax='{"y" : -150, "smoothness": 20}' src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image data-parallax='{"y" : -150, "smoothness": 20}' src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
               <div className="deco_item shape_3">
-                <Image src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image src={shape_circle_3} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
               <div className="deco_item chart_image">
-                <Image src={about_image_10} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image src={about_image_10} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const ValueSection = () => {
                 <div className="col col-md-6">
                   <div className="iconbox_item pe-lg-3 pe-xl-5">
                     <div className="item_icon">
-                      <Image src={icon_users} style={{ width: "50%", height: "auto" }} alt="Paradox Icon Users" />
+                      <Image src={icon_users} style={{ width: "50%", height: "auto" }} alt=" Icon Users" />
                     </div>
                     <div className="item_content">
                       <h3 className="item_title">User Friendly</h3>
@@ -69,7 +69,7 @@ const ValueSection = () => {
                 <div className="col col-md-6">
                   <div className="iconbox_item pe-lg-3 pe-xl-5">
                     <div className="item_icon">
-                      <Image src={icon_love} style={{ width: "50%", height: "auto" }} alt="Paradox Icon Handshake" />
+                      <Image src={icon_love} style={{ width: "50%", height: "auto" }} alt=" Icon Handshake" />
                     </div>
                     <div className="item_content">
                       <h3 className="item_title">Best Support</h3>

@@ -16,36 +16,36 @@ const PortfolioSectionThire = () => {
     slidesToScroll: 1,
     pauseOnHover: true,
     autoplaySpeed: 5000,
-  	responsive: [
-  		{
-  			breakpoint: 1200,
-  			settings: {
-  				slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 992,
-  			settings: {
-  				slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 767,
-  			settings: {
-  				slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
-  			},
-  		},
-  		{
-  			breakpoint: 575,
-  			settings: {
-  				slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
-  			},
-  		},
-  	]
+        },
+      },
+    ]
   };
   return (
     <section className="portfolio_section section_space_lg bg_primary">
@@ -70,7 +70,7 @@ const PortfolioSectionThire = () => {
                   <div className="portfolio_item layout_fullimage">
                     <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Paradox Portfolio Image" />
+                        <Image src={item.image} style={{ width: "100%", height: "auto" }} alt=" Portfolio Image" />
                       </Link>
                     </div>
                     <div className="item_content">

@@ -56,16 +56,16 @@ const CounterSectionSix = () => {
         }
       </div>
       <div className="deco_item shape_1">
-        <img src="assets/images/shapes/shape_line_flow.svg" alt="Paradox Shapes Image Line Flow" />
+        <img src="assets/images/shapes/shape_line_flow.svg" alt=" Shapes Image Line Flow" />
       </div>
       <div className="deco_item shape_2">
-        <img src="assets/images/shapes/shape_circle_2.svg" alt="Paradox Shapes Circle" />
+        <img src="assets/images/shapes/shape_circle_2.svg" alt=" Shapes Circle" />
       </div>
       <div className="deco_item shape_3" data-parallax='{"y" : 100, "smoothness": 20}'>
-        <img src="assets/images/shapes/shape_circle_1.svg" alt="Paradox Shapes Circle" />
+        <img src="assets/images/shapes/shape_circle_1.svg" alt=" Shapes Circle" />
       </div>
       <div className="deco_item shape_4" data-parallax='{"y" : -200, "smoothness": 20}'>
-        <img src="assets/images/shapes/shape_8.svg" alt="Paradox Shape" />
+        <img src="assets/images/shapes/shape_8.svg" alt=" Shape" />
       </div>
     </section>
   );

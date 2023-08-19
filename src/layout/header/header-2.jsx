@@ -25,7 +25,7 @@ const HeaderTwo = () => {
   };
 
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
-  const selectHandler = e => {}
+  const selectHandler = e => { }
 
   return (
     <>
@@ -37,7 +37,7 @@ const HeaderTwo = () => {
                 <Image
                   src={site_logo}
                   style={{ width: "100%", height: "100%" }}
-                  alt="Site Logo - Paradox - Agency Template"
+                  alt="Site Logo -  - Agency Template"
                 />
               </Link>
             </div>

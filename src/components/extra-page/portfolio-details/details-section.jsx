@@ -12,13 +12,13 @@ import icon_arrow_right_primary from '@assets/images/icons/icon_arrow_right_prim
 import Link from 'next/link';
 import Image from 'next/image';
 
-const DetailsSection = ({item}) => {
+const DetailsSection = ({ item }) => {
   return (
     <section className="details_section portfolio_details section_space_lg">
       <div className="container">
         <div className="section_space_md pt-0">
           <div className="details_item_image">
-            <Image src={details_image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+            <Image src={details_image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
           </div>
         </div>
         <div className="details_content_wrap">
@@ -66,7 +66,7 @@ const DetailsSection = ({item}) => {
             <div className="col col-lg-4 col-md-6">
               <div className="iconbox_item bg-white">
                 <div className="item_icon">
-                  <Image src={icon_care_primary} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Eye White" />
+                  <Image src={icon_care_primary} style={{ width: "100%", height: "100%" }} alt=" Icon Eye White" />
                 </div>
                 <div className="item_content">
                   <h3 className="item_title">Client Care</h3>
@@ -79,7 +79,7 @@ const DetailsSection = ({item}) => {
             <div className="col col-lg-4 col-md-6">
               <div className="iconbox_item bg-white">
                 <div className="item_icon">
-                  <Image src={icon_together_primary} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Eye White" />
+                  <Image src={icon_together_primary} style={{ width: "100%", height: "100%" }} alt=" Icon Eye White" />
                 </div>
                 <div className="item_content">
                   <h3 className="item_title">Using Empathy</h3>
@@ -92,7 +92,7 @@ const DetailsSection = ({item}) => {
             <div className="col col-lg-4 col-md-6">
               <div className="iconbox_item bg-white">
                 <div className="item_icon">
-                  <Image src={icon_communication_primary} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Eye White" />
+                  <Image src={icon_communication_primary} style={{ width: "100%", height: "100%" }} alt=" Icon Eye White" />
                 </div>
                 <div className="item_content">
                   <h3 className="item_title">Communication Skills</h3>
@@ -119,8 +119,8 @@ const DetailsSection = ({item}) => {
                     </span>
                     <span className="pd-animation-flip">
                       <span className="bd-btn-anim-wrapp">
-                        <span className="bd-button-text">Get This Service Now</span>
-                        <span className="bd-button-text">Get This Service Now</span>
+                        <span className="bd-button-text">Request an Estimate</span>
+                        <span className="bd-button-text">Request an Estimate</span>
                       </span>
                     </span>
                   </span>
@@ -157,12 +157,12 @@ const DetailsSection = ({item}) => {
           <div className="row mb-4">
             <div className="col col-md-6">
               <div className="details_item_image m-0">
-                <Image src={details_image_2} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                <Image src={details_image_2} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
               </div>
             </div>
             <div className="col col-md-6">
               <div className="details_item_image m-0">
-                <Image src={details_image_3} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                <Image src={details_image_3} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
               </div>
             </div>
           </div>
@@ -188,15 +188,15 @@ const DetailsSection = ({item}) => {
               <Link href="/portfolio-details" data-cursor="-exclusion -lg" data-cursor-stick="#prev_post">
                 <span className="btn_text">Previous Portfolio</span>
                 <span id="prev_post" className="btn_icon">
-                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Left" />
-                  <Image src={icon_arrow_left_primary} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Left" />
+                  <Image src={icon_arrow_down} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Left" />
+                  <Image src={icon_arrow_left_primary} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Left" />
                 </span>
               </Link>
               <Link href="/portfolio-details" data-cursor="-exclusion -lg" data-cursor-stick="#next_post">
                 <span className="btn_text">Next Portfolio</span>
                 <span id="next_post" className="btn_icon">
-                  <Image src={icon_arrow_down_right} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
-                  <Image src={icon_arrow_right_primary} style={{ width: "100%", height: "100%" }} alt="Paradox - Icon Arrow Down Right" />
+                  <Image src={icon_arrow_down_right} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
+                  <Image src={icon_arrow_right_primary} style={{ width: "100%", height: "100%" }} alt=" - Icon Arrow Down Right" />
                 </span>
               </Link>
             </div>

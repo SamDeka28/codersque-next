@@ -74,7 +74,7 @@ const TermsPrivacySection = () => {
                     You may direct questions, comments or reports to:
                   </p>
                   <p>
-                    <Link className="author_mail" href="mailto:howdy@paradox.com">howdy@paradox.com</Link>
+                    <Link className="author_mail" href="mailto:howdy@.com">howdy@.com</Link>
                   </p>
                   <h4 className="info_title">Revisions to this privacy policy without notice</h4>
                   <p className="mb-0">
@@ -153,7 +153,7 @@ const TermsPrivacySection = () => {
                     You may direct questions, comments or reports to:
                   </p>
                   <p>
-                    <Link className="author_mail" href="mailto:howdy@paradox.com">howdy@paradox.com</Link>
+                    <Link className="author_mail" href="mailto:howdy@.com">howdy@.com</Link>
                   </p>
                   <h4 className="info_title">Revisions to this Teams & Condition without Notice</h4>
                   <p className="mb-0">

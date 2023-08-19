@@ -97,7 +97,7 @@ const PortfolioSectionMain = () => {
                         <Image
                           src={item.image}
                           style={{ width: "100%", height: "100%" }}
-                          alt="Paradox Portfolio Image"
+                          alt=" Portfolio Image"
                         />
                       </Link>
                     </div>
@@ -140,7 +140,7 @@ const PortfolioSectionMain = () => {
                             <Image
                               src={item.image}
                               style={{ width: "100%", height: "100%" }}
-                              alt="Paradox Portfolio Image"
+                              alt=" Portfolio Image"
                             />
                           </Link>
                         </div>
@@ -186,7 +186,7 @@ const PortfolioSectionMain = () => {
                             <Image
                               src={item.image}
                               style={{ width: "100%", height: "100%" }}
-                              alt="Paradox Portfolio Image"
+                              alt=" Portfolio Image"
                             />
                           </Link>
                         </div>
@@ -232,7 +232,7 @@ const PortfolioSectionMain = () => {
                             <Image
                               src={item.image}
                               style={{ width: "100%", height: "100%" }}
-                              alt="Paradox Portfolio Image"
+                              alt=" Portfolio Image"
                             />
                           </Link>
                         </div>
@@ -278,7 +278,7 @@ const PortfolioSectionMain = () => {
                             <Image
                               src={item.image}
                               style={{ width: "100%", height: "100%" }}
-                              alt="Paradox Portfolio Image"
+                              alt=" Portfolio Image"
                             />
                           </Link>
                         </div>

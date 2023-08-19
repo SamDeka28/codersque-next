@@ -3,7 +3,7 @@ import Header from '@layout/header/header';
 import React from 'react';
 import Breadcrumb from '@components/common/breadcrumb/breadcrumb';
 import ContactSection from './contact-section';
-import CollectionSection from '@components/home/collection-section';
+import FooterSix from '@layout/footer/footer-6';
 
 const Index = () => {
     return (
@@ -11,8 +11,7 @@ const Index = () => {
             <Header />
             <Breadcrumb title='Contact Us' subTitle='Contact Us' />
             <ContactSection />
-            <CollectionSection />
-            <Footer />
+            <FooterSix />
         </main>
     );
 };

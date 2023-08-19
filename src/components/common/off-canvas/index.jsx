@@ -45,11 +45,11 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
               <div className="offcanvas__contact-text mb-2">
                 <p>
                   <a
-                    href="mailto:paradox@example"
+                    href="mailto:sales@codersque.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    paradox@example.com
+                    sales@codersque.com
                   </a>
                 </p>
                 <span>

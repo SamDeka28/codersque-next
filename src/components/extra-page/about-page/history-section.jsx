@@ -17,7 +17,7 @@ const HistorySection = () => {
             </span>
             <span>Our History</span>
           </h2>
-          <h3 className="heading_title mb-0">Journey of Paradox</h3>
+          <h3 className="heading_title mb-0">Journey of Codersque</h3>
         </div>
       </div>
       <div className="history_carousel_wrap">
@@ -60,17 +60,17 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        Ideation
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We thought of starting Codersque Technologies Pvt Ltd
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2002</span>
+                    <span>September, 2022</span>
                   </h4>
                 </div>
               </div>
@@ -81,17 +81,16 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
-                      </h3>
+                        Launch</h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        Registered Codersque Technologies as a Pvt Ltd firm and started with 2 people
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2004</span>
+                    <span>Nov, 2022</span>
                   </h4>
                 </div>
               </div>
@@ -103,17 +102,17 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        Struggle Phase
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We started getting local and national leads. We fixed meetings with potential clients both offline and online.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2010</span>
+                    <span>Nov, 2022</span>
                   </h4>
                 </div>
               </div>
@@ -125,17 +124,17 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        Patnerships and Network building
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We started building up our network and partnered with peoples having same vision as us.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2014</span>
+                    <span>Dec, 2022</span>
                   </h4>
                 </div>
               </div>
@@ -148,17 +147,17 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        First Client Onboading
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We got our first client.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2019</span>
+                    <span>Jan, 2023</span>
                   </h4>
                 </div>
               </div>
@@ -170,17 +169,17 @@ const HistorySection = () => {
                   <div className="iconbox_item">
                     <div className="item_content">
                       <h3 className="item_title">
-                        We were thinking for Paradox
+                        Continuation...
                       </h3>
                       <p className="mb-0">
-                        We are help generate positive the cash floinvest
+                        We are getting strong day by day
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="content_wrap">
                   <h4 className="year_text m-0 text-center">
-                    <span>2023</span>
+                    <span>Present</span>
                   </h4>
                 </div>
               </div>

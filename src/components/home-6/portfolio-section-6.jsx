@@ -17,42 +17,42 @@ const PortfolioSectionSix = () => {
     pauseOnHover: true,
     autoplaySpeed: 5000,
     responsive: [
-  		{
-  			breakpoint: 1400,
-  			settings: {
-  				slidesToShow: 3,
-  			},
-  		},
-  		{
-  			breakpoint: 1200,
-  			settings: {
-  				slidesToShow: 2,
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 2,
-  			},
-  		},
-  		{
-  			breakpoint: 992,
-  			settings: {
-  				slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 2,
-  			},
-  		},
-  		{
-  			breakpoint: 768,
-  			settings: {
-  				slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: '80px',
-  			},
-  		},
-  		{
-  			breakpoint: 575,
-  			settings: {
-  				slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
-  			},
-  		},
+        },
+      },
     ]
   };
   return (
@@ -72,13 +72,13 @@ const PortfolioSectionSix = () => {
           <div className="portfolio_carousel_2 decoration_wrap ">
             <div className="common_carousel_centered_2 ">
               <Slider {...portfolio_slider}>
-                {portfolio_data.slice(0, 5).map((item) => (
+                {portfolio_data.map((item) => (
                   <div className="carousel_item" key={item.id}>
                     <div className="carousel_item">
                       <div className="portfolio_item layout_grid text-center">
-                        <div className="item_image">
-                          <Link href={`/portfolio-details/${item.id}`}>
-                            <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Paradox Portfolio Image" />
+                        <div className="item_image" style={{ boxShadow: "1px 1px 50px 2px rgba(0,0,0,0.2)" }}>
+                          <Link href="#">
+                            <Image src={item.image} style={{ width: "100%", height: "auto" }} alt=" Portfolio Image" />
                           </Link>
                         </div>
                         <div className="item_content">
@@ -86,7 +86,7 @@ const PortfolioSectionSix = () => {
                             <li><Link href="/blog-classic">{item.catagory_list}</Link></li>
                           </ul>
                           <h3 className="item_title mb-0">
-                            <Link href={`/portfolio-details/${item.id}`}>
+                            <Link href={`#`}>
                               {item.title}
                             </Link>
                           </h3>
@@ -101,7 +101,7 @@ const PortfolioSectionSix = () => {
         </div>
       </div>
       <div className="deco_item shape_1">
-        <Image src={shape_circle} style={{ width: "100%", height: "auto" }} alt="Paradox Illustration Image" />
+        <Image src={shape_circle} style={{ width: "100%", height: "auto" }} alt=" Illustration Image" />
       </div>
     </section>
   );

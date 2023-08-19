@@ -35,7 +35,7 @@ const ServiceSectionFive = () => {
                 </div>
                 <Link className="item_details_btn" href={`/service-details/${item.id}`}>
                   <span className="btn_icon">
-                    <Image src={item.btn_icon} style={{ width: "100%", height: "100%" }} alt="Paradox icons" />
+                    <Image src={item.btn_icon} style={{ width: "100%", height: "100%" }} alt=" icons" />
                   </span>
                 </Link>
               </div>
@@ -44,10 +44,10 @@ const ServiceSectionFive = () => {
         </div>
 
         <div className="deco_item shape_1">
-          <Image data-parallax='{"y" : 200, "smoothness": 20}' src={shape_line_2} style={{ width: "auto", height: "auto" }} alt="Paradox - Shape Image" />
+          <Image data-parallax='{"y" : 200, "smoothness": 20}' src={shape_line_2} style={{ width: "auto", height: "auto" }} alt=" - Shape Image" />
         </div>
         <div className="deco_item shape_2">
-          <Image data-parallax='{"y" : -200, "smoothness": 20}' src={shape_line_1} style={{ width: "auto", height: "auto" }} alt="Paradox - Shape Image" />
+          <Image data-parallax='{"y" : -200, "smoothness": 20}' src={shape_line_1} style={{ width: "auto", height: "auto" }} alt=" - Shape Image" />
         </div>
       </div>
     </section>

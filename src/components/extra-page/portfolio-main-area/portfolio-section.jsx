@@ -25,12 +25,12 @@ const PortfolioSection = () => {
           <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabIndex="0">
             <div className="row grid">
               {
-                portfolio_data.slice(5,14).map((item) => (
+                portfolio_data.slice(5, 14).map((item) => (
                   <div className="col col-xl-4 col-lg-4 col-md-6 element-item graphics" key={item.id}>
                     <div className="portfolio_item layout_grid text-center">
                       <div className="item_image">
                         <Link href={`/portfolio-details/${item.id}`}>
-                          <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                          <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                         </Link>
                       </div>
                       <div className="item_content">
@@ -51,12 +51,12 @@ const PortfolioSection = () => {
           </div>
           <div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabIndex="0">
             <div className="row grid">
-              {portfolio_data.slice(5,14).map((item) => (
+              {portfolio_data.slice(5, 14).map((item) => (
                 item.graphics && <div className="col col-xl-4 col-lg-4 col-md-6 element-item graphics" key={item.id}>
                   <div className="portfolio_item layout_grid text-center">
                     <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                       </Link>
                     </div>
                     <div className="item_content">
@@ -77,12 +77,12 @@ const PortfolioSection = () => {
           </div>
           <div className="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabIndex="0">
             <div className="row grid">
-              {portfolio_data.slice(5,14).map((item) => (
+              {portfolio_data.slice(5, 14).map((item) => (
                 item.uiUx && <div className="col col-xl-4 col-lg-4 col-md-6 element-item graphics" key={item.id}>
                   <div className="portfolio_item layout_grid text-center">
                     <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                       </Link>
                     </div>
                     <div className="item_content">
@@ -103,12 +103,12 @@ const PortfolioSection = () => {
           </div>
           <div className="tab-pane fade" id="nav-wordpress" role="tabpanel" aria-labelledby="nav-wordpress-tab" tabIndex="0">
             <div className="row grid">
-              {portfolio_data.slice(5,14).map((item) => (
+              {portfolio_data.slice(5, 14).map((item) => (
                 item.wordpress && <div className="col col-xl-4 col-lg-4 col-md-6 element-item graphics" key={item.id}>
                   <div className="portfolio_item layout_grid text-center">
                     <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                       </Link>
                     </div>
                     <div className="item_content">
@@ -129,12 +129,12 @@ const PortfolioSection = () => {
           </div>
           <div className="tab-pane fade" id="nav-webdesign" role="tabpanel" aria-labelledby="nav-webdesign-tab" tabIndex="0">
             <div className="row grid">
-              {portfolio_data.slice(5,14).map((item) => (
+              {portfolio_data.slice(5, 14).map((item) => (
                 item.webDesign && <div className="col col-xl-4 col-lg-4 col-md-6 element-item graphics" key={item.id}>
                   <div className="portfolio_item layout_grid text-center">
                     <div className="item_image">
                       <Link href={`/portfolio-details/${item.id}`}>
-                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt="Paradox Portfolio Image" />
+                        <Image src={item.image} style={{ width: "100%", height: "100%" }} alt=" Portfolio Image" />
                       </Link>
                     </div>
                     <div className="item_content">

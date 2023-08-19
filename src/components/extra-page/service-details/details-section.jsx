@@ -35,7 +35,7 @@ const DetailsSection = ({ item: { detailed = {} } }) => {
             <div className='row mb-5'>
               <div className='col col-lg-12'>
                 <div className='text-center'>
-                  <h6 style={{ color: "#3A0CA3", fontWeight: "bold" }}>We do "standard"</h6>
+                  <h6 style={{ color: "#6741EF", fontWeight: "bold" }}>We do "standard"</h6>
                   <h2>Our {detailed.process?.length}-D Process</h2>
 
                 </div>
@@ -70,7 +70,7 @@ const DetailsSection = ({ item: { detailed = {} } }) => {
           <div className='row'>
             {/* <div className="section_space_lg">
               <div className="video_widget">
-                <Image src={service_details} style={{ width: "100%", height: "100%" }} alt="Paradox Service Video Poster" />
+                <Image src={service_details} style={{ width: "100%", height: "100%" }} alt=" Service Video Poster" />
                 <button type='button' className="video_play_icon popup_video" onClick={openVideoModal}>
                   <span className="icon_wrap" data-magnetic>
                     <i className="fas fa-play"></i>

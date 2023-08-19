@@ -15,7 +15,7 @@ const PostCategories = () => {
                         <li key={item.id}>
                             <div className="recent_post_item">
                                 <Link className="item_image" href={`/blog-details/${item.id}`}>
-                                    <Image src={item.img} style={{ width: "100%", height: "100%" }} alt="Paradox Blog Image" />
+                                    <Image src={item.img} style={{ width: "100%", height: "100%" }} alt=" Blog Image" />
                                 </Link>
                                 <div className="item_content">
                                     <ul className="meta_list unordered_list">

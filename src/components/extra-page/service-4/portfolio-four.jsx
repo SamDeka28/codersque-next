@@ -32,32 +32,32 @@ const PortfolioFour = () => {
     pauseOnHover: true,
     autoplaySpeed: 5000,
     responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
       },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
       },
-    },
-    {
-      breakpoint: 678,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 678,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
     ]
   };
 
@@ -99,7 +99,7 @@ const PortfolioFour = () => {
                     <div className="portfolio_item layout_grid text-center">
                       <div className="item_image">
                         <Link href={`/portfolio-details/${item.id}`}>
-                          <Image src={item.image} style={{ width: "100%", height: "auto" }} alt="Paradox Portfolio Image" />
+                          <Image src={item.image} style={{ width: "100%", height: "auto" }} alt=" Portfolio Image" />
                         </Link>
                       </div>
                       <div className="item_content">

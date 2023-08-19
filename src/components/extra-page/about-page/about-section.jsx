@@ -11,9 +11,9 @@ const DetailsAboutSection = () => {
         <div className="row align-items-center">
           <div className="col col-lg-6">
             <div className="about_image decoration_wrap mb-4 mb-lg-0 text-center">
-              <Image className="wow fadeInLeft" data-wow-delay=".1s" src={about_image_1} style={{ width: "100%", height: "100%" }} alt="Paradox - About Image" />
+              <Image className="wow fadeInLeft" data-wow-delay=".1s" src={about_image_1} style={{ width: "100%", height: "100%" }} alt=" - About Image" />
               <div className="deco_item shape_1">
-                <Image className="wow zoomIn" data-wow-delay=".1s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt="Paradox - Shape Image" />
+                <Image className="wow zoomIn" data-wow-delay=".1s" src={shape_circle_2} style={{ width: "100%", height: "100%" }} alt=" - Shape Image" />
               </div>
             </div>
           </div>

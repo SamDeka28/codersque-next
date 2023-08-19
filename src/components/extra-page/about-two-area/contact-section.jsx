@@ -6,7 +6,7 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   }
-  const selectHandler = e => {}
+  const selectHandler = e => { }
 
   return (
     <section className="contact_section section_space_lg">
@@ -94,7 +94,7 @@ const ContactSection = () => {
               <ul className="contact_info_list unordered_list_block">
                 <li>
                   <strong>Email:</strong>
-                  <span>gary@paradox.com</span>
+                  <span>gary@.com</span>
                 </li>
                 <li>
                   <strong>Phone:</strong>

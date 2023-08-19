@@ -6,7 +6,7 @@ const ClientFromSection = () => {
       <div className="container">
         <div className="form_box">
           <h2 className="form_title">
-            Howdy, <span className="focus_title">Paradox.</span> Team!
+            Howdy, <span className="focus_title">.</span> Team!
           </h2>
           <div className="row">
             <div className="col col-md-6">

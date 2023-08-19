@@ -6,10 +6,10 @@ import NiceSelect from '@ui/niceSelect';
 
 
 const ContactFromSection = () => {
-  const handleSubmit =(event)=>{
+  const handleSubmit = (event) => {
     event.preventDefault()
   }
-  const selectHandler = e => {}
+  const selectHandler = e => { }
   return (
     <section className="contact_form_section">
       <div className="container">
@@ -86,10 +86,10 @@ const ContactFromSection = () => {
             </form>
           </div>
           <div className="deco_item shape_1 wow fadeInUp" data-wow-delay=".1s">
-            <Image data-parallax='{"y" : -140, "smoothness": 10}' src={shape_comment} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration" />
+            <Image data-parallax='{"y" : -140, "smoothness": 10}' src={shape_comment} style={{ width: "100%", height: "100%" }} alt=" Illustration" />
           </div>
           <div className="deco_item shape_2 wow fadeInUp" data-wow-delay=".1s">
-            <Image data-parallax='{"y" : -140, "smoothness": 10}' src={shape_man_1} style={{ width: "100%", height: "100%" }} alt="Paradox Illustration" />
+            <Image data-parallax='{"y" : -140, "smoothness": 10}' src={shape_man_1} style={{ width: "100%", height: "100%" }} alt=" Illustration" />
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ import PortfolioSection from './portfolio-section';
 import CollectionSection from '@components/home/collection-section';
 import PolicySection from './policy-section';
 import Breadcrumb from '@components/common/breadcrumb/breadcrumb';
+import StarterStepsSection from '@components/home-6/starter-steps-section';
+import FooterSix from '@layout/footer/footer-6';
 
 const Index = () => {
     return (
@@ -14,9 +16,10 @@ const Index = () => {
             <Breadcrumb title='Our Services' subTitle='Our Services' />
             <ServicesSection />
             <PortfolioSection />
-            <PolicySection />
+            {/* <PolicySection /> */}
+            <StarterStepsSection />
             <CollectionSection />
-            <Footer />
+            <FooterSix />
         </main>
     );
 };

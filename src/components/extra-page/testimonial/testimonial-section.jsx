@@ -25,7 +25,7 @@ const TestimonialSection = () => {
                       <li><i className="fas fa-star"></i></li>
                     </ul>
                     <span className="quote_icon">
-                      <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt="Paradox Icon Quote" />
+                      <Image src={item.quote_icon} style={{ width: "100%", height: "100%" }} alt=" Icon Quote" />
                     </span>
                   </div>
                   <div className="admin_item">

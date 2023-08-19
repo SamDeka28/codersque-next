@@ -10,15 +10,15 @@ const Breadcrumb = ({ title, subTitle }) => {
       <div className="container decoration_wrap">
         <h1 className="page_title">{title}</h1>
 
-        <Link href="/pricing" className="bd-btn-link btn_primary">
+        <Link href="/contact" className="bd-btn-link btn_primary">
           <span className="bd-button-content-wrapper">
             <span className="bd-button-icon">
               <i className="fa-light fa-arrow-right-long"></i>
             </span>
             <span className="pd-animation-flip">
               <span className="bd-btn-anim-wrapp">
-                <span className="bd-button-text">Get This Service Now</span>
-                <span className="bd-button-text">Get This Service Now</span>
+                <span className="bd-button-text">Request an Estimate</span>
+                <span className="bd-button-text">Request an Estimate</span>
               </span>
             </span>
           </span>
@@ -34,20 +34,20 @@ const Breadcrumb = ({ title, subTitle }) => {
             src={shape_circle_1}
             data-parallax='{"y" : -140, "smoothness": 10}'
             style={{ width: "100%", height: "100%" }}
-            alt="Paradox - Shape Image"
+            alt="shape circle"
           />
         </div>
         <div
           className="deco_item shape_2 wow rotateInDownRight"
           data-wow-delay=".1s"
         >
-          <img src="/assets/images/shapes/shape_circle_half_1.svg" data-parallax='{"y" : 200, "smoothness": 10}' alt="Paradox - Shape Image" />
+          <img src="/assets/images/shapes/shape_circle_half_1.svg" data-parallax='{"y" : 200, "smoothness": 10}' alt="share image" />
         </div>
         <div className="deco_item shape_3 wow fadeInDown">
           <Image
             data-parallax='{"x" : -200, "smoothness": 10}'
             src={shape_circle_2}
-            alt="Paradox - Shape Image"
+            alt="shape circle"
           />
         </div>
       </div>

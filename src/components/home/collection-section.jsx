@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Action_image from '@assets/images/calltoaction/cta_image_1.png'
+import Action_image from '@assets/images/illustrations/Social ideas-rafiki.svg'
 import Shape_image from '@assets/images/shapes/shape_circle_3.svg'
 import Link from 'next/link';
 
@@ -11,9 +11,9 @@ const CollectionSection = () => {
         <div className="row align-items-center">
           <div className="col col-lg-6 order-lg-last">
             <div className="cta_image decoration_wrap">
-              <Image src={Action_image} style={{ width: "100%", height: "100%" }} alt="Paradox Call To Action Image" />
+              <Image src={Action_image} style={{ width: "100%", height: "100%" }} alt=" Call To Action Image" />
               <div className="deco_item shape_1">
-                <Image className="wow zoomIn" data-wow-delay=".1s" src={Shape_image} style={{ width: "100%", height: "100%" }} alt="Paradox Shape Image" />
+                <Image className="wow zoomIn" data-wow-delay=".1s" src={Shape_image} style={{ width: "100%", height: "100%" }} alt=" Shape Image" />
               </div>
             </div>
           </div>
@@ -28,7 +28,7 @@ const CollectionSection = () => {
                   <span>Get In Touch</span>
                 </h2>
                 <h3 className="heading_title mb-30">
-                  Ready to Get Started A New Project ?
+                  Do you have a Product Idea? Lets get started ?
                 </h3>
               </div>
               <Link href="/pricing" className="bd-btn-link btn_warning">
