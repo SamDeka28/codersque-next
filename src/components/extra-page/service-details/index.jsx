@@ -13,7 +13,7 @@ const Index = ({ item }) => {
       <main>
         <Breadcrumb title={item.fullTitle} subTitle={item.fullTitle} />
         <DetailsSection item={item} />
-        <FaqSection />
+        {/* <FaqSection /> */}
         <ServiceSection serviceBgg="service_section section_space_lg bg_light" />
       </main>
       <FooterSix />
