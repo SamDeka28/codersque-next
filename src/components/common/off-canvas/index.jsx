@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@assets/images/logo/site_logo_white.svg";
+import logo from "@assets/images/logo/logo.png";
 import MobileMenus from "./mobile-menus";
 
 const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
@@ -16,7 +16,7 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   <Link href="/">
                     <Image
                       src={logo}
-                      style={{ width: "auto", height: "auto" }}
+                      style={{ width: "50px", height: "auto" }}
                       alt="img not found"
                     />
                   </Link>
@@ -40,9 +40,9 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 <MobileMenus />
               </div>
             </div>
-            <div className="offcanvas__contact text-center">
+            <div className="offcanvas__contact text-left">
               <h4 className="offcanvas__title">Contact Info</h4>
-              <div className="offcanvas__contact-text mb-2">
+              <div className="offcanvas__contact-text mb-2 ">
                 <p>
                   <a
                     href="mailto:sales@codersque.com"
@@ -54,14 +54,14 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 </p>
                 <span>
                   <a href="tel:725214456" target="_blank" rel="noreferrer">
-                    725 214 456
+                    +91 76359 58420
                   </a>
                 </span>
               </div>
               <div className="offcanvas__contact-text">
                 <p>
                   <Link target="_blank" href="https://www.google.com/maps">
-                    Folkungagatan 83, Stockholm, Sweden
+                    Hno 34, Ashirwaad Path, Sonai Mikir Path, Satgaon, Guwahati, Assam
                   </Link>
                 </p>
               </div>
@@ -69,7 +69,7 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
             <div className="offcanvas__devider"></div>
             <div className="offcanvas__social">
               <ul>
-                <li>
+                {/* <li>
                   <Link target="_blank" href="https://www.facebook.com">
                     Facebook
                   </Link>
@@ -83,9 +83,9 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   <Link target="_blank" href="https://www.twitter.com">
                     Twitter
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <Link target="_blank" href="https://www.linkedin.com">
+                  <Link target="_blank" href="https://www.linkedin.com/company/codersque/">
                     Linkedin
                   </Link>
                 </li>

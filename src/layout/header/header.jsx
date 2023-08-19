@@ -24,7 +24,7 @@ const Header = () => {
       : header.classList.remove("sticky");
   };
 
-  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
+  const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(ture);
 
   const selectHandler = e => { }
 

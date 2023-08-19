@@ -27,7 +27,7 @@ const MobileMenus = () => {
       <ul>
         {menu_data.map((menu, i) => (
           <React.Fragment key={i}>
-            {menu.hasDropdown && !menu?.megaMenu && !menu.pages && (
+            {(
               <li className="has-dropdown">
                 <Link href={menu.link}>{menu.title}</Link>
                 <ul
@@ -36,21 +36,21 @@ const MobileMenus = () => {
                     display: navTitle === menu.title ? "block" : "none",
                   }}
                 >
-                  {menu.submenus.map((sub, i) => (
+                  {menu?.submenus?.map((sub, i) => (
                     <li key={i}>
                       <Link href={sub.link}>{sub.title}</Link>
                     </li>
                   ))}
                 </ul>
-                <a
-                  className={`mean-expand ${
-                    navTitle === menu.title ? "mean-clicked" : ""
-                  }`}
-                  onClick={() => openMobileMenu(menu.title)}
-                  style={{ fontSize: "18px",cursor:'pointer' }}
-                >
-                  <i className="fal fa-plus"></i>
-                </a>
+                {menu.hasDropdown &&
+                  <a
+                    className={`mean-expand ${navTitle === menu.title ? "mean-clicked" : ""
+                      }`}
+                    onClick={() => openMobileMenu(menu.title)}
+                    style={{ fontSize: "18px", cursor: 'pointer' }}
+                  >
+                    <i className="fal fa-plus"></i>
+                  </a>}
               </li>
             )}
 
@@ -80,11 +80,10 @@ const MobileMenus = () => {
                         ))}
                       </ul>
                       <a
-                        className={`mean-expand ${
-                          subMenu === mega_m.title ? "mean-clicked" : ""
-                        }`}
+                        className={`mean-expand ${subMenu === mega_m.title ? "mean-clicked" : ""
+                          }`}
                         onClick={() => openSubMobileMenu(mega_m.title)}
-                        style={{ fontSize: "18px",cursor:'pointer' }}
+                        style={{ fontSize: "18px", cursor: 'pointer' }}
                       >
                         <i className="fal fa-plus"></i>
                       </a>
@@ -92,11 +91,10 @@ const MobileMenus = () => {
                   ))}
                 </ul>
                 <a
-                  className={`mean-expand ${
-                    navTitle === menu.title ? "mean-clicked" : ""
-                  }`}
+                  className={`mean-expand ${navTitle === menu.title ? "mean-clicked" : ""
+                    }`}
                   onClick={() => openMobileMenu(menu.title)}
-                  style={{ fontSize: "18px",cursor:'pointer' }}
+                  style={{ fontSize: "18px", cursor: 'pointer' }}
                 >
                   <i className="fal fa-plus"></i>
                 </a>
@@ -129,11 +127,10 @@ const MobileMenus = () => {
                         ))}
                       </ul>
                       <a
-                        className={`mean-expand ${
-                          subMenu === mega_m.title ? "mean-clicked" : ""
-                        }`}
+                        className={`mean-expand ${subMenu === mega_m.title ? "mean-clicked" : ""
+                          }`}
                         onClick={() => openSubMobileMenu(mega_m.title)}
-                        style={{ fontSize: "18px",cursor:'pointer' }}
+                        style={{ fontSize: "18px", cursor: 'pointer' }}
                       >
                         <i className="fal fa-plus"></i>
                       </a>
@@ -141,11 +138,10 @@ const MobileMenus = () => {
                   ))}
                 </ul>
                 <a
-                  className={`mean-expand ${
-                    navTitle === menu.title ? "mean-clicked" : ""
-                  }`}
+                  className={`mean-expand ${navTitle === menu.title ? "mean-clicked" : ""
+                    }`}
                   onClick={() => openMobileMenu(menu.title)}
-                  style={{ fontSize: "18px",cursor:'pointer' }}
+                  style={{ fontSize: "18px", cursor: 'pointer' }}
                 >
                   <i className="fal fa-plus"></i>
                 </a>
