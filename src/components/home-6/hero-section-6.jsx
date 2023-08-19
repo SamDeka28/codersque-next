@@ -17,7 +17,7 @@ const HeroSectionSix = () => {
           <div className="col col-lg-6 order-lg-last">
             <div className="banner_content_6 mb-5 mb-lg-0">
               <h1 className="hero_banner_heading">
-                <span className="small_title">Best IT Business In 2023</span>
+                <span className="small_title">Providing Best IT Services</span>
                 <span className="d-block">Transform Your Vision into  <span className="focus_text">Reality</span></span>
               </h1>
               <ul className="btns_group unordered_list">
