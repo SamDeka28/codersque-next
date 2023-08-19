@@ -86,7 +86,7 @@ const DetailsSection = ({ item: { detailed = {} } }) => {
                       Why Choose Codersque Technologies?
                     </h2>
                   </div>
-                  <Link href="/pricing" className="bd-btn-link btn_primary">
+                  {/* <Link href="/pricing" className="bd-btn-link btn_primary">
                     <span className="bd-button-content-wrapper">
                       <span className="bd-button-icon">
                         <i className="fa-light fa-arrow-right-long"></i>
@@ -98,7 +98,7 @@ const DetailsSection = ({ item: { detailed = {} } }) => {
                         </span>
                       </span>
                     </span>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="col col-lg-8">

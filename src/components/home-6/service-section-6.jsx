@@ -70,11 +70,11 @@ const ServiceSectionSix = () => {
         <div
           className="common_carousel_4col row"
           data-slick='{"arrows": false}'
-          style={{ display: "grid", gridTemplateColumns: "auto auto auto", gridAutoRows: "1fr" }}
+          style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(400px, 1fr)" }}
         >
           {/* <Slider {...services_carousel} ref={sliderRef}> */}
           {service_data.map((item) => (
-            <div className="carousel_item col" style={{ margin: "inherit", height: "100%" }} key={item.id}>
+            <div className="carousel_item col" style={{ height: "100%" }} key={item.id}>
               <div className="service_item style_4 bg-white" style={{ height: "100%", paddingBottom: 50 }}>
                 <div
                   className="item_icon"
