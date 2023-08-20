@@ -11,7 +11,7 @@ const Index = ({ item }) => {
     <>
       <Header />
       <main>
-        <Breadcrumb title={item.fullTitle} subTitle={item.fullTitle} />
+        <Breadcrumb title={item.title} subTitle={item.title} />
         <DetailsSection item={item} />
         {/* <FaqSection /> */}
         <ServiceSection serviceBgg="service_section section_space_lg bg_light" />

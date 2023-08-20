@@ -64,7 +64,7 @@ const service_data = [
     icon_svg: img_1,
     overlay_bg: shape_color_1,
     title: "Web Development",
-    description: "From building responsive websites to powerful web applications, our web development services leverage the latest technologies to deliver a seamless user experience.",
+    description: "Codersque Technologies offers expert web development services to create responsive and user-friendly websites that drive engagement and conversions. Our collaborative approach and skilled team ensure your website reflects your brand and meets your business goals. Contact us to discuss your web development project today!",
     btn_icon: icon,
     fullTitle: "Web Development",
     detailed: {
@@ -128,7 +128,7 @@ const service_data = [
     overlay_bg: shape_color_2,
     icon_svg: img_2,
     title: "UX/UI Design",
-    description: "Enhance user engagement with our visually appealing UI/UX design. From wireframing to high-fidelity prototypes, we create intuitive experiences that captivate users.",
+    description: "At Codersque Technologies, our focus is on creating user-centric interfaces that enhance usability and make a lasting impact. With specialized expertise in UI/UX design, we deliver exceptional user experiences across various platforms and devices. Our design philosophy centers on blending visual appeal with practicality, resulting in interfaces that capture users' attention and drive meaningful interactions. Contact us to discuss your UI/UX project today!",
     btn_icon: icon,
     fullTitle: "UX/UI Design",
     detailed: {
@@ -193,7 +193,7 @@ const service_data = [
     overlay_bg: shape_color_3,
     icon_svg: icon_grid,
     title: "Mobile App Development",
-    description: "Create cutting-edge mobile apps that run smoothly on iOS and Android platforms. We ensure your app is user- friendly and scalable to meet your business requirements.",
+    description: "Codersque Technologies offers expert mobile app development services for iOS and Android platforms. From idea to implementation, our skilled team delivers outstanding mobile experiences that align with your business goals. Contact us to discuss your mobile app development project today!",
     btn_icon: icon,
     fullTitle: "Mobile App Development",
     detailed: {
@@ -257,7 +257,7 @@ const service_data = [
     overlay_bg: shape_color_6,
     icon_svg: icon_code_4,
     title: "Custom Application Development",
-    description: "We specialize in developing tailor-made software solutions that perfectly fit your unique business needs. Our custom applications are designed for efficiency and optimal performance.",
+    description: "Codersque Technologies provides custom application development services to address your unique business challenges. Our team crafts tailored software solutions that align with your goals and streamline your processes. Contact us to discuss your custom application development project today!",
     btn_icon: icon,
     fullTitle: "Custom Application Development",
     detailed: {
@@ -321,7 +321,7 @@ const service_data = [
     overlay_bg: shape_color_8,
     icon_svg: icon_cog,
     title: "ERP Development",
-    description: "Streamline your business processes and enhance productivity with our ERP development solutions. We integrate various modules to create a cohesive and efficient ERP system.",
+    description: "Codersque Technologies specializes in ERP development services that streamline business processes and enhance efficiency. Our tailored ERP solutions are designed to meet your specific needs and drive growth. Contact us to discuss your ERP development project today!",
     btn_icon: icon,
     fullTitle: "ERP Development",
     detailed: {

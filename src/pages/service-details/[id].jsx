@@ -19,10 +19,11 @@ const ServicesDetails = () => {
     return () => { };
   }, [id]);
 
-  console.log({ service })
   return (
     <Wrapper>
-      <SEO pageTitle={'Service Details'} />
+      <SEO pageTitle={`${service.title} | Codersque Technologies Pvt Ltd`}
+        description={service?.description}
+      />
       <ServiceDetailsArea item={service} />
     </Wrapper>
   );

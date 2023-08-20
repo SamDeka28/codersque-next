@@ -7,9 +7,9 @@ import React from 'react';
 const Index = () => {
     return (
         <Wrapper>
-        <SEO pageTitle={'Comming Soon'} />
-         <CommingSoon/>
-      </Wrapper>
+            <SEO pageTitle={'Comming Soon | Codersque Technologies Pvt Ltd'} />
+            <CommingSoon />
+        </Wrapper>
     );
 };
 
