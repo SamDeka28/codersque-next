@@ -72,7 +72,7 @@ const FooterSix = () => {
                   <li><Link href="/service-details/ui-ux">UI/UX Design</Link></li>
                   <li><Link href="/service-details/custom-application-development">Custom Application Development</Link></li>
                   <li><Link href="/service-details/erp-development">ERP Development</Link></li>
-                  <li><Link href="/portfolio">Portfolio</a></li>
+                  <li><Link href="/portfolio">Portfolio</Link></li>
                 </ul>
               </div>
             </div>
