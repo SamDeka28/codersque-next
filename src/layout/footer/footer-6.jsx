@@ -67,12 +67,12 @@ const FooterSix = () => {
               <div className="footer_widget">
                 <h3 className="footer_widget_title">Links</h3>
                 <ul style={{ listStyle: "none", lineHeight: '2em' }}>
-                  <li><a href="/service-details/web-development">Web Development</a></li>
-                  <li><a href="/service-details/app-development">Mobile Applications</a></li>
-                  <li><a href="/service-details/ui-ux">UI/UX Design</a></li>
-                  <li><a href="/service-details/custom-application-development">Custom Application Development</a></li>
-                  <li><a href="/service-details/erp-development">ERP Development</a></li>
-                  <li><a href="/portfolio">Portfolio</a></li>
+                  <li><Link href="/service-details/web-development">Web Development</Link></li>
+                  <li><Link href="/service-details/app-development">Mobile Applications</Link></li>
+                  <li><Link href="/service-details/ui-ux">UI/UX Design</Link></li>
+                  <li><Link href="/service-details/custom-application-development">Custom Application Development</Link></li>
+                  <li><Link href="/service-details/erp-development">ERP Development</Link></li>
+                  <li><Link href="/portfolio">Portfolio</a></li>
                 </ul>
               </div>
             </div>
