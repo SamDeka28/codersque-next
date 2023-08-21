@@ -1,8 +1,8 @@
 import CollectionSection from '@components/home/collection-section';
-import Footer from '@layout/footer/footer';
 import Header from '@layout/header/header';
 import React from 'react';
 import ErrorSection from './error-section';
+import FooterSix from '@layout/footer/footer-6';
 
 const ErrorMainArea = () => {
     return (
@@ -10,7 +10,7 @@ const ErrorMainArea = () => {
             <Header />
             <ErrorSection />
             <CollectionSection />
-            <Footer />
+            <FooterSix />
         </main>
     );
 };
