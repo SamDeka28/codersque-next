@@ -6,9 +6,9 @@ import services_data from '@data/common_data/service-data';
 import Wrapper from '@layout/wrapper';
 import menu_data from '@data/menu-data';
 
-const ServicesDetails = () => {
-  const router = useRouter();
-  const id = router.query.id;
+const ServicesDetails = ({ id }) => {
+  // const router = useRouter();
+  // const id = router.query.id;
   const [service, setService] = useState({});
 
 
@@ -34,15 +34,21 @@ const ServicesDetails = () => {
 export async function getStaticPaths() {
 
   // Get the paths we want to pre-render based on posts
-  const paths = menu_data.filter(menu => menu.title === "Services").submenus.map(link => ({
+  const paths = menu_data[1].submenus.map(link => ({
     params: {
-      name: link.name
+      id: link.name
     }
   }))
 
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
+  return {
+    props: { id: params.id }
+  }
 }
 
 export default ServicesDetails;
