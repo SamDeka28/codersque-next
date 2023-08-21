@@ -19,11 +19,11 @@ const menu_data = [
     title: 'Services',
     link: '/service',
     submenus: [
-      { title: 'Web Development', link: '/service-details/web-development' },
-      { title: 'UI/UX Design', link: '/service-details/ui-ux' },
-      { title: 'App Development', link: '/service-details/app-development' },
-      { title: 'Custom Application', link: '/service-details/custom-application-development' },
-      { title: 'ERP Development', link: '/service-details/erp-development' },
+      { title: 'Web Development', link: '/service-details/web-development', name: 'web-development' },
+      { title: 'UI/UX Design', link: '/service-details/ui-ux', name: 'ui-ux' },
+      { title: 'App Development', link: '/service-details/app-development', name: 'app-development' },
+      { title: 'Custom Application', link: '/service-details/custom-application-development', name: 'custom-application-development' },
+      { title: 'ERP Development', link: '/service-details/erp-development', name: 'erp-development' },
     ]
   },
   {
