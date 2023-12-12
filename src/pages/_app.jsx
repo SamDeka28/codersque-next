@@ -1,5 +1,5 @@
 if (typeof window !== "undefined") {
-    require("bootstrap/dist/js/bootstrap");
+  require("bootstrap/dist/js/bootstrap");
 }
 import { store } from '../redux/store';
 import { Provider } from "react-redux";
@@ -10,20 +10,20 @@ import { Parallax } from 'react-parallax';
 
 function MyApp({ Component, pageProps }) {
 
-    return (
-      <>
-        <SEO
-          font={
-            "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
-          }
-        />
-        <Provider store={store}>
-          <Parallax>
-            <Component {...pageProps} />
-          </Parallax>
-        </Provider>
-      </>
-    );
+  return (
+    <>
+      <SEO
+        font={
+          "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        }
+      />
+      <Provider store={store}>
+        <Parallax>
+          <Component {...pageProps} />
+        </Parallax>
+      </Provider>
+    </>
+  );
 }
 
 export default MyApp;
