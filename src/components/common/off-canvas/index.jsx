@@ -53,8 +53,8 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   </a>
                 </p>
                 <span>
-                  <a href="tel:725214456" target="_blank" rel="noreferrer">
-                    +91 76359 58420
+                  <a href="tel:9706202403" target="_blank" rel="noreferrer">
+                    +91 97062 02403
                   </a>
                 </span>
               </div>

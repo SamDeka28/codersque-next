@@ -86,7 +86,7 @@ const FooterSix = () => {
                   <strong>Email</strong> : sales@codersque.com
                 </p>
                 <p>
-                  <strong>Mobile</strong> : +91 97062 02403 | +91 86381 87156
+                  <strong>Mobile</strong> : +91 97062 02403
                 </p>
               </div>
             </div>
