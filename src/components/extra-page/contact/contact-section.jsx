@@ -135,7 +135,7 @@ const ContactSection = () => {
               </li>
               <li>
                 <strong>Phone:</strong>
-                <span>+91 76359 58420</span>
+                <span>+91 97062 02403</span>
               </li>
               <li>
                 <strong>Email:</strong>
