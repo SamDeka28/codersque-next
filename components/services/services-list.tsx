@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp } from "lucide-react"
+import Link from "next/link"
+import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp, ArrowRight } from "lucide-react"
 import { TiltCard } from "@/components/ui/tilt-card"
 
 const services = [
@@ -18,7 +19,9 @@ const services = [
       "Content Management Systems",
       "API development and integration",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/web-development",
   },
   {
     icon: <Smartphone className="h-10 w-10" />,
@@ -32,7 +35,9 @@ const services = [
       "Mobile app testing and optimization",
       "App maintenance and support",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/mobile-apps",
   },
   {
     icon: <Palette className="h-10 w-10" />,
@@ -46,7 +51,9 @@ const services = [
       "Usability testing",
       "Design systems creation",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/ui-ux-design",
   },
   {
     icon: <Database className="h-10 w-10" />,
@@ -60,7 +67,9 @@ const services = [
       "Predictive analytics",
       "Chatbots and virtual assistants",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1677442135968-6bd241f8dd36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/ai-solutions",
   },
   {
     icon: <CloudLightning className="h-10 w-10" />,
@@ -74,7 +83,9 @@ const services = [
       "Serverless applications",
       "Cloud security and compliance",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/cloud-services",
   },
   {
     icon: <TrendingUp className="h-10 w-10" />,
@@ -88,7 +99,9 @@ const services = [
       "Email Marketing Campaigns",
       "Analytics and Reporting",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/digital-marketing",
   },
 ]
 
@@ -125,28 +138,39 @@ export default function ServicesList() {
                         ))}
                       </ul>
                     </div>
+                    <div className="mt-6">
+                      <Link
+                        href={service.link}
+                        className="inline-flex items-center text-purple-600 dark:text-purple-400 font-medium hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+                      >
+                        Learn more
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </div>
                   </div>
                 </TiltCard>
               </div>
 
               <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="relative rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
-                  <Image
-                    src={service.image || "/placeholder.svg"}
-                    alt={service.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                      <p className="text-white/80 text-sm">
-                        Learn more about our {service.title.toLowerCase()} services
-                      </p>
+                <Link href={service.link}>
+                  <div className="relative rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+                    <Image
+                      src={service.image || "/placeholder.svg"}
+                      alt={service.title}
+                      width={600}
+                      height={400}
+                      className="w-full h-auto object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                      <div className="p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                        <p className="text-white/80 text-sm">
+                          Learn more about our {service.title.toLowerCase()} services
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </motion.div>
           ))}

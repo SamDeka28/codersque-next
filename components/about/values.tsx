@@ -54,15 +54,15 @@ export default function Values() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-purple-950 -z-10" />
 
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 dark:via-purple-800 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 dark:via-purple-800 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-800 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-800 to-transparent" />
 
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ export default function Values() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
         >
           {values.map((value, index) => (
             <motion.div
@@ -116,14 +116,14 @@ export default function Values() {
               }}
             >
               <TiltCard className="h-full" glareEnabled={true} glareMaxOpacity={0.1} scale={1.02}>
-                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 h-full border border-gray-100 dark:border-gray-700 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80 relative overflow-hidden">
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 h-full border border-gray-100 dark:border-gray-700 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80 relative overflow-hidden">
                   {/* Background gradient */}
                   <div
                     className={`absolute -top-24 -right-24 w-40 h-40 rounded-full bg-gradient-to-br ${value.color} opacity-10 blur-xl`}
                   />
 
                   <div
-                    className={`w-16 h-16 rounded-full bg-gradient-to-r ${value.color} flex items-center justify-center mb-6 text-white shadow-lg`}
+                    className={`w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r ${value.color} flex items-center justify-center mb-6 text-white shadow-lg`}
                   >
                     {value.icon}
                   </div>

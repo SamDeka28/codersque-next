@@ -111,20 +111,19 @@ export default function Footer() {
 H.No. 34, Ashirwaad Path,<br />
 Sonai Mikir Path, Satgaon,<br />
 Guwahati, Assam 781171<br />
-India
-
+India<br />
                 </span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-purple-400 mr-3" />
                 <a href="mailto:info@codersque.com" className="text-gray-400 hover:text-white transition-colors duration-300">
-                sales@codersque.com
+                  sales@codersque.com
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-purple-400 mr-3" />
                 <a href="tel:+919876543210" className="text-gray-400 hover:text-white transition-colors duration-300">
-                +91 97062 02403
+                  +91 97062 02403
                 </a>
               </li>
             </ul>

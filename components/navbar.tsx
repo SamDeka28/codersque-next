@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
-import Image from "next/image"
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -36,20 +35,26 @@ export default function Navbar() {
         <div className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-100 dark:border-gray-800 px-6 py-3">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-                <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-                className="h-14 w-auto"
-                >
-                <Image 
-                  src="/logo.png" 
-                  alt="Codersque Logo" 
-                  width={62}
-                  height={62}
-                  className="h-full w-auto"
+                <div className="flex items-center">
+                <motion.img
+                  src="/logo.png"
+                  alt="Codersque Logo"
+                  width={40}
+                  height={40}
+                  className="mr-2"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
                 />
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300"
+                >
+                  Codersque
                 </motion.div>
+                </div>
             </Link>
 
             {/* Desktop Navigation */}

@@ -11,7 +11,8 @@ const projects = [
     id: 1,
     title: "E-commerce Platform",
     category: "Web Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "A comprehensive e-commerce solution built with Next.js, featuring product recommendations, secure payments, and an admin dashboard.",
     technologies: ["Next.js", "React", "Node.js", "MongoDB", "Stripe"],
@@ -22,7 +23,8 @@ const projects = [
     id: 2,
     title: "Health & Fitness App",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "A mobile application for iOS and Android that helps users track their fitness goals, nutrition, and workout routines.",
     technologies: ["React Native", "Firebase", "Redux", "HealthKit", "Google Fit API"],
@@ -33,7 +35,8 @@ const projects = [
     id: 3,
     title: "Financial Dashboard",
     category: "UI/UX Design",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "An intuitive financial dashboard designed for a fintech startup, providing real-time data visualization and analytics.",
     technologies: ["Figma", "Adobe XD", "Chart.js", "D3.js"],
@@ -44,7 +47,8 @@ const projects = [
     id: 4,
     title: "Real Estate Marketplace",
     category: "Web Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "A property listing platform that connects buyers, sellers, and agents with advanced search and filtering capabilities.",
     technologies: ["React", "Redux", "Express", "PostgreSQL", "Google Maps API"],
@@ -55,7 +59,8 @@ const projects = [
     id: 5,
     title: "AI-powered Chatbot",
     category: "AI Solutions",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "An intelligent customer service chatbot that uses natural language processing to answer customer queries and provide support.",
     technologies: ["Python", "TensorFlow", "NLP", "DialogFlow", "Node.js"],
@@ -66,7 +71,8 @@ const projects = [
     id: 6,
     title: "Social Media App",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description: "A social networking application focused on connecting professionals in the creative industry.",
     technologies: ["Flutter", "Firebase", "GraphQL", "AWS", "WebRTC"],
     link: "/portfolio/social-media-app",
@@ -76,7 +82,8 @@ const projects = [
     id: 7,
     title: "Educational Platform",
     category: "Web Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "An online learning platform with interactive courses, quizzes, and progress tracking for students and educators.",
     technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS S3"],
@@ -87,7 +94,8 @@ const projects = [
     id: 8,
     title: "Inventory Management System",
     category: "Enterprise Solutions",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "A comprehensive inventory management solution for retail businesses to track stock, orders, and generate reports.",
     technologies: ["Angular", "Express", "MySQL", "Docker", "Jenkins"],
@@ -98,7 +106,8 @@ const projects = [
     id: 9,
     title: "Tourism Mobile App",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     description:
       "A travel guide application highlighting local attractions, restaurants, and events with offline maps and itinerary planning.",
     technologies: ["React Native", "Redux", "Firebase", "Google Maps API", "Stripe"],
@@ -119,7 +128,6 @@ const categories = [
 export default function PortfolioGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [filteredProjects, setFilteredProjects] = useState(projects)
-  const [selectedProject, setSelectedProject] = useState<null | (typeof projects)[0]>(null)
   const [isFilterOpen, setIsFilterOpen] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
@@ -343,120 +351,50 @@ export default function PortfolioGrid() {
         >
           <AnimatePresence>
             {filteredProjects.map((project) => (
-              <motion.div
-                key={project.id}
-                variants={item}
-                layout
-                onClick={() => setSelectedProject(project)}
-                className="cursor-pointer"
-              >
-                <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 h-full flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                  <div className="relative overflow-hidden aspect-video">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      width={800}
-                      height={600}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 rounded-full bg-purple-600/80 text-white text-xs font-medium">
-                        {project.category}
-                      </span>
+              <motion.div key={project.id} variants={item} layout className="cursor-pointer">
+                <Link href={project.link}>
+                  <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 h-full flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <div className="relative overflow-hidden aspect-video">
+                      <Image
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        width={800}
+                        height={600}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 rounded-full bg-purple-600/80 text-white text-xs font-medium">
+                          {project.category}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-auto">
+                        {project.technologies.slice(0, 3).map((tech, idx) => (
+                          <span
+                            key={idx}
+                            className="px-2 py-1 text-xs rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                        {project.technologies.length > 3 && (
+                          <span className="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
+                            +{project.technologies.length - 3}
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
-                  <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
-                    <div className="flex flex-wrap gap-2 mt-auto">
-                      {project.technologies.slice(0, 3).map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="px-2 py-1 text-xs rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <span className="px-2 py-1 text-xs rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">
-                          +{project.technologies.length - 3}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
-
-        {/* Project Modal */}
-        <AnimatePresence>
-          {selectedProject && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70"
-              onClick={() => setSelectedProject(null)}
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="relative aspect-video">
-                  <Image
-                    src={selectedProject.image || "/placeholder.svg"}
-                    alt={selectedProject.title}
-                    width={1200}
-                    height={675}
-                    className="w-full h-full object-cover"
-                  />
-                  <button
-                    className="absolute top-4 right-4 bg-black/50 rounded-full p-2 text-white hover:bg-black/70 transition-colors"
-                    onClick={() => setSelectedProject(null)}
-                  >
-                    <X size={24} />
-                  </button>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                    <span className="inline-block px-3 py-1 rounded-full bg-purple-600/80 text-white text-xs font-medium mb-2">
-                      {selectedProject.category}
-                    </span>
-                    <h2 className="text-2xl font-bold text-white">{selectedProject.title}</h2>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-600 dark:text-gray-400 mb-6">{selectedProject.description}</p>
-
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Technologies Used</h3>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {selectedProject.technologies.map((tech, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 text-sm rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <Link
-                    href={selectedProject.link}
-                    className="inline-flex items-center px-6 py-3 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-700 transition-colors"
-                  >
-                    View Project Details
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </div>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
 
         {filteredProjects.length === 0 && (
           <div className="text-center py-12">

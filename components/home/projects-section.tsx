@@ -11,19 +11,22 @@ const projects = [
   {
     title: "E-commerce Platform",
     category: "Web Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "/portfolio/e-commerce-platform",
   },
   {
     title: "Health & Fitness App",
     category: "Mobile Development",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "/portfolio/health-fitness-app",
   },
   {
     title: "Financial Dashboard",
     category: "UI/UX Design",
-    image: "/placeholder.svg?height=600&width=800",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "/portfolio/financial-dashboard",
   },
 ]

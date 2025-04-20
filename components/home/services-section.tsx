@@ -5,37 +5,44 @@ import { motion, useInView } from "framer-motion"
 import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp } from "lucide-react"
 import { TiltCard } from "@/components/ui/tilt-card"
 import { AnimatedText } from "@/components/ui/animated-text"
+import Link from "next/link"
 
 const services = [
   {
     icon: <Code className="h-6 w-6" />,
     title: "Web Development",
     description: "Custom websites and web applications built with modern frameworks and technologies.",
+    link: "/services/web-development",
   },
   {
     icon: <Smartphone className="h-6 w-6" />,
     title: "Mobile Apps",
     description: "Native and cross-platform mobile applications for iOS and Android devices.",
+    link: "/services/mobile-apps",
   },
   {
     icon: <Palette className="h-6 w-6" />,
     title: "UI/UX Design",
     description: "User-centric design solutions that enhance user experience and engagement.",
+    link: "/services/ui-ux-design",
   },
   {
     icon: <Database className="h-6 w-6" />,
     title: "AI Solutions",
     description: "Intelligent systems and machine learning solutions for business automation.",
+    link: "/services/ai-solutions",
   },
   {
     icon: <CloudLightning className="h-6 w-6" />,
     title: "Cloud Services",
     description: "Scalable cloud infrastructure and deployment solutions for your applications.",
+    link: "/services/cloud-services",
   },
   {
     icon: <TrendingUp className="h-6 w-6" />,
     title: "Digital Marketing",
     description: "Strategic digital marketing services to boost your online presence and growth.",
+    link: "/services/digital-marketing",
   },
 ]
 
@@ -131,10 +138,12 @@ export default function ServicesSection() {
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    Learn more
-                    <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+                    <Link href={service.link} className="inline-flex items-center text-purple-600 dark:text-purple-400 font-medium">
+    Learn more
+    <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+    </svg>
+  </Link>
                   </motion.div>
                 </div>
               </TiltCard>

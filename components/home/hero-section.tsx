@@ -14,7 +14,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+    <section className="relative min-h-screen flex items-center pt-40 pb-11 lg:pt-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
       {/* Code animation background */}
       <div className="absolute inset-0 overflow-hidden opacity-5 dark:opacity-10">
         <div className="code-animation absolute inset-0 text-xs md:text-sm overflow-hidden font-mono">
@@ -62,7 +62,7 @@ export default function HeroSection() {
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent dark:from-gray-950 dark:to-transparent z-10"></div>
 
       <div className="container mx-auto px-4 z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight"
             >
               <span className="text-gray-900 dark:text-white">Building </span>
               <span className="text-blue-600 dark:text-blue-400">Smarter</span>
@@ -106,11 +106,11 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-col sm:flex-row items-start gap-4"
+              className="flex flex-col sm:flex-row items-center sm:items-start gap-4"
             >
               <Link
                 href="/contact"
-                className="px-8 py-4 rounded-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center"
+                className="w-full sm:w-auto px-8 py-4 rounded-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -118,7 +118,7 @@ export default function HeroSection() {
 
               <Link
                 href="/portfolio"
-                className="px-8 py-4 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-medium shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1 transition-all duration-200"
+                className="w-full sm:w-auto px-8 py-4 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-medium shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center"
               >
                 View Our Work
               </Link>
@@ -129,19 +129,19 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="grid grid-cols-3 gap-4 mt-12 max-w-xl"
+              className="grid grid-cols-3 gap-2 md:gap-4 mt-8 md:mt-12 max-w-xl"
             >
-              <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">100+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
+              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
+                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">100+</div>
+                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Projects</div>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400">50+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Happy Clients</div>
+              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
+                <div className="text-xl md:text-3xl font-bold text-purple-600 dark:text-purple-400">50+</div>
+                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Clients</div>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
+              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
+                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
+                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Years</div>
               </div>
             </motion.div>
           </motion.div>
@@ -151,7 +151,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="relative"
+            className="relative mt-8 lg:mt-0"
           >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
               <Image
@@ -165,7 +165,7 @@ export default function HeroSection() {
 
             {/* Floating elements */}
             <motion.div
-              className="absolute -top-10 -left-10 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700"
+              className="absolute -top-10 -left-10 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
             >
@@ -173,7 +173,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="absolute top-1/2 -right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700"
+              className="absolute top-1/2 -right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", delay: 1 }}
             >
@@ -181,7 +181,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-5 left-1/4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700"
+              className="absolute -bottom-5 left-1/4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", delay: 0.5 }}
             >
