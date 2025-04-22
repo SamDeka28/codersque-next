@@ -109,7 +109,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4"
             >
               <Link
-                href="/contact"
+                href="/client-onboarding"
                 className="w-full sm:w-auto px-8 py-4 rounded-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center"
               >
                 Start Your Project

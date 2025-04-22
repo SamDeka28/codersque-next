@@ -22,7 +22,7 @@ export default function AboutSection() {
               About Codersque Technologies
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Founded in 2020, Codersque Technologies is a leading software development company based in Guwahati,
+              Founded in 2022, Codersque Technologies is a leading software development company based in Guwahati,
               Assam. We specialize in creating innovative digital solutions that help businesses transform and thrive in
               the digital era.
             </p>

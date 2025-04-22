@@ -4,6 +4,7 @@ import ServicesSection from "@/components/home/services-section"
 import ProjectsSection from "@/components/home/projects-section"
 import AboutSection from "@/components/home/about-section"
 import TestimonialsSection from "@/components/home/testimonials-section"
+import CtaSection from "@/components/ready-to-fire/cta-section"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ProjectsSection />
       <AboutSection />
       <TestimonialsSection />
+      <CtaSection/>
     </PageTransition>
   )
 }

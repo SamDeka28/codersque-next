@@ -1,5 +1,6 @@
 "use client"
 
+
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -7,12 +8,14 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
 
+// Update the navItems array to include "Ready to Fire Us?"
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
   { name: "Portfolio", path: "/portfolio" },
   { name: "Blog", path: "/blog" },
+  { name: "Ready to Fire Us?", path: "/ready-to-fire-us" },
   { name: "Contact", path: "/contact" },
 ]
 
@@ -34,28 +37,28 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-100 dark:border-gray-800 px-6 py-3">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-                <div className="flex items-center">
-                <motion.img
-                  src="/logo.png"
-                  alt="Codersque Logo"
-                  width={40}
-                  height={40}
-                  className="mr-2"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                />
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300"
-                >
-                  Codersque
-                </motion.div>
-                </div>
-            </Link>
+          <Link href="/" className="flex items-center space-x-2">
+<div className="flex items-center">
+<motion.img
+  src="/logo.png"
+  alt="Codersque Logo"
+  width={40}
+  height={40}
+  className="mr-2"
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5 }}
+/>
+<motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.5 }}
+  className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300"
+>
+  Codersque
+</motion.div>
+</div>
+</Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-1">
