@@ -8,7 +8,7 @@ export default function HealthFitnessAppPage() {
   return (
      <DetailedPageLayout
           title="Algebrik"
-          subtitle="An intuitive financial dashboard designed for a fintech startup, providing real-time data visualization and analytics."
+          subtitle="Algebrik's cloud-native, AI-powered platform empowers lenders to simplify lending experiences and delight borrowers."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Portfolio", href: "/portfolio" },
@@ -49,9 +49,7 @@ export default function HealthFitnessAppPage() {
               <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Project Overview</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              EverythinkInk, a growing fashion brand, needed a modernized e-commerce platform that would scale with their business.
-                They required a feature-rich solution capable of handling thousands of SKUs, personalized customer journeys, secure checkout experiences, and a fully integrated admin system.
-              </p>
+            Algebrik's cloud-native, AI-powered platform empowers lenders to simplify lending experiences and delight borrowers. Built using Next.js, the platform delivers a fast, intelligent, and seamless experience across lending workflows — from loan origination to customer onboarding and servicing.</p>
               </div>
 
               {/* Challenges Section */}
@@ -59,11 +57,11 @@ export default function HealthFitnessAppPage() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">The Challenge</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                "Inconsistent user experience across mobile and desktop",
-                "Limited inventory visibility and inefficient stock management",
-                "Slow website performance affecting SEO and conversions",
-                "No personalization in product recommendations",
-                "Fragmented payment processing systems"
+              "Developed responsive, scalable UI components using Next.js and Tailwind CSS.",
+              "Integrated complex API systems for real-time loan management and customer interactions.",
+              "Implemented secure authentication and role-based access for lenders and borrowers.",
+              "Built dynamic forms for borrower applications and document uploads.",
+              "Focused on performance optimization, SEO, and accessibility best practices.",
                 ].map((challenge, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full" />
@@ -77,17 +75,17 @@ export default function HealthFitnessAppPage() {
               <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Solution</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                We built a custom Shopify solution enhanced with Firebase for real-time operations and AWS S3 for efficient media management.
-                The frontend focused on performance-first development, ensuring mobile-first responsiveness and seamless navigation.
+              At Algebrik, we designed and developed a cloud-native, AI-powered lending platform that empowers financial institutions to modernize every step of the borrower journey.
+              Our solution leverages Next.js for high-performance web applications, integrates AI models for intelligent decision-making, and uses secure cloud infrastructure to ensure scalability and data protection.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                "Fully responsive, performance-optimized storefront",
-                "Personalized product suggestions using customer activity tracking",
-                "Secure and streamlined Stripe payments",
-                "Integrated order, inventory, and customer management",
-                "Marketing automation integrations",
-                "Third-party CRM and logistics provider integrations"
+                  "AI-powered loan assessment and approval",
+                  "Real-time borrower credit analysis",
+                  "Automated document verification",
+                  "Secure digital loan application process",
+                  "Multi-lender integration capabilities",
+                  "Customizable lending workflows",
                 ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -106,9 +104,9 @@ export default function HealthFitnessAppPage() {
                 {[
                 { metric: "50%", desc: "Faster website load times" },
                 { metric: "40%", desc: "Increase in sales conversions" },
-                { metric: "30%", desc: "Higher engagement" },
+                { metric: "30%", desc: "Higher engagement rates" },
                 { metric: "28%", desc: "Reduction in abandoned carts" },
-                { metric: "2x", desc: "Improved inventory turnover" }
+                { metric: "2x", desc: "Faster inventory turnover" },
                 ].map((result, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-6 text-center shadow-md">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">{result.metric}</div>
@@ -124,67 +122,27 @@ export default function HealthFitnessAppPage() {
 
       <ContentSection
         title="Development Process"
-        description="Our approach to developing the health and fitness app involved a user-centered design process and agile development methodology."
-        image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
-        imageAlt="App development process"
+        description="Our approach to developing the Algebrik platform emphasized a customer-centric design philosophy and agile methodology for rapid iterations."
+        image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        imageAlt="Development process"
       >
-        <div className="space-y-4">
-          <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
-              1
+ <div className="space-y-4">
+          {[
+            { step: "User Research & Analysis", description: "Extensive research to understand customer behaviors, needs, and friction points." },
+            { step: "UX/UI Design", description: "Crafted engaging, mobile-first user interfaces with a focus on performance and experience." },
+            { step: "Backend & Integrations", description: "Real-time database integration with Firebase, seamless payment setup with Stripe, and logistics system sync." },
+            { step: "Optimization & Testing", description: "Continuous performance optimization and user testing to fine-tune UX and ensure robust operations." },
+          ].map((item, index) => (
+            <div key={index} className="flex items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+                {index + 1}
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{item.step}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{item.description}</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">User Research & Analysis</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                We conducted extensive user research to understand the needs, preferences, and pain points of fitness
-                app users.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
-              2
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">UX/UI Design</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                We created intuitive and engaging user interfaces with a focus on simplicity and ease of use.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
-              3
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Cross-Platform Development</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                We built the app using React Native to ensure consistent performance across iOS and Android platforms.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
-              4
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Health Platform Integration</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                We integrated with HealthKit, Google Fit, and other health platforms to collect and analyze user data.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
-              5
-            </div>
-            <div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Testing & Optimization</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                We conducted thorough testing across multiple devices and made performance optimizations.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </ContentSection>
 
@@ -197,38 +155,38 @@ export default function HealthFitnessAppPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=600&q=80"
+                  src="/a1.png"
                   alt="App home screen"
                   width={300}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full h-[450px] rounded-lg"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=600&q=80"
-                  alt="Workout tracking"
-                  width={300}
-                  height={600}
-                  className="w-full h-auto"
+                    src="/a1.png"
+                    alt="App home screen"
+                    width={300}
+                    height={600}
+                    className="w-full h-[450px] rounded-lg"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=600&q=80"
-                  alt="Nutrition tracking"
+                  src="/a1.png"
+                  alt="App home screen"
                   width={300}
                   height={600}
-                  className="w-full h-auto"
+                  className="w-full h-[450px] rounded-lg"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-md">
                 <Image
-                  src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=600&q=80"
-                  alt="Progress analytics"
-                  width={300}
-                  height={600}
-                  className="w-full h-auto"
+                src="/a1.png"
+                alt="App home screen"
+                width={300}
+                height={600}
+                className="w-full h-[450px] rounded-lg"
                 />
               </div>
             </div>

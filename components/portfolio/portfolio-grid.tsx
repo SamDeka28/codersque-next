@@ -26,22 +26,22 @@ const projects = [
     image:
       "/albegrik.png",
     description:
-      "A mobile application for iOS and Android that helps users track their fitness goals, nutrition, and workout routines.",
+      "Algebrik's cloud-native, AI-powered platform empowers lenders to simplify lending experiences and delight borrowers.",
     technologies: ["Next.js", "Framer Motion", "Redux", "HealthKit", "Google Fit API"],
-    link: "/portfolio/health-fitness-app",
+    link: "/portfolio/albegrik",
     featured: true,
   },
   {
     id: 3,
-    title: "Financial Dashboard",
-    category: "UI/UX Design",
+    title: "Everfur",
+    category: "Web & App Development",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "An intuitive financial dashboard designed for a fintech startup, providing real-time data visualization and analytics.",
-    technologies: ["Figma", "Adobe XD", "Chart.js", "D3.js"],
-    link: "/portfolio/financial-dashboard",
-    featured: false,
+      "/everfur.png",
+      description:
+      "A pet wellness platform leveraging fur-based diagnostics and AI to deliver early health insights and personalized joint care products for dogs and cats.",
+    technologies: ["Next.js", "Shopify", "Firebase", "Liquid", "Graph Ql, Shopify Custom App Developement"],
+    link: "/portfolio/everfur",
+    featured: true,
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ const projects = [
       "An intelligent customer service chatbot that uses natural language processing to answer customer queries and provide support.",
     technologies: ["Python", "TensorFlow", "NLP", "DialogFlow", "Node.js"],
     link: "/portfolio/ai-chatbot",
-    featured: true,
+    featured: false,
   },
   {
     id: 6,

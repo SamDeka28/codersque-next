@@ -125,7 +125,7 @@ export default function FinancialDashboardPage() {
       <ContentSection
         title="Design Process"
         description="Our approach to designing the financial dashboard involved a comprehensive user-centered design process."
-        image="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
         imageAlt="Design process"
       >
         <div className="space-y-4">
