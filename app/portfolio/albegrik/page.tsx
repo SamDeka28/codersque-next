@@ -146,7 +146,7 @@ export default function HealthFitnessAppPage() {
         </div>
       </ContentSection>
 
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      {/* <section className="py-16 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
@@ -192,38 +192,39 @@ export default function HealthFitnessAppPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <ResourceLinks
-        title="Related Resources"
-        description="Explore these resources to learn more about mobile app development"
-        resources={[
-          {
-            title: "React Native Best Practices",
-            description: "Learn about the latest best practices in React Native development",
-            link: "#",
-            type: "article",
-          },
-          {
-            title: "Health App UX Design",
-            description: "A guide to designing user-friendly health and fitness applications",
-            link: "#",
-            type: "documentation",
-          },
-          {
-            title: "Integrating with Health Platforms",
-            description: "Best practices for integrating with HealthKit and Google Fit",
-            link: "#",
-            type: "article",
-          },
-          {
-            title: "Mobile App Performance Optimization",
-            description: "Strategies for optimizing the performance of React Native applications",
-            link: "#",
-            type: "video",
-          },
-        ]}
-      />
+{/* <ResourceLinks
+  title="Related Resources"
+  description="Explore these resources to learn more about modern web development with Next.js and related technologies"
+  resources={[
+    {
+      title: "Next.js Best Practices",
+      description: "Learn about the latest best practices in Next.js development for building scalable web applications",
+      link: "#",
+      type: "article",
+    },
+    {
+      title: "Building High-Performance Web Apps",
+      description: "A guide to optimizing performance in Next.js, including server-side rendering and static generation",
+      link: "#",
+      type: "article",
+    },
+    {
+      title: "Integrating APIs with Next.js",
+      description: "Best practices for connecting your Next.js applications with external APIs and databases",
+      link: "#",
+      type: "article",
+    },
+    {
+      title: "Web Animation Techniques with Framer Motion",
+      description: "Strategies for adding smooth and performant animations in your Next.js projects using Framer Motion",
+      link: "#",
+      type: "article",
+    },
+  ]}
+/> */}
+
 
       <CTABanner
         title="Ready to Build Your Mobile App?"

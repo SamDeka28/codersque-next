@@ -44,11 +44,11 @@ export default function SelfSufficientCode() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-2xl blur-xl"></div>
                 <div className="relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl border border-white/20 dark:border-gray-700/20 rounded-2xl shadow-xl overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/self-sufficient-code.png"
                     alt="Self-sufficient code"
                     width={800}
                     height={600}
-                    className="w-full h-auto"
+                    className="w-full h-auto lg:h-[600px] object-cover"
                   />
                 </div>
 

@@ -9,25 +9,25 @@ import { AnimatedText } from "@/components/ui/animated-text"
 
 const projects = [
   {
-    title: "E-commerce Platform",
+    title: "Everythinkink",
     category: "Web Development",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "/portfolio/e-commerce-platform",
+    "/everythink.png",
+      link: "/portfolio/e-commerce-platform",
   },
   {
-    title: "Health & Fitness App",
-    category: "Mobile Development",
+    title: "Algebrik",
+    category: "Web Development",
     image:
-      "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "/portfolio/health-fitness-app",
+      "/albegrik.png",
+      link: "/portfolio/albegrik",
   },
   {
-    title: "Financial Dashboard",
-    category: "UI/UX Design",
+    title: "Everfur",
+    category: "Web & App Development",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "/portfolio/financial-dashboard",
+      "/everfur.png",
+      link: "/portfolio/everfur",
   },
 ]
 

@@ -7,25 +7,25 @@ import Image from "next/image"
 export default function HealthFitnessAppPage() {
   return (
      <DetailedPageLayout
-     title="Everfur"
-     subtitle="Everfur's innovative pet health platform offers at-home tests, empowering pet owners to monitor and optimize their pets' health with personalized insights."     
-          breadcrumbs={[
-            { label: "Home", href: "/" },
-            { label: "Portfolio", href: "/portfolio" },
-            { label: "Everfur", href: "/portfolio/everfur" },
-          ]}
-          backLink={{ label: "Back to Portfolio", href: "/portfolio" }}
+     title="The Troy Agency"
+     subtitle="Specialized consultancy empowering B2B professionals through LinkedIn outreach, video content, and email campaigns"
+     breadcrumbs={[
+         { label: "Home", href: "/" },
+         { label: "Portfolio", href: "/portfolio" },
+         { label: "The Troy Agency", href: "/portfolio/the-troy-agency" },
+     ]}
+     backLink={{ label: "Back to Portfolio", href: "/portfolio" }}
         >
           <section className="py-12">
             <div className="container mx-auto px-4">
               <div className="max-w-5xl mx-auto">
                 <div className="rounded-xl overflow-hidden shadow-xl mb-12">
                   <Image
-                    src="/everfur.png"
-                    alt="Financial Dashboard"
+                    src="/tr.png"
+                    alt="The Troy Agency"
                     width={1200}
                     height={675}
-                    className="w-full h-auto"
+                    className="w-full h-auto lg:h-[675px] object-cover"
                   />
                 </div>
     
@@ -36,11 +36,11 @@ export default function HealthFitnessAppPage() {
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-100 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Timeline</h3>
-                    <p className="text-gray-600 dark:text-gray-400">6 months</p>
+                    <p className="text-gray-600 dark:text-gray-400">1 months</p>
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-100 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Technologies</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Next.js, Shopify, Firebase, Liquid, GraphQL, Shopify Custom App Development, Stripe</p>
+                    <p className="text-gray-600 dark:text-</div>gray-400"> WordPress, Custom Theme Development, WooCommerce Advanced Custom Fields, Elementor Pro, SEO Optimization,</p>
                   </div>
                 </div>
 
@@ -49,9 +49,7 @@ export default function HealthFitnessAppPage() {
               <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Project Overview</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-              Everfur is an innovative pet health platform designed to empower pet owners to proactively monitor and improve their pets' well-being. By analyzing unique molecules found in a pet’s fur, Everfur provides invaluable insights into their health, helping owners anticipate their pets' needs before they arise. The platform offers easy-to-use at-home health test kits that track everything from joint health to early disease detection. Developed in partnership with veterinarians, Everfur’s products aim to optimize pet care, reduce the risk of health issues, and ensure pets lead healthy, active lives.
-
-The platform also includes a range of educational tools, including comprehensive reports and expert recommendations, enabling pet owners to make informed decisions about their pets' care. Trusted by veterinarians and pet owners alike, Everfur provides a seamless and pain-free way to ensure pets' long-term health.            </p>
+              The Troy Agency website project focused on creating a modern, professional online presence for this specialized B2B consultancy. Our WordPress implementation features a custom theme, optimized user experience, and seamless integration of their service offerings. The site effectively showcases their expertise in LinkedIn outreach, video content creation, and email campaign management.</p>
               </div>
 
               {/* Challenges Section */}
@@ -59,11 +57,11 @@ The platform also includes a range of educational tools, including comprehensive
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">The Challenge</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-              "Developed a seamless e-commerce platform integrating Shopify with custom Next.js components.",
-              "Created a secure system for handling sensitive pet health data and test results.",
-              "Implemented real-time tracking and notifications for pet health test orders.",
-              "Built an intuitive dashboard for pet owners to view and understand test results.",
-              "Integrated with veterinary systems for professional health insights and recommendations.",
+              "Creating a professional and modern website design that reflects the agency's brand.",
+              "Implementing a responsive layout that works seamlessly across all devices.",
+              "Integrating dynamic content management for service offerings and case studies.",
+              "Setting up optimized landing pages for lead generation and conversion.",
+              "Ensuring fast loading times and SEO best practices for better visibility.",
                 ].map((challenge, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full" />
@@ -77,16 +75,17 @@ The platform also includes a range of educational tools, including comprehensive
               <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Solution</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                Everfur revolutionizes pet health management through innovative fur-based diagnostics. Using at-home test kits, we analyze over 200 molecules in pet fur to detect early signs of health conditions, particularly focusing on arthritis and joint health. The platform provides personalized health reports with actionable recommendations, combining AI analytics with veterinary expertise to help pet owners make informed decisions about their pets' wellbeing.
+              We developed a custom WordPress website with a modern, responsive design that effectively showcases The Troy Agency's services. Our solution includes custom post types for case studies, integrated lead generation forms, and optimized landing pages for each service offering.
+              The implementation features a user-friendly content management system, enabling easy updates to service descriptions, portfolio items, and client testimonials.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  "Scientific fur-based health analysis",
-                  "Quick test result processing",
-                  "Comprehensive health report generation",
-                  "Secure pet health data storage",
-                  "Direct veterinary consultation platform",
-                  "Evidence-based wellness recommendations",
+                  "Custom WordPress theme development",
+                  "Responsive design implementation",
+                  "SEO-optimized content structure",
+                  "Lead generation form integration",
+                  "Dynamic service page templates",
+                  "Performance-optimized architecture",
                 ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,11 +102,11 @@ The platform also includes a range of educational tools, including comprehensive
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Impact & Results</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                { metric: "95%", desc: "Test result accuracy rate" },
-                { metric: "60%", desc: "Earlier health issue detection" },
-                { metric: "40%", desc: "Reduction in vet visits" },
-                { metric: "25K+", desc: "Pet health tests processed" },
-                { metric: "85%", desc: "Customer satisfaction rate" },
+                { metric: "80%", desc: "Increase in website traffic" },
+                { metric: "60%", desc: "Growth in lead generation" },
+                { metric: "45%", desc: "Higher conversion rate" },
+                { metric: "3x", desc: "Increase in engagement" },
+                { metric: "25%", desc: "More client inquiries" },
                 ].map((result, index) => (
                 <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-6 text-center shadow-md">
                   <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">{result.metric}</div>
@@ -123,17 +122,17 @@ The platform also includes a range of educational tools, including comprehensive
 
       <ContentSection
         title="Development Process"
-        description="Our approach to developing the Everfur platform emphasized a customer-centric design philosophy and agile methodology for rapid iterations."
+        description="Our approach to developing the Algebrik platform emphasized a customer-centric design philosophy and agile methodology for rapid iterations."
         image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
         imageAlt="Development process"
       >
  <div className="space-y-4">
           {[
-            { step: "User Research & Analysis", description: "Extensive research to understand customer behaviors, needs, and friction points." },
-            { step: "UX/UI Design", description: "Crafted engaging, mobile-first user interfaces with a focus on performance and experience." },
-            { step: "Backend & Integrations", description: "Real-time database integration with Firebase, seamless payment setup with Stripe, and logistics system sync." },
-            { step: "Optimization & Testing", description: "Continuous performance optimization and user testing to fine-tune UX and ensure robust operations." },
-          ].map((item: { step: string; description: string }, index) => (
+            { step: "WordPress Theme Planning", description: "Analyzed requirements and planned custom theme structure with focus on client's business needs." },
+            { step: "Custom Theme Development", description: "Built responsive WordPress theme with custom post types, advanced custom fields, and WooCommerce integration." },
+            { step: "Plugin Integration", description: "Implemented essential plugins including Elementor Pro, Yoast SEO, and custom form solutions for lead generation." },
+            { step: "Performance Optimization", description: "Optimized site speed, implemented caching solutions, and ensured mobile responsiveness across devices." },
+          ].map((item, index) => (
             <div key={index} className="flex items-start">
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
                 {index + 1}
@@ -193,9 +192,9 @@ The platform also includes a range of educational tools, including comprehensive
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <ResourceLinks
+      {/* <ResourceLinks
         title="Related Resources"
         description="Explore these resources to learn more about mobile app development"
         resources={[

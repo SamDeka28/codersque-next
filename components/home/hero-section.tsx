@@ -155,7 +155,7 @@ export default function HeroSection() {
           >
             <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
               <Image
-                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=2070"
+                src="/worki.jpg"
                 alt="Professional team working on digital solutions"
                 width={600}
                 height={400}

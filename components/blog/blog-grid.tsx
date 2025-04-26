@@ -6,133 +6,14 @@ import Image from "next/image"
 import Link from "next/link"
 import { Search, Calendar, User } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { blogPosts, type BlogPost } from "@/data/blog-posts"
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "The Future of Web Development: Trends to Watch in 2023",
-    excerpt:
-      "Explore the emerging technologies and trends that are shaping the future of web development and how they can benefit your business.",
-    image:
-      "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "June 15, 2023",
-    author: "Rahul Sharma",
-    category: "Web Development",
-    slug: "future-web-development-trends",
-  },
-  {
-    id: 2,
-    title: "Why User Experience Should Be Your Top Priority",
-    excerpt:
-      "Learn why investing in user experience design is crucial for business success and how it impacts customer satisfaction and retention.",
-    image:
-      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "May 28, 2023",
-    author: "Priya Singh",
-    category: "UI/UX Design",
-    slug: "user-experience-priority",
-  },
-  {
-    id: 3,
-    title: "Building Scalable Mobile Applications with React Native",
-    excerpt:
-      "Discover best practices and strategies for developing scalable, high-performance mobile applications using React Native.",
-    image:
-      "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "May 12, 2023",
-    author: "Amit Das",
-    category: "Mobile Development",
-    slug: "scalable-react-native-apps",
-  },
-  {
-    id: 4,
-    title: "Implementing AI in Your Business: Practical Applications",
-    excerpt:
-      "Explore practical ways to integrate artificial intelligence into your business operations to improve efficiency and drive innovation.",
-    image:
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "April 30, 2023",
-    author: "Meera Patel",
-    category: "AI Solutions",
-    slug: "ai-business-applications",
-  },
-  {
-    id: 5,
-    title: "The Benefits of Cloud-Native Architecture",
-    excerpt:
-      "Learn about the advantages of cloud-native architecture and how it can help your organization achieve greater agility and scalability.",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "April 15, 2023",
-    author: "Vikram Choudhury",
-    category: "Cloud Services",
-    slug: "cloud-native-architecture-benefits",
-  },
-  {
-    id: 6,
-    title: "Securing Your Web Applications: Best Practices",
-    excerpt:
-      "Discover essential security practices to protect your web applications from common vulnerabilities and cyber threats.",
-    image:
-      "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "March 28, 2023",
-    author: "Rahul Sharma",
-    category: "Web Development",
-    slug: "web-app-security-practices",
-  },
-  {
-    id: 7,
-    title: "Optimizing Website Performance for Better Conversion Rates",
-    excerpt:
-      "Learn how website performance impacts conversion rates and strategies to optimize your site for speed and user engagement.",
-    image:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "March 15, 2023",
-    author: "Sunita Roy",
-    category: "Digital Marketing",
-    slug: "website-performance-conversion-rates",
-  },
-  {
-    id: 8,
-    title: "The Role of DevOps in Modern Software Development",
-    excerpt:
-      "Understand the importance of DevOps practices in streamlining development processes and improving collaboration between teams.",
-    image:
-      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "February 28, 2023",
-    author: "Vikram Choudhury",
-    category: "Development",
-    slug: "devops-in-software-development",
-  },
-  {
-    id: 9,
-    title: "Creating Accessible Web Applications for All Users",
-    excerpt:
-      "Discover guidelines and techniques for building inclusive web applications that are accessible to users with disabilities.",
-    image:
-      "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    date: "February 15, 2023",
-    author: "Priya Singh",
-    category: "Web Development",
-    slug: "accessible-web-applications",
-  },
-]
-
-const categories = [
-  "All",
-  "Web Development",
-  "UI/UX Design",
-  "Mobile Development",
-  "AI Solutions",
-  "Cloud Services",
-  "Digital Marketing",
-  "Development",
-]
+const categories = ["All", ...Array.from(new Set(blogPosts.map((post) => post.category))).sort()]
 
 export default function BlogGrid() {
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [searchQuery, setSearchQuery] = useState("")
-  const [filteredPosts, setFilteredPosts] = useState(blogPosts)
+  const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(blogPosts)
   const [currentPage, setCurrentPage] = useState(1)
   const postsPerPage = 6
   const { ref, isInView } = useScrollAnimation()
@@ -153,7 +34,8 @@ export default function BlogGrid() {
           post.title.toLowerCase().includes(query) ||
           post.excerpt.toLowerCase().includes(query) ||
           post.author.toLowerCase().includes(query) ||
-          post.category.toLowerCase().includes(query),
+          post.category.toLowerCase().includes(query) ||
+          post.tags.some((tag) => tag.toLowerCase().includes(query)),
       )
     }
 

@@ -4,41 +4,15 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-
-// This would typically come from a database or API
-const getRelatedPosts = (slug: string) => {
-  // This is a simplified example - you would fetch this data from an API or database
-  return [
-    {
-      id: 1,
-      title: "Why User Experience Should Be Your Top Priority",
-      excerpt: "Learn why investing in user experience design is crucial for business success.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "May 28, 2023",
-      slug: "user-experience-priority",
-    },
-    {
-      id: 2,
-      title: "Building Scalable Mobile Applications with React Native",
-      excerpt: "Discover best practices for developing high-performance mobile applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "May 12, 2023",
-      slug: "scalable-react-native-apps",
-    },
-    {
-      id: 3,
-      title: "Securing Your Web Applications: Best Practices",
-      excerpt: "Discover essential security practices to protect your web applications.",
-      image: "/placeholder.svg?height=400&width=600",
-      date: "March 28, 2023",
-      slug: "web-app-security-practices",
-    },
-  ]
-}
+import { getRelatedPosts } from "@/data/blog-posts"
 
 export default function RelatedPosts({ slug }: { slug: string }) {
   const relatedPosts = getRelatedPosts(slug)
   const { ref, isInView } = useScrollAnimation()
+
+  if (relatedPosts.length === 0) {
+    return null
+  }
 
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900">

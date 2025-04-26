@@ -45,75 +45,74 @@ const projects = [
   },
   {
     id: 4,
-    title: "Real Estate Marketplace",
+    title: "The Troy Agency",
     category: "Web Development",
     image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "A property listing platform that connects buyers, sellers, and agents with advanced search and filtering capabilities.",
-    technologies: ["React", "Redux", "Express", "PostgreSQL", "Google Maps API"],
-    link: "/portfolio/real-estate-marketplace",
+      "/tr.png",
+      description: "​The Troy Agency is a specialized consultancy that empowers B2B professionals to amplify their personal brands, expand their networks, and generate qualified leads through a strategic blend of LinkedIn outreach, personalized video content, social media engagement, and warm email campaigns.",
+      technologies: ["WordPress", "PHP", "MySQL", "Custom Theme Development", "WooCommerce", "Advanced Custom Fields", "Elementor Pro", "SEO Optimization"],
+    link: "/portfolio/the-troy-agency",
     featured: false,
   },
-  {
-    id: 5,
-    title: "AI-powered Chatbot",
-    category: "AI Solutions",
-    image:
-      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "An intelligent customer service chatbot that uses natural language processing to answer customer queries and provide support.",
-    technologies: ["Python", "TensorFlow", "NLP", "DialogFlow", "Node.js"],
-    link: "/portfolio/ai-chatbot",
-    featured: false,
-  },
-  {
-    id: 6,
-    title: "Social Media App",
-    category: "Mobile Development",
-    image:
-      "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description: "A social networking application focused on connecting professionals in the creative industry.",
-    technologies: ["Flutter", "Firebase", "GraphQL", "AWS", "WebRTC"],
-    link: "/portfolio/social-media-app",
-    featured: false,
-  },
-  {
-    id: 7,
-    title: "Educational Platform",
-    category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "An online learning platform with interactive courses, quizzes, and progress tracking for students and educators.",
-    technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS S3"],
-    link: "/portfolio/educational-platform",
-    featured: false,
-  },
-  {
-    id: 8,
-    title: "Inventory Management System",
-    category: "Enterprise Solutions",
-    image:
-      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "A comprehensive inventory management solution for retail businesses to track stock, orders, and generate reports.",
-    technologies: ["Angular", "Express", "MySQL", "Docker", "Jenkins"],
-    link: "/portfolio/inventory-management",
-    featured: false,
-  },
-  {
-    id: 9,
-    title: "Tourism Mobile App",
-    category: "Mobile Development",
-    image:
-      "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    description:
-      "A travel guide application highlighting local attractions, restaurants, and events with offline maps and itinerary planning.",
-    technologies: ["React Native", "Redux", "Firebase", "Google Maps API", "Stripe"],
-    link: "/portfolio/tourism-app",
-    featured: false,
-  },
+  // {
+  //   id: 5,
+  //   title: "AI-powered Chatbot",
+  //   category: "AI Solutions",
+  //   image:
+  //     "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+  //   description:
+  //     "An intelligent customer service chatbot that uses natural language processing to answer customer queries and provide support.",
+  //   technologies: ["Python", "TensorFlow", "NLP", "DialogFlow", "Node.js"],
+  //   link: "/portfolio/ai-chatbot",
+  //   featured: false,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Social Media App",
+  //   category: "Mobile Development",
+  //   image:
+  //     "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+  //   description: "A social networking application focused on connecting professionals in the creative industry.",
+  //   technologies: ["Flutter", "Firebase", "GraphQL", "AWS", "WebRTC"],
+  //   link: "/portfolio/social-media-app",
+  //   featured: false,
+  // },
+  // {
+  //   id: 7,
+  //   title: "Educational Platform",
+  //   category: "Web Development",
+  //   image:
+  //     "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+  //   description:
+  //     "An online learning platform with interactive courses, quizzes, and progress tracking for students and educators.",
+  //   technologies: ["React", "Node.js", "MongoDB", "Socket.io", "AWS S3"],
+  //   link: "/portfolio/educational-platform",
+  //   featured: false,
+  // },
+  // {
+  //   id: 8,
+  //   title: "Inventory Management System",
+  //   category: "Enterprise Solutions",
+  //   image:
+  //     "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+  //   description:
+  //     "A comprehensive inventory management solution for retail businesses to track stock, orders, and generate reports.",
+  //   technologies: ["Angular", "Express", "MySQL", "Docker", "Jenkins"],
+  //   link: "/portfolio/inventory-management",
+  //   featured: false,
+  // },
+  // {
+  //   id: 9,
+  //   title: "Tourism Mobile App",
+  //   category: "Mobile Development",
+  //   image:
+  //     "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+  //   description:
+  //     "A travel guide application highlighting local attractions, restaurants, and events with offline maps and itinerary planning.",
+  //   technologies: ["React Native", "Redux", "Firebase", "Google Maps API", "Stripe"],
+  //   link: "/portfolio/tourism-app",
+  //   featured: false,
+  // },
 ]
 
 const categories = [

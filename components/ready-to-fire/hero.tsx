@@ -26,7 +26,7 @@ export default function ReadyToFireHero() {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">
-              Ready to Fire Us?
+             Future Ready Partnerships
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 font-light">
@@ -66,7 +66,7 @@ export default function ReadyToFireHero() {
               <div className="relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl border border-white/20 dark:border-gray-700/20 rounded-2xl shadow-xl overflow-hidden p-1">
                 <div className="aspect-w-4 aspect-h-3 rounded-xl overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800"
+                    src="/future-ready-handshake.png"
                     alt="Team collaboration"
                     width={800}
                     height={600}

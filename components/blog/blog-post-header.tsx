@@ -4,23 +4,33 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Calendar, Tag, ArrowLeft } from "lucide-react"
 import Link from "next/link"
-
-// This would typically come from a database or API
-const getBlogPostData = (slug: string) => {
-  // This is a simplified example - you would fetch this data from an API or database
-  return {
-    title: "The Future of Web Development: Trends to Watch in 2023",
-    image: "/placeholder.svg?height=600&width=1200",
-    date: "June 15, 2023",
-    author: "Rahul Sharma",
-    authorImage: "/placeholder.svg?height=100&width=100",
-    category: "Web Development",
-    readTime: "8 min read",
-  }
-}
+import { getBlogPostBySlug } from "@/data/blog-posts"
 
 export default function BlogPostHeader({ slug }: { slug: string }) {
-  const post = getBlogPostData(slug)
+  const post = getBlogPostBySlug(slug)
+
+  if (!post) {
+    return (
+      <section className="pt-32 pb-0">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <Link
+                href="/blog"
+                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to all articles
+              </Link>
+            </div>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+              Post not found
+            </h1>
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section className="pt-32 pb-0">
