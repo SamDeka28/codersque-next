@@ -10,7 +10,7 @@ export default function AboutPage() {
       <CompanyIntro />
       <Timeline />
       <Values />
-      <Team />
+      {/* <Team /> */}
     </PageTransition>
   )
 }

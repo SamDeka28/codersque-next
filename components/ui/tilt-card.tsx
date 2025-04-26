@@ -104,6 +104,7 @@ export function TiltCard({
         style={{
           rotateX: isHovered ? rotateX : 0,
           rotateY: isHovered ? rotateY : 0,
+          height: "100%",
           transformStyle: "preserve-3d",
         }}
         transition={{ duration: 0.1 }}

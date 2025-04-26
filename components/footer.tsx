@@ -1,8 +1,18 @@
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Github, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+  Mail,
+  Phone,
+  MapPin,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white pt-20 pb-8 relative overflow-hidden">
@@ -19,9 +29,12 @@ export default function Footer() {
         <div className="bg-gray-800/50 rounded-xl p-8 mb-16 backdrop-blur-sm border border-gray-700">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-xl font-bold mb-2">Subscribe to Our Newsletter</h3>
+              <h3 className="text-xl font-bold mb-2">
+                Subscribe to Our Newsletter
+              </h3>
               <p className="text-gray-400">
-                Stay updated with the latest trends, insights, and news from the world of technology.
+                Stay updated with the latest trends, insights, and news from the
+                world of technology.
               </p>
             </div>
             <div>
@@ -53,7 +66,8 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-400 max-w-xs">
-              Building smarter digital solutions for businesses around the world. Based in Guwahati, Assam.
+              Building smarter digital solutions for businesses around the
+              world. Based in Guwahati, Assam.
             </p>
 
             <div className="flex space-x-4">
@@ -107,10 +121,22 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></span>
             </h3>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Portfolio", "Blog", "Ready to Fire Us?", "Contact"].map((item) => (
+              {[
+                "Home",
+                "About",
+                "Services",
+                "Portfolio",
+                "Blog",
+                "Future-Ready Partnerships",
+                "Contact",
+              ].map((item) => (
                 <li key={item}>
                   <Link
-                    href={item === "Home" ? "/" : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={
+                      item === "Home"
+                        ? "/"
+                        : `/${item.toLowerCase().replace(/\s+/g, "-")}`
+                    }
                     className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
                   >
                     <ArrowRight className="h-4 w-0 mr-0 opacity-0 group-hover:w-4 group-hover:mr-2 group-hover:opacity-100 transition-all duration-300" />
@@ -159,11 +185,15 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-purple-400 mr-3 mt-1" />
                 <span className="text-gray-400">
-                Codersque Technologies Pvt. Ltd.<br />
-H.No. 34, Ashirwaad Path,<br />
-Sonai Mikir Path, Satgaon,<br />
-Guwahati, Assam 781171<br />
-India 
+                  Codersque Technologies Pvt. Ltd.
+                  <br />
+                  H.No. 34, Ashirwaad Path,
+                  <br />
+                  Sonai Mikir Path, Satgaon,
+                  <br />
+                  Guwahati, Assam 781171
+                  <br />
+                  India
                 </span>
               </li>
               <li className="flex items-center">
@@ -175,12 +205,15 @@ India
                   sales@codersque.com
                 </a>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <Phone className="h-5 w-5 text-purple-400 mr-3" />
-                <a href="tel:+919706202403 " className="text-gray-400 hover:text-white transition-colors duration-300">
-                +91 97062 02403               
+                <a
+                  href="tel:+919706202403 "
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  +91 97062 02403
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -203,12 +236,15 @@ India
             >
               Terms of Service
             </Link>
-            <Link href="/site" className="text-gray-500 hover:text-white text-sm transition-colors duration-300">
+            <Link
+              href="/site"
+              className="text-gray-500 hover:text-white text-sm transition-colors duration-300"
+            >
               Sitemap
             </Link>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }

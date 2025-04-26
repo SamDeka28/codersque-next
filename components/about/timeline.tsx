@@ -10,7 +10,7 @@ const timelineEvents = [
     year: "2022",
     title: "Company Founded",
     description:
-      "Codersque Technologies Pvt. Ltd. was officially founded in November 2022 in Guwahati, Assam, by Simanta Deka and Bimala Das. The company set out to provide innovative software solutions tailored to modern business needs.",
+      "Codersque Technologies Pvt. Ltd. was officially founded in November 2022 in Guwahati, Assam. The company set out to provide innovative software solutions tailored to modern business needs.",
     icon: "🚀",
     achievements: [
       "Registered as a private limited company",
@@ -36,11 +36,12 @@ const timelineEvents = [
     year: "2024",
     title: "Strategic Partnerships & Recognition",
     description:
-      "Codersque collaborated with notable startups and businesses, including MPAARS and BrandWorks, gaining recognition in Northeast India's tech community. Their commitment to quality and innovation made them a trusted name in software development.",
+      "Codersque collaborated with notable startups and businesses, including BrandWorks Worldwide, Revynox Technologies LLC,  MPAARS Innovation Pvt. Ltd. and AttendeeGain. Their commitment to quality and innovation made them a trusted name in software development.",
     icon: "🏆",
     achievements: [
-      "Partnered with EngageNet, MPAARS, and BrandWorks",
-      "Recognized as a fast-growing tech firm in the region",
+      "Formed strategic partnerships with startups",
+      "Delivered high-impact projects in various sectors",
+      "Client satisfaction ratings above 95%",
       "Expanded team to support increasing demand"
     ],
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"

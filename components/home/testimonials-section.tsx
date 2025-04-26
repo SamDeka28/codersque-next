@@ -127,7 +127,7 @@ export default function TestimonialsSection() {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Testimonial Cards */}
-          <div className="relative h-[600px] md:h-[500px] overflow-hidden">
+            <div className="relative h-[800px] sm:h-[700px] md:h-[600px] lg:h-[500px] overflow-hidden">
             <AnimatePresence initial={false} mode="wait">
               <motion.div
                 key={current}

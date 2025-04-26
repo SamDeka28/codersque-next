@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { Award, Users, Lightbulb, Target, Heart, Zap } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { TiltCard } from "@/components/ui/tilt-card"
+import CtaSection from "../ready-to-fire/cta-section"
 
 const values = [
   {
@@ -137,6 +138,7 @@ export default function Values() {
           ))}
         </motion.div>
       </div>
+      <CtaSection/>
     </section>
   )
 }

@@ -6,14 +6,13 @@ import CtaSection from "@/components/ready-to-fire/cta-section"
 import ReadyToFireHero from "@/components/ready-to-fire/hero"
 import SelfSufficientCode from "@/components/ready-to-fire/self-sufficient-code"
 
-
 export const metadata = {
-  title: "Ready to Fire Us? | Codersque Technologies",
+  title: "Future-Ready Partnerships | Codersque Technologies",
   description:
-    "At Codersque, we believe in empowering our clients with full ownership and independence. Learn how we build solutions that allow you to grow without us.",
+    "At Codersque, we believe in empowering our clients with full ownership and independence. Learn how we build future-ready solutions that allow you to grow without relying on us.",
 }
 
-export default function ReadyToFireUsPage() {
+export default function FutureReadyPartnerships() {
   return (
     <PageTransition>
       <ReadyToFireHero />

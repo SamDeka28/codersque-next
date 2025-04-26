@@ -15,7 +15,7 @@ const navItems = [
   { name: "Services", path: "/services" },
   { name: "Portfolio", path: "/portfolio" },
   { name: "Blog", path: "/blog" },
-  { name: "Ready to Fire Us?", path: "/ready-to-fire-us" },
+  { name: "Future-Ready Partnerships", path: "/future-ready-partnerships" },
   { name: "Contact", path: "/contact" },
 ]
 
@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "py-3" : "py-5"}`}>
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-100 dark:border-gray-800 px-6 py-3">
+        <div className="max-w-7xl mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-100 dark:border-gray-800 px-6 py-3">
           <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
 <div className="flex items-center">

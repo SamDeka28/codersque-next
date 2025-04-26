@@ -9,25 +9,25 @@ import { ArrowRight, X, Filter } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "EverythinkInk",
     category: "Web Development",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+              "/everythink.png",
     description:
       "A comprehensive e-commerce solution built with Next.js, featuring product recommendations, secure payments, and an admin dashboard.",
-    technologies: ["Next.js", "React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["Shopify", "Node.js", "Firebase", "Stripe"],
     link: "/portfolio/e-commerce-platform",
     featured: true,
   },
   {
     id: 2,
-    title: "Health & Fitness App",
-    category: "Mobile Development",
+    title: "Algebrik",
+    category: "Web Development",
     image:
-      "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+      "/albegrik.png",
     description:
       "A mobile application for iOS and Android that helps users track their fitness goals, nutrition, and workout routines.",
-    technologies: ["React Native", "Firebase", "Redux", "HealthKit", "Google Fit API"],
+    technologies: ["Next.js", "Framer Motion", "Redux", "HealthKit", "Google Fit API"],
     link: "/portfolio/health-fitness-app",
     featured: true,
   },

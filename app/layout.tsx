@@ -25,9 +25,35 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Codersque Technologies",
-  description: "Building Smarter Digital Solutions - Software Development Company in Guwahati, Assam",
-    generator: 'v0.dev'
+  metadataBase: new URL("https://www.codersque.com"), // Set the base URL for resolving relative links
+  title: "Codersque Technologies | Software Development Company in Guwahati, Assam",
+  description:
+    "Codersque Technologies provides innovative software development services, specializing in web and mobile app development, custom solutions, and scalable technologies. Based in Guwahati, Assam, we empower businesses with full ownership and independence.",
+  keywords:
+    "software development, web development, mobile app development, custom software solutions, scalable technology, Guwahati software company, app development agency, tech consulting, React, Next.js, custom solutions, SaaS, e-commerce development",
+  authors: [{ name: "Codersque Technologies" }],
+  robots: "index, follow",
+  openGraph: {
+    title: "Codersque Technologies | Empowering Businesses with Custom Software Solutions",
+    description:
+      "Codersque Technologies helps businesses in Guwahati, Assam, and beyond with tailored software solutions, from app development to digital transformation, offering full client independence.",
+    images: ["/images/social-share-image.jpg"], // Relative URL
+    type: "website",
+    url: "https://www.codersque.com", 
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Codersque Technologies | Custom Software Development",
+    description:
+      "Looking for a software development partner? Codersque Technologies delivers scalable, custom solutions with a focus on empowering businesses to grow independently.",
+    images: ["/images/social-share-image.jpg"], // Relative URL
+    creator: "@Codersque",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
@@ -38,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable} ${lato.variable} font-poppins antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <PageLoader />
           <div className="flex min-h-screen flex-col">
             <Navbar />
