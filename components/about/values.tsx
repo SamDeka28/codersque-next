@@ -55,7 +55,7 @@ export default function Values() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <section className="py-16 md:py-24 relative overflow-hidden">
+    <section className="pt-20 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-purple-950 -z-10" />
 
@@ -100,7 +100,7 @@ export default function Values() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:mb-24"
         >
           {values.map((value, index) => (
             <motion.div

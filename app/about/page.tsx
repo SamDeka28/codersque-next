@@ -9,8 +9,8 @@ export default function AboutPage() {
     <PageTransition>
       <CompanyIntro />
       <Timeline />
-      <Values />
       {/* <Team /> */}
+      <Values />
     </PageTransition>
   )
 }
