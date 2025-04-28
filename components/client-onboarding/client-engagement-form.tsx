@@ -100,7 +100,6 @@ export default function ClientEngagementForm() {
   const nextStep = () => {
     if (validateStep(step)) {
       setStep((prev) => prev + 1)
-      window.scrollTo(0, 0)
     }
   }
 

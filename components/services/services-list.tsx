@@ -68,7 +68,7 @@ const services = [
       "Chatbots and virtual assistants",
     ],
     image:
-      "https://images.unsplash.com/photo-1677442135968-6bd241f8dd36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+      "https://images.unsplash.com/photo-1710770563074-6d9cc0d3e338?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80",
     link: "/services/ai-solutions",
   },
   {

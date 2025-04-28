@@ -32,7 +32,7 @@ export default function HealthFitnessAppPage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-100 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Client</h3>
-                    <p className="text-gray-600 dark:text-gray-400">BrandWorks Worldwide</p>
+                    <p className="text-gray-600 dark:text-gray-400">EINCRED Systems (India) Private Limited</p>
                   </div>
                   <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-100 dark:border-gray-700">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Timeline</h3>

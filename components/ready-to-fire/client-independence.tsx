@@ -26,8 +26,7 @@ export default function ClientIndependence() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
             >
-              From the very beginning, our goal is to not only build you something powerful—but also make sure you have
-              the clarity, resources, and tools to grow without us. That's not letting go—it's lifting up.
+              From day one, our mission is to build powerful solutions while ensuring you have the knowledge, resources, and tools to thrive independently. This isn't about letting go—it's about empowering you to succeed.
             </motion.p>
           </div>
 
@@ -46,8 +45,7 @@ export default function ClientIndependence() {
                     Our Mission: Build With You, Then Step Back Gracefully
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    We're not in this to lock you into never-ending retainers. We're here to deliver value, clarity, and
-                    peace of mind—and then watch you soar.
+                    We're committed to delivering exceptional value, providing clear solutions, and ensuring your long-term success—not creating dependency through endless retainers.
                   </p>
                 </div>
 
@@ -56,17 +54,17 @@ export default function ClientIndependence() {
                     "At Codersque, we take pride in helping founders and teams become truly independent."
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 mt-2">
-                    We'll always be around when needed—but the goal is that you won't need us much.
+                    While we're always here to support you, our ultimate success is measured by your ability to operate independently.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white flex items-center">
                     <span className="text-3xl mr-3">🧾</span>
-                    What Happens If You "Fire" Us?
+                    Ready to Take Full Control?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Actually, we love when this happens. It means we've done our job well.
+                    We consider it a success when our clients achieve full autonomy. It's a testament to our commitment to your long-term success.
                   </p>
 
                   <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">You'll Walk Away With:</h4>
@@ -141,7 +139,7 @@ export default function ClientIndependence() {
 
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                     <p className="text-white font-medium">
-                      You'll understand your product inside out and won't feel stuck, blocked, or held back.
+                      Gain complete understanding of your product and the confidence to drive it forward independently.
                     </p>
                   </div>
                 </div>

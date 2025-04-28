@@ -48,7 +48,7 @@ const processSteps = [
     title: "Testing",
     description: "We conduct thorough testing to ensure quality, functionality, performance, and security.",
     icon: <TestTube className="h-6 w-6" />,
-    image: "https://images.unsplash.com/photo-1581092335397-9fa73b6c660d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    image: "https://images.unsplash.com/photo-1585624882829-f92c2d4cd89d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     color: "from-green-500 to-emerald-500",
   },
   {
@@ -146,7 +146,7 @@ export default function ProcessSection() {
               >
                 <div className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} items-center`}>
                   {/* Step number and content */}
-                  <div className="w-full lg:w-1/2 p-6 relative">
+                  <div className="w-full lg:w-1/2 p-4 lg:p-10 relative">
                     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-8 border border-gray-100 dark:border-gray-700 relative z-10">
                       <div className="absolute top-0 right-0 -mt-6 -mr-6">
                         <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center text-white shadow-lg`}>
@@ -193,7 +193,7 @@ export default function ProcessSection() {
                   </div>
 
                   {/* Step image */}
-                  <div className="w-full lg:w-1/2 p-6">
+                  <div className="w-full lg:w-1/2 p-4 lg:p-8">
                     <motion.div
                       whileHover={{ scale: 1.05 }}
                       transition={{ type: "spring", stiffness: 300, damping: 10 }}

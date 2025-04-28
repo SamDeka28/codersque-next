@@ -146,7 +146,7 @@ export default function Timeline() {
           viewport={{ once: true, amount: 0.3 }}
           className={`flex flex-col md:flex-row items-center md:items-start mb-24 last:mb-0 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
         >
-          <div className="w-full md:w-1/2 px-4 md:px-8 mb-8 md:mb-0">
+          <div className="w-full md:w-1/2 px-4 lg:px-14 mb-8 md:mb-0">
             <motion.div
               whileHover={{
                 scale: 1.03,
@@ -182,7 +182,7 @@ export default function Timeline() {
             </motion.div>
           </div>
 
-          <div className="w-full md:w-1/2 px-4 md:px-8">
+          <div className="w-full md:w-1/2 px-4 lg:px-14">
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}

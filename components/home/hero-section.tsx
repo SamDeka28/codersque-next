@@ -14,7 +14,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-40 pb-11 lg:pt-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
+    <section className="relative min-h-screen flex items-center pt-32 pb-11 lg:pt-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
       {/* Code animation background */}
       <div className="absolute inset-0 overflow-hidden opacity-5 dark:opacity-10">
         <div className="code-animation absolute inset-0 text-xs md:text-sm overflow-hidden font-mono">
@@ -140,7 +140,7 @@ export default function HeroSection() {
                 <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Clients</div>
               </div>
               <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
+                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
                 <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Years</div>
               </div>
             </motion.div>

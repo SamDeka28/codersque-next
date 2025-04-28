@@ -158,7 +158,7 @@ export default function Differentiators() {
           className="text-center mt-12"
         >
           <Link
-            href="/ready-to-fire-us"
+            href="/future-ready-partnerships"
             className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
           >
             Learn More About Our Approach
