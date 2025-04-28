@@ -5,108 +5,54 @@ import Image from "next/image"
 import { Calendar, Tag, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import { getBlogPostBySlug } from "@/data/blog-posts"
+import { BlogPost } from "@/data/blog-posts"
 
-export default function BlogPostHeader({ slug }: { slug: string }) {
-  const post = getBlogPostBySlug(slug)
+interface BlogPostHeaderProps {
+  post: BlogPost
+}
 
-  if (!post) {
-    return (
-      <section className="pt-32 pb-0">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <Link
-                href="/blog"
-                className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
-              >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to all articles
-              </Link>
+export default function BlogPostHeader({ post }: BlogPostHeaderProps) {
+  return (
+    <header className="relative">
+      <div className="relative h-[400px] w-full">
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent" />
+      </div>
+      <div className="container mx-auto px-4 -mt-32 relative z-10">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="px-3 py-1 text-sm font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 rounded-full">
+              {post.category}
+            </span>
+            <span className="text-sm text-white">
+              {post.readTime}
+            </span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            {post.title}
+          </h1>
+          <div className="flex items-center gap-4">
+            <div className="relative w-12 h-12 rounded-full overflow-hidden">
+              <Image
+                src={post.authorImage}
+                alt={post.author}
+                fill
+                className="object-cover"
+              />
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
-              Post not found
-            </h1>
+            <div>
+              <p className="text-white font-medium">{post.author}</p>
+              <p className="text-gray-300 text-sm">{post.date}</p>
+            </div>
           </div>
         </div>
-      </section>
-    )
-  }
-
-  return (
-    <section className="pt-32 pb-0">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8"
-          >
-            <Link
-              href="/blog"
-              className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
-            >
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to all articles
-            </Link>
-          </motion.div>
-
-          <motion.h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            {post.title}
-          </motion.h1>
-
-          <motion.div
-            className="flex flex-wrap items-center text-gray-500 dark:text-gray-400 mb-8 gap-y-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="flex items-center mr-6">
-              <div className="w-8 h-8 rounded-full overflow-hidden mr-2">
-                <Image
-                  src={post.authorImage || "/placeholder.svg"}
-                  alt={post.author}
-                  width={32}
-                  height={32}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <span>{post.author}</span>
-            </div>
-            <div className="flex items-center mr-6">
-              <Calendar size={16} className="mr-2" />
-              <span>{post.date}</span>
-            </div>
-            <div className="flex items-center mr-6">
-              <Tag size={16} className="mr-2" />
-              <span>{post.category}</span>
-            </div>
-            <div className="flex items-center">
-              <span>{post.readTime}</span>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="rounded-xl overflow-hidden mb-12 shadow-lg"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <Image
-              src={post.image || "/placeholder.svg"}
-              alt={post.title}
-              width={1200}
-              height={675}
-              className="w-full h-auto"
-            />
-          </motion.div>
-        </div>
       </div>
-    </section>
+    </header>
   )
 }

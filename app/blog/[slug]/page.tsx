@@ -4,25 +4,18 @@ import BlogPostContent from "@/components/blog/blog-post-content"
 import RelatedPosts from "@/components/blog/related-posts"
 import CommentSection from "@/components/blog/comment-section"
 import { notFound } from "next/navigation"
-import { blogPosts } from "@/data/blog-posts"
+import { getBlogPostBySlug } from "@/data/blog-posts"
 
 // Generate static params for all blog posts
-export function generateStaticParams() {
-  // Directly use the imported blogPosts
-  if (!Array.isArray(blogPosts)) return []
+export async function generateStaticParams() {
+  const blogPosts = await import("@/data/blog-posts").then((mod) => mod.blogPosts)
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  // Add type safety check
-  if (!Array.isArray(blogPosts)) {
-    console.error("blogPosts is not an array:", blogPosts);
-    notFound();
-  }
-
-  const post = blogPosts.find((post) => post.slug === params.slug)
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+  const post = await getBlogPostBySlug(params.slug)
 
   if (!post) {
     notFound()
@@ -30,8 +23,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <PageTransition>
-      <BlogPostHeader slug={params.slug} />
-      <BlogPostContent slug={params.slug} />
+      <BlogPostHeader post={post} />
+      <BlogPostContent post={post} />
       <RelatedPosts slug={params.slug} />
       <CommentSection slug={params.slug} />
     </PageTransition>

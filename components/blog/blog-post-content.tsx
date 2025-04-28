@@ -3,11 +3,14 @@
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import { Facebook, Twitter, Linkedin, Mail } from "lucide-react"
-import { getBlogPostBySlug } from "@/data/blog-posts"
+import { BlogPost } from "@/data/blog-posts"
 
-export default function BlogPostContent({ slug }: { slug: string }) {
+interface BlogPostContentProps {
+  post: BlogPost
+}
+
+export default function BlogPostContent({ post }: BlogPostContentProps) {
   const { ref, isInView } = useScrollAnimation()
-  const post = getBlogPostBySlug(slug)
 
   if (!post) {
     return (
