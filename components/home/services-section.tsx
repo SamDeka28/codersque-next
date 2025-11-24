@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp } from "lucide-react"
+import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp, FileText } from "lucide-react"
 import { TiltCard } from "@/components/ui/tilt-card"
 import { AnimatedText } from "@/components/ui/animated-text"
 import Link from "next/link"
@@ -49,6 +49,13 @@ const services = [
     description: "Strategic digital marketing services to boost your online presence and growth.",
     link: "/services/digital-marketing",
     color: "from-amber-500 to-orange-500",
+  },
+  {
+    icon: <FileText className="h-6 w-6" />,
+    title: "IP Services",
+    description: "Comprehensive intellectual property services including patents, trademarks, and copyrights.",
+    link: "/services/ip-services",
+    color: "from-violet-500 to-purple-500",
   },
 ]
 export default function ServicesSection() {

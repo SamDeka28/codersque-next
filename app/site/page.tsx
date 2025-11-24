@@ -25,6 +25,8 @@ export default function SiteInfo() {
         <li>Cloud-based Solutions</li>
         <li>AI/ML Development</li>
         <li>UI/UX Design & Prototyping</li>
+        <li>Digital Marketing</li>
+        <li>IP Services (Patents, Trademarks, Copyrights)</li>
         <li>Digital Transformation Consulting</li>
       </ul>
 

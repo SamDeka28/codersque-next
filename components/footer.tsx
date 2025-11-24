@@ -161,6 +161,7 @@ export default function Footer() {
                 "AI Solutions",
                 "Cloud Services",
                 "Digital Marketing",
+                "IP Services",
               ].map((item) => (
                 <li key={item}>
                   <Link

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp, ArrowRight } from "lucide-react"
+import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp, ArrowRight, FileText } from "lucide-react"
 import { TiltCard } from "@/components/ui/tilt-card"
 
 const services = [
@@ -102,6 +102,22 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
     link: "/services/digital-marketing",
+  },
+  {
+    icon: <FileText className="h-10 w-10" />,
+    title: "IP Services",
+    description:
+      "We provide comprehensive intellectual property services to protect your innovations, brands, and creative works. Our expert team helps you navigate the complex world of patents, trademarks, copyrights, and trade secrets to safeguard your competitive advantage.",
+    features: [
+      "Patent filing and prosecution",
+      "Trademark registration and protection",
+      "Copyright registration",
+      "IP portfolio management",
+      "IP litigation and enforcement",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    link: "/services/ip-services",
   },
 ]
 
