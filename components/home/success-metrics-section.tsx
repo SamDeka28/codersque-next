@@ -1,7 +1,6 @@
 "use client"
 
-import React, { useRef, useState } from "react"
-import { motion, useInView, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Clock, Users, Award, TrendingUp } from "lucide-react"
 import { Section } from "@/components/ui/section"
@@ -61,11 +60,6 @@ const metrics = [
 ]
 
 export default function SuccessMetricsSection() {
-  const [activeTab, setActiveTab] = useState("delivery")
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.1 })
-  const active = metrics.find((m) => m.id === activeTab) ?? metrics[0]
-
   return (
     <Section className="mesh-wash" size="wide">
       <FluidOrbs className="opacity-35" />
@@ -76,8 +70,8 @@ export default function SuccessMetricsSection() {
         className="relative z-10 mb-12 md:mb-16"
       />
 
-      <div ref={ref} className="relative z-10">
-        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+      <div className="relative z-10">
+        <Tabs defaultValue="delivery" className="w-full">
           <TabsList className="mb-6 grid h-auto w-full grid-cols-2 gap-2 rounded-none bg-transparent p-0 md:grid-cols-4">
             {metrics.map((metric) => (
               <TabsTrigger
@@ -94,29 +88,25 @@ export default function SuccessMetricsSection() {
           </TabsList>
 
           <div className="overflow-hidden rounded-[1.75rem] border border-border/70 bg-card/80 p-6 backdrop-blur-sm md:p-12">
-            <AnimatePresence mode="wait">
-              <TabsContent key={active.id} value={active.id} className="mt-0">
+            {metrics.map((metric) => (
+              <TabsContent key={metric.id} value={metric.id} className="mt-0">
                 <motion.div
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -12 }}
                   transition={{ duration: 0.35 }}
                 >
                   <div className="flex items-start gap-4">
                     <IconWell>
-                      {(() => {
-                        const Icon = active.icon
-                        return <Icon />
-                      })()}
+                      <metric.icon />
                     </IconWell>
                     <div>
-                      <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">{active.title}</h3>
-                      <p className="mt-1 text-muted-foreground">{active.description}</p>
+                      <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">{metric.title}</h3>
+                      <p className="mt-1 text-muted-foreground">{metric.description}</p>
                     </div>
                   </div>
 
                   <div className="mt-10 grid grid-cols-1 gap-6 border-t border-border pt-8 sm:grid-cols-3">
-                    {active.stats.map((stat, i) => (
+                    {metric.stats.map((stat, i) => (
                       <motion.div
                         key={stat.label}
                         initial={{ opacity: 0, y: 12 }}
@@ -129,10 +119,10 @@ export default function SuccessMetricsSection() {
                     ))}
                   </div>
 
-                  <p className="mt-8 border-t border-border pt-6 text-sm text-muted-foreground">{active.highlight}</p>
+                  <p className="mt-8 border-t border-border pt-6 text-sm text-muted-foreground">{metric.highlight}</p>
                 </motion.div>
               </TabsContent>
-            </AnimatePresence>
+            ))}
           </div>
         </Tabs>
       </div>
