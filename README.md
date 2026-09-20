@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- **Node.js**: >= 22.0.0 (LTS)
-- **npm**: >= 10.0.0
+- **Node.js**: 24.x (Active LTS)
+- **npm**: >= 11.0.0
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ If you're using NVM, the project includes a `.nvmrc` file. Simply run:
 nvm use
 ```
 
-This will automatically switch to Node.js 22 LTS.
+This will automatically switch to Node.js 24 LTS.
 
 ### Installation
 

@@ -14,22 +14,21 @@ export function generateStaticParams() {
   }))
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  // Check if the blog post exists
-  const post = blogPosts.find((post) => post.slug === params.slug)
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = blogPosts.find((post) => post.slug === slug)
 
-  // If the post doesn't exist, return a 404
   if (!post) {
     notFound()
   }
 
   return (
     <PageTransition>
-      <BlogPostHeader slug={params.slug} />
-      <BlogPostContent slug={params.slug} />
-      {/* <AuthorBio slug={params.slug} /> */}
-      <RelatedPosts slug={params.slug} />
-      <CommentSection slug={params.slug} />
+      <BlogPostHeader slug={slug} />
+      <BlogPostContent slug={slug} />
+      {/* <AuthorBio slug={slug} /> */}
+      <RelatedPosts slug={slug} />
+      <CommentSection slug={slug} />
     </PageTransition>
   )
 }
