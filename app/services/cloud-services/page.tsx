@@ -15,11 +15,12 @@ export default function CloudServicesPage() {
         { label: "Cloud Services", href: "/services/cloud-services" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/cloud.jpg"
     >
       <ContentSection
         title="Modern Cloud Solutions"
         description="Our cloud services enable businesses to leverage scalable, secure, and cost-effective infrastructure. We provide cloud migration, architecture design, and management services to optimize your operations and ensure reliability."
-        image="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/cloud.jpg"
         imageAlt="Cloud computing infrastructure"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -55,13 +56,13 @@ export default function CloudServicesPage() {
       <ContentSection
         title="Our Cloud Services Approach"
         description="We follow a comprehensive approach to cloud services that ensures your infrastructure is optimized for performance, security, and cost-efficiency."
-        image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/cloud.jpg"
         imageAlt="Cloud architecture diagram"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -72,7 +73,7 @@ export default function CloudServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -83,7 +84,7 @@ export default function CloudServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -94,7 +95,7 @@ export default function CloudServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -105,7 +106,7 @@ export default function CloudServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -127,21 +128,21 @@ export default function CloudServicesPage() {
             description:
               "Migrated a high-traffic e-commerce platform to AWS, improving performance and reducing costs by 40%.",
             image:
-              "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/cloud.jpg",
           },
           {
             title: "Microservices Architecture",
             description:
               "Designed and implemented a microservices architecture on Google Cloud Platform for a fintech startup.",
             image:
-              "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/cloud.jpg",
           },
           {
             title: "DevOps Implementation",
             description:
               "Implemented CI/CD pipelines and DevOps practices for a software development company, reducing deployment time by 70%.",
             image:
-              "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/cloud.jpg",
           },
         ]}
       />
@@ -149,7 +150,7 @@ export default function CloudServicesPage() {
       <ContentSection
         title="Cloud Technologies We Use"
         description="We leverage leading cloud platforms and technologies to deliver robust and scalable solutions."
-        image="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/cloud.jpg"
         imageAlt="Cloud technologies"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">

@@ -15,11 +15,12 @@ export default function MobileAppDevelopmentPage() {
         { label: "Mobile App Development", href: "/services/mobile-apps" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/mobile.jpg"
     >
       <ContentSection
         title="Innovative Mobile Solutions"
         description="We create cutting-edge mobile applications that deliver exceptional user experiences across all devices. Our team specializes in both native and cross-platform development, ensuring your app performs optimally on any platform."
-        image="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/mobile.jpg"
         imageAlt="Mobile app development"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -55,13 +56,13 @@ export default function MobileAppDevelopmentPage() {
       <ContentSection
         title="Our Mobile Development Process"
         description="We follow a comprehensive approach to mobile app development that ensures your app is built to the highest standards of quality and user experience."
-        image="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/mobile.jpg"
         imageAlt="Mobile development process"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -73,7 +74,7 @@ export default function MobileAppDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -84,7 +85,7 @@ export default function MobileAppDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -95,7 +96,7 @@ export default function MobileAppDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -106,7 +107,7 @@ export default function MobileAppDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -127,19 +128,19 @@ export default function MobileAppDevelopmentPage() {
             title: "Health & Fitness App",
             description: "A comprehensive fitness tracking app with personalized workout plans and nutrition guidance.",
             image:
-              "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/mobile.jpg",
           },
           {
             title: "Social Media App",
             description: "A social networking platform for creative professionals with portfolio showcasing features.",
             image:
-              "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/mobile.jpg",
           },
           {
             title: "Tourism Mobile App",
             description: "A travel guide app with offline maps, local attractions, and personalized itineraries.",
             image:
-              "https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/mobile.jpg",
           },
         ]}
       />
@@ -147,7 +148,7 @@ export default function MobileAppDevelopmentPage() {
       <ContentSection
         title="Technologies We Use"
         description="We leverage the latest mobile development technologies and frameworks to build high-quality applications."
-        image="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/mobile.jpg"
         imageAlt="Mobile development technologies"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">

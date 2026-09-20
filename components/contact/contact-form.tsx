@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Check, Send } from "lucide-react"
+import { ImageVeil } from "@/components/ui/visual"
 
 export default function ContactForm() {
   const [formState, setFormState] = useState({
@@ -85,41 +86,46 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-20 pt-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+    <section className="relative isolate overflow-hidden pb-20 pt-36 md:pt-44">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] overflow-hidden">
+        <img src="/stock/office.jpg" alt="" className="photo-media h-full w-full object-cover" />
+        <ImageVeil />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/70 to-background" />
+      </div>
+      <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-              <h1 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300">
-                Get in Touch
+              <p className="eyebrow mb-4">Contact</p>
+              <h1 className="text-4xl font-semibold tracking-tight">
+                Get in touch
               </h1>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
+              <p className="mb-6 mt-5 leading-relaxed text-muted-foreground">
                 Have a project in mind or want to explore how we can help your business? Fill out the form below, and
                 our team will get back to you within 24 hours.
               </p>
-              <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-6 border border-purple-100 dark:border-purple-800">
+              <div className="border border-border bg-muted/40 p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Why Choose Codersque?</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
-                    <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
+                    <span className="text-foreground mr-2">•</span>
                     <span className="text-gray-600 dark:text-gray-400">
                       Experienced team of developers and designers
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
+                    <span className="text-foreground mr-2">•</span>
                     <span className="text-gray-600 dark:text-gray-400">
                       Tailored solutions for your specific business needs
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
+                    <span className="text-foreground mr-2">•</span>
                     <span className="text-gray-600 dark:text-gray-400">
                       Transparent communication throughout the project
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
+                    <span className="text-foreground mr-2">•</span>
                     <span className="text-gray-600 dark:text-gray-400">Ongoing support and maintenance services</span>
                   </li>
                 </ul>
@@ -127,11 +133,11 @@ export default function ContactForm() {
 
               <div className="mt-8">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg transform rotate-1 scale-105 opacity-20 blur-lg"></div>
-                  <div className="relative bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+                  <div className="absolute inset-0 hidden"></div>
+                  <div className="relative border border-border bg-card p-6">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Our Office</h3>
                     <div className="flex items-start mb-4">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+                      <div className="mr-4 flex h-10 w-10 shrink-0 items-center justify-center border border-border text-foreground">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5"
@@ -162,7 +168,7 @@ export default function ContactForm() {
                       </div>
                     </div>
                     <div className="flex items-start">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+                      <div className="mr-4 flex h-10 w-10 shrink-0 items-center justify-center border border-border text-foreground">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5"
@@ -192,7 +198,7 @@ export default function ContactForm() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-100 dark:border-gray-700">
+              <div className="border border-border bg-card p-8">
                 {isSubmitted ? (
                   <div className="text-center py-12">
                     <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -222,7 +228,7 @@ export default function ContactForm() {
                           onChange={handleChange}
                           className={`w-full px-4 py-2 rounded-lg border ${
                             errors.name ? "border-red-500 dark:border-red-500" : "border-gray-300 dark:border-gray-600"
-                          } bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400`}
+                          } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring`}
                         />
                         {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
                       </div>
@@ -241,7 +247,7 @@ export default function ContactForm() {
                           onChange={handleChange}
                           className={`w-full px-4 py-2 rounded-lg border ${
                             errors.email ? "border-red-500 dark:border-red-500" : "border-gray-300 dark:border-gray-600"
-                          } bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400`}
+                          } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring`}
                         />
                         {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
                       </div>
@@ -258,7 +264,7 @@ export default function ContactForm() {
                           name="phone"
                           value={formState.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400"
+                          className="w-full border border-border bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                         />
                       </div>
                       <div>
@@ -274,7 +280,7 @@ export default function ContactForm() {
                           name="company"
                           value={formState.company}
                           onChange={handleChange}
-                          className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400"
+                          className="w-full border border-border bg-background px-4 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                         />
                       </div>
                     </div>
@@ -309,14 +315,14 @@ export default function ContactForm() {
                         onChange={handleChange}
                         className={`w-full px-4 py-2 rounded-lg border ${
                           errors.message ? "border-red-500 dark:border-red-500" : "border-gray-300 dark:border-gray-600"
-                        } bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400`}
+                        } bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring`}
                       ></textarea>
                       {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
                     </div>
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full flex justify-center items-center px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 text-white font-medium hover:from-purple-700 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+                      className="inline-flex w-full items-center justify-center bg-foreground px-6 py-3 font-medium text-background transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {isSubmitting ? (
                         <svg
@@ -349,7 +355,6 @@ export default function ContactForm() {
               </div>
             </motion.div>
           </div>
-        </div>
       </div>
     </section>
   )

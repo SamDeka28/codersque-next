@@ -15,11 +15,12 @@ export default function WebDevelopmentPage() {
         { label: "Web Development", href: "/services/web-development" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/web.jpg"
     >
       <ContentSection
         title="Modern Web Development Solutions"
         description="At Codersque Technologies, we specialize in creating custom web applications that are tailored to your specific business needs. Our team of experienced developers uses the latest technologies and frameworks to build responsive, scalable, and high-performance web solutions."
-        image="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/web.jpg"
         imageAlt="Web development team working on code"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -54,13 +55,13 @@ export default function WebDevelopmentPage() {
       <ContentSection
         title="Our Web Development Process"
         description="We follow a systematic approach to web development that ensures high-quality results and client satisfaction. Our process is designed to be transparent, collaborative, and efficient."
-        image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/web.jpg"
         imageAlt="Web development process diagram"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -71,7 +72,7 @@ export default function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -82,7 +83,7 @@ export default function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -93,7 +94,7 @@ export default function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -104,7 +105,7 @@ export default function WebDevelopmentPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -126,21 +127,21 @@ export default function WebDevelopmentPage() {
             description:
               "A comprehensive e-commerce solution with product recommendations, secure payments, and an admin dashboard.",
             image:
-              "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/web.jpg",
           },
           {
             title: "Real Estate Marketplace",
             description:
               "A property listing platform that connects buyers, sellers, and agents with advanced search capabilities.",
             image:
-              "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/web.jpg",
           },
           {
             title: "Educational Platform",
             description:
               "An online learning platform with interactive courses, quizzes, and progress tracking for students and educators.",
             image:
-              "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/web.jpg",
           },
         ]}
       />
@@ -148,7 +149,7 @@ export default function WebDevelopmentPage() {
       <ContentSection
         title="Technologies We Use"
         description="We stay up-to-date with the latest web development technologies and frameworks to deliver cutting-edge solutions."
-        image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/web.jpg"
         imageAlt="Web development technologies"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">

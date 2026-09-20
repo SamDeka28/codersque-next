@@ -1,7 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ClipboardList, MessageSquare, Lightbulb, Code, Rocket, Users, BarChart2, ShieldCheck, GitMerge, Smartphone, Server, Globe } from "lucide-react"
+import {
+  ClipboardList,
+  MessageSquare,
+  Lightbulb,
+  Code,
+  Upload,
+  Users,
+  Smartphone,
+  Globe,
+  Server,
+  BarChart2,
+  GitMerge,
+  ShieldCheck,
+} from "lucide-react"
 
 export default function ProcessOverview() {
   const steps = [
@@ -41,7 +54,7 @@ export default function ProcessOverview() {
       features: ["Performance testing", "Security audits", "User acceptance testing"]
     },
     {
-      icon: <Rocket className="w-6 h-6" />,
+      icon: <Upload className="w-6 h-6" />,
       title: "Deployment & Growth",
       description: "Seamless launch with monitoring, analytics, and iterative improvements.",
       duration: "Ongoing",
@@ -99,14 +112,12 @@ export default function ProcessOverview() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300 mb-4">
-                Our Methodology
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">
-                Transparent Development Process
+              <p className="eyebrow mb-4">Method</p>
+              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+                How an engagement runs
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Our 6-phase approach ensures quality, transparency, and alignment with your business goals at every step.
+              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+                Six phases, written down. Adjusted to the size of the product, not reinvented each time.
               </p>
             </motion.div>
           </div>
@@ -119,16 +130,15 @@ export default function ProcessOverview() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden"
+                className="group relative overflow-hidden border border-border bg-card p-6"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6 group-hover:bg-white dark:group-hover:bg-gray-700 transition-colors duration-300">
+                  <div className="mb-6 flex h-11 w-11 items-center justify-center border border-border text-foreground">
                     {step.icon}
                   </div>
                   <div className="flex items-center gap-2 mb-2">
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{step.title}</h3>
-                    <span className="text-xs font-medium px-2 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                    <span className="border border-border px-2 py-0.5 text-xs text-muted-foreground">
                       {step.duration}
                     </span>
                   </div>
@@ -136,7 +146,7 @@ export default function ProcessOverview() {
                   <ul className="space-y-2">
                     {step.features.map((feature, i) => (
                       <li key={i} className="flex items-start">
-                        <svg className="w-4 h-4 mt-1 mr-2 text-purple-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="mt-1 mr-2 h-4 w-4 shrink-0 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         <span className="text-sm text-gray-600 dark:text-gray-300">{feature}</span>
@@ -160,14 +170,12 @@ export default function ProcessOverview() {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 mb-4">
-                Our Expertise
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 lg:pb-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">
-                Technology Domains We Master
+              <p className="eyebrow mb-4">Capabilities</p>
+              <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+                Domains we work in
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                We deliver cutting-edge solutions across all major technology verticals.
+              <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+                Web, mobile, cloud, and applied AI, chosen for the problem, not for the brochure.
               </p>
             </motion.div>
           </div>

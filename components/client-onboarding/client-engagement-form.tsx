@@ -547,7 +547,7 @@ export default function ClientEngagementForm() {
                 <button
                   type="button"
                   onClick={startTechStackTool}
-                  className="px-6 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-colors duration-200"
+                  className="bg-foreground px-6 py-2 font-medium text-background transition-opacity hover:opacity-90"
                 >
                   Try Tech Stack Tool
                 </button>
@@ -798,7 +798,7 @@ export default function ClientEngagementForm() {
         return (
           <div className="space-y-6">
             <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400">
+              <h3 className="mb-2 text-2xl font-semibold tracking-tight">
                 Your Tech Stack Recommendations
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
@@ -883,7 +883,7 @@ export default function ClientEngagementForm() {
                 <button
                   type="button"
                   onClick={closeTechStackTool}
-                  className="px-6 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-colors duration-200"
+                  className="bg-foreground px-6 py-2 font-medium text-background transition-opacity hover:opacity-90"
                 >
                   Continue with Form
                 </button>
@@ -921,7 +921,7 @@ export default function ClientEngagementForm() {
                 </p>
                 <a
                   href="/"
-                  className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white font-medium hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
+                  className="inline-flex items-center bg-foreground px-6 py-3 font-medium text-background transition-opacity hover:opacity-90"
                 >
                   Return to Homepage
                 </a>
@@ -976,7 +976,7 @@ export default function ClientEngagementForm() {
                                 (techStackStep === 3 && !formData.scalability) ||
                                 (techStackStep === 4 && formData.features.length === 0)
                               }
-                              className="px-6 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                              className="bg-foreground px-6 py-2 font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-50"
                             >
                               {techStackStep < 4 ? "Next" : "Get Recommendations"}
                             </button>
@@ -988,7 +988,7 @@ export default function ClientEngagementForm() {
                 </AnimatePresence>
 
                 {/* Form Header */}
-                <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-6 text-white">
+                <div className="bg-foreground p-6 text-background">
                   <h2 className="text-2xl font-bold">Client Engagement Form</h2>
                   <p className="mt-1 opacity-90">Tell us about your project and requirements</p>
                 </div>
@@ -1001,7 +1001,7 @@ export default function ClientEngagementForm() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-medium ${
                             step >= stepNumber
-                              ? "bg-purple-600 text-white"
+                              ? "bg-foreground text-background"
                               : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-400"
                           }`}
                         >
@@ -1051,7 +1051,7 @@ export default function ClientEngagementForm() {
                       <button
                         type="button"
                         onClick={nextStep}
-                        className="px-6 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-medium transition-colors duration-200"
+                        className="bg-foreground px-6 py-2 font-medium text-background transition-opacity hover:opacity-90"
                       >
                         Next
                         <ChevronRight className="w-5 h-5 inline ml-1" />
@@ -1060,7 +1060,7 @@ export default function ClientEngagementForm() {
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="px-6 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center"
+                        className="inline-flex items-center bg-foreground px-6 py-2 font-medium text-background transition-opacity hover:opacity-90 disabled:opacity-50"
                       >
                         {isSubmitting ? (
                           <>

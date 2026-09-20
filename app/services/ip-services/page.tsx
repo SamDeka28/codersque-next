@@ -15,11 +15,12 @@ export default function IPServicesPage() {
         { label: "IP Services", href: "/services/ip-services" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/legal.jpg"
     >
       <ContentSection
         title="Intellectual Property Protection Services"
         description="At Codersque Technologies, we understand the critical importance of protecting your intellectual property. Our comprehensive IP services help you secure patents, trademarks, copyrights, and trade secrets to safeguard your competitive advantage and maximize the value of your innovations."
-        image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/legal.jpg"
         imageAlt="Intellectual property protection services"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -53,13 +54,13 @@ export default function IPServicesPage() {
       <ContentSection
         title="Our IP Services Process"
         description="We follow a systematic approach to intellectual property protection that ensures comprehensive coverage and strategic alignment with your business goals. Our process is designed to be transparent, efficient, and results-oriented."
-        image="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/legal.jpg"
         imageAlt="IP services process"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -70,7 +71,7 @@ export default function IPServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -81,7 +82,7 @@ export default function IPServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -92,7 +93,7 @@ export default function IPServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -103,7 +104,7 @@ export default function IPServicesPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -119,7 +120,7 @@ export default function IPServicesPage() {
       <ContentSection
         title="Our IP Service Offerings"
         description="We offer a comprehensive range of intellectual property services to meet all your protection needs."
-        image="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/legal.jpg"
         imageAlt="IP service offerings"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -247,21 +248,21 @@ export default function IPServicesPage() {
             description:
               "Successfully filed and prosecuted a comprehensive patent portfolio for a SaaS platform, securing protection for core algorithms and user interface innovations.",
             image:
-              "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/legal.jpg",
           },
           {
             title: "Brand Trademark Protection",
             description:
               "Established comprehensive trademark protection across multiple jurisdictions for a growing tech startup, including monitoring and enforcement services.",
             image:
-              "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/legal.jpg",
           },
           {
             title: "Copyright Registration Program",
             description:
               "Implemented a systematic copyright registration program for a content creation company, protecting hundreds of digital assets and creative works.",
             image:
-              "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/legal.jpg",
           },
         ]}
       />

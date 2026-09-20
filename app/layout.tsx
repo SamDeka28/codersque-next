@@ -1,7 +1,7 @@
 import type React from "react"
 import "./globals.css"
 import type { Metadata } from "next"
-import { Poppins, Lato } from "next/font/google"
+import { Inter, Manrope } from "next/font/google"
 import { ThemeProvider } from "@/providers/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -11,17 +11,14 @@ import PageLoader from "@/components/page-loader"
 import BackToTop from "@/components/back-to-top"
 import { CustomCursor } from "@/components/ui/custom-cursor"
 
-// Font configuration
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-inter",
 })
 
-const lato = Lato({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  variable: "--font-lato",
+  variable: "--font-manrope",
 })
 
 export const metadata: Metadata = {
@@ -62,9 +59,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${lato.variable} font-poppins antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+    <html lang="en" className="dark" suppressHydrationWarning>
+      <body className={`${inter.variable} ${manrope.variable} font-sans antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
           <PageLoader />
           <div className="flex min-h-screen flex-col">
             <Navbar />

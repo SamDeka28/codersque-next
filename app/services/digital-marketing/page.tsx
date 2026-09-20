@@ -15,11 +15,12 @@ export default function DigitalMarketingPage() {
         { label: "Digital Marketing", href: "/services/digital-marketing" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/marketing.jpg"
     >
       <ContentSection
         title="Comprehensive Digital Marketing Solutions"
         description="We help businesses establish a strong online presence and reach their target audience through strategic digital marketing services. Our data-driven approach ensures measurable results and continuous improvement of your marketing efforts."
-        image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/marketing.jpg"
         imageAlt="Digital marketing strategy"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -53,13 +54,13 @@ export default function DigitalMarketingPage() {
       <ContentSection
         title="Our Digital Marketing Process"
         description="We follow a strategic approach to digital marketing that ensures your campaigns are aligned with your business goals and deliver measurable results."
-        image="https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/marketing.jpg"
         imageAlt="Digital marketing process"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -70,7 +71,7 @@ export default function DigitalMarketingPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -81,7 +82,7 @@ export default function DigitalMarketingPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -92,7 +93,7 @@ export default function DigitalMarketingPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -103,7 +104,7 @@ export default function DigitalMarketingPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -125,21 +126,21 @@ export default function DigitalMarketingPage() {
             description:
               "Increased organic traffic by 150% and conversions by 80% for an e-commerce client within 6 months.",
             image:
-              "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/marketing.jpg",
           },
           {
             title: "B2B Social Media Strategy",
             description:
               "Developed and implemented a comprehensive social media strategy for a B2B software company, increasing lead generation by 65%.",
             image:
-              "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/marketing.jpg",
           },
           {
             title: "Content Marketing Campaign",
             description:
               "Created and executed a content marketing strategy that increased website traffic by 200% and improved search rankings for a healthcare provider.",
             image:
-              "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/marketing.jpg",
           },
         ]}
       />
@@ -147,7 +148,7 @@ export default function DigitalMarketingPage() {
       <ContentSection
         title="Digital Marketing Tools We Use"
         description="We leverage industry-leading tools and platforms to execute and optimize your digital marketing campaigns."
-        image="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/marketing.jpg"
         imageAlt="Digital marketing tools"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">

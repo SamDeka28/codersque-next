@@ -15,11 +15,12 @@ export default function UiUxDesignPage() {
         { label: "UI/UX Design", href: "/services/ui-ux-design" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/stock/design.jpg"
     >
       <ContentSection
         title="User-Centered Design Approach"
         description="At Codersque Technologies, we believe that great design starts with understanding the user. Our UI/UX design services focus on creating intuitive, engaging, and accessible interfaces that delight users and achieve business goals."
-        image="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/design.jpg"
         imageAlt="UI/UX design process"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -53,13 +54,13 @@ export default function UiUxDesignPage() {
       <ContentSection
         title="Our UI/UX Design Process"
         description="We follow a comprehensive design process that ensures your digital products are both beautiful and functional."
-        image="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/design.jpg"
         imageAlt="UI/UX design process diagram"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -70,7 +71,7 @@ export default function UiUxDesignPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -81,7 +82,7 @@ export default function UiUxDesignPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -92,7 +93,7 @@ export default function UiUxDesignPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -103,7 +104,7 @@ export default function UiUxDesignPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -124,19 +125,19 @@ export default function UiUxDesignPage() {
             title: "Financial Dashboard",
             description: "An intuitive financial dashboard designed for a fintech startup with data visualization.",
             image:
-              "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/design.jpg",
           },
           {
             title: "E-commerce Redesign",
             description: "A complete redesign of an e-commerce platform focusing on improving conversion rates.",
             image:
-              "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/design.jpg",
           },
           {
             title: "Healthcare App",
             description: "A user-friendly healthcare app designed for patients to manage appointments and medications.",
             image:
-              "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/stock/design.jpg",
           },
         ]}
       />
@@ -144,7 +145,7 @@ export default function UiUxDesignPage() {
       <ContentSection
         title="Design Tools We Use"
         description="We leverage industry-standard design tools to create exceptional user experiences."
-        image="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/stock/design.jpg"
         imageAlt="UI/UX design tools"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">

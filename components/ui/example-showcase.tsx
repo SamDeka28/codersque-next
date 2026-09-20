@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 import Image from "next/image"
+import { ImageVeil, isStudioSrc, photoMediaClass } from "@/components/ui/visual"
+import { cn } from "@/lib/utils"
 
 interface Example {
   title: string
@@ -56,8 +58,9 @@ export function ExampleShowcase({ title, description, examples }: ExampleShowcas
                   alt={example.title}
                   width={400}
                   height={300}
-                  className="w-full h-full object-cover"
+                  className={cn("h-full w-full object-cover", photoMediaClass(example.image))}
                 />
+                <ImageVeil tone={isStudioSrc(example.image) ? "studio" : "photo"} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{example.title}</h3>

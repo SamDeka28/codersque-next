@@ -4,7 +4,28 @@ import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Code, Zap, BarChart } from "lucide-react"
+import { ArrowRight } from "lucide-react"
+import { Container } from "@/components/ui/container"
+import { buttonVariants } from "@/components/ui/button"
+import { ImageVeil } from "@/components/ui/visual"
+import { cn } from "@/lib/utils"
+
+const stats = [
+  { value: "100+", label: "Projects delivered" },
+  { value: "50+", label: "Clients" },
+  { value: "10+", label: "Years of practice" },
+]
+
+const capabilities = [
+  "Web platforms",
+  "iOS & Android",
+  "Product design",
+  "Cloud architecture",
+  "Applied AI",
+  "Growth systems",
+  "IP protection",
+  "Handover & ownership",
+]
 
 export default function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -14,10 +35,27 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-32 pb-11 lg:pt-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900">
-      {/* Code animation background */}
-      <div className="absolute inset-0 overflow-hidden opacity-5 dark:opacity-10">
-        <div className="code-animation absolute inset-0 text-xs md:text-sm overflow-hidden font-mono">
+    <section className="relative isolate min-h-[100svh] overflow-hidden text-white">
+      <motion.div
+        initial={{ scale: 1.08, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+        className="absolute inset-0"
+      >
+        <Image
+          src="/generated/hero-studio.png"
+          alt="Codersque engineering studio"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </motion.div>
+
+      <ImageVeil tone="studio" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-transparent to-black/15" />
+
+      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/2 overflow-hidden opacity-[0.07] lg:block">
+        <div className="code-animation absolute inset-0 overflow-hidden font-mono text-xs md:text-sm">
           {Array.from({ length: 40 }).map((_, i) => (
             <div
               key={i}
@@ -30,186 +68,93 @@ export default function HeroSection() {
               {`import { useState, useEffect } from 'react';`}
             </div>
           ))}
-          {Array.from({ length: 40 }).map((_, i) => (
-            <div
-              key={i + 40}
-              className="code-line"
-              style={{
-                animationDelay: `${(i + 20) * 0.1}s`,
-                transform: `translateY(${Math.random() * 100}%)`,
-              }}
-            >
-              {`const [data, setData] = useState(null);`}
-            </div>
-          ))}
-          {Array.from({ length: 40 }).map((_, i) => (
-            <div
-              key={i + 80}
-              className="code-line"
-              style={{
-                animationDelay: `${(i + 40) * 0.1}s`,
-                transform: `translateY(${Math.random() * 100}%)`,
-              }}
-            >
-              {`useEffect(() => { fetchData(); }, []);`}
-            </div>
-          ))}
         </div>
       </div>
 
-      {/* Gradient overlays */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-white to-transparent dark:from-gray-950 dark:to-transparent z-10"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-white to-transparent dark:from-gray-950 dark:to-transparent z-10"></div>
+      <Container className="relative z-10 flex min-h-[100svh] flex-col justify-end pb-36 pt-36 md:pb-40 md:pt-40">
+        <div className="max-w-4xl">
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: isLoaded ? 1 : 0, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="mb-6 text-[11px] font-medium uppercase tracking-[0.28em] text-white/70"
+          >
+            Software engineering studio · Guwahati
+          </motion.p>
 
-      <div className="container mx-auto px-4 z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-          {/* Text content */}
+          <motion.h1
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.22 }}
+            className="text-5xl font-semibold leading-[0.98] tracking-tight md:text-7xl lg:text-[5.4rem]"
+          >
+            Digital products
+            <span className="block text-white/55">your team can own.</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="mt-7 max-w-xl text-lg leading-relaxed text-white/72 md:text-xl"
+          >
+            Codersque designs and builds web platforms, mobile apps, and internal systems, then hands over the
+            architecture, the accounts, and the knowledge.
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-left"
+            transition={{ duration: 0.5, delay: 0.45 }}
+            className="mt-10 flex flex-col gap-3 sm:flex-row"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="mb-4 inline-block px-6 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium"
+            <Link
+              href="/client-onboarding"
+              className={cn(buttonVariants({ size: "lg" }), "bg-white text-neutral-950 hover:bg-white/90")}
             >
-              Leading Software Development Company
-            </motion.div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight"
+              Start a project
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="/portfolio"
+              className={cn(
+                buttonVariants({ size: "lg", variant: "outline" }),
+                "border-white/25 bg-white/5 text-white hover:bg-white/10 hover:text-white",
+              )}
             >
-              <span className="text-gray-900 dark:text-white">Building </span>
-              <span className="text-blue-600 dark:text-blue-400">Smarter</span>
-              <br />
-              <span className="text-purple-600 dark:text-purple-400">Digital </span>
-              <span className="text-gray-900 dark:text-white">Solutions</span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-xl"
-            >
-              We transform your ideas into exceptional digital experiences that drive growth and innovation for your
-              business. Our expert team delivers cutting-edge solutions tailored to your unique needs.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-col sm:flex-row items-center sm:items-start gap-4"
-            >
-              <Link
-                href="/client-onboarding"
-                className="w-full sm:w-auto px-8 py-4 rounded-md bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center"
-              >
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-
-              <Link
-                href="/portfolio"
-                className="w-full sm:w-auto px-8 py-4 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-medium shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700 transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center"
-              >
-                View Our Work
-              </Link>
-            </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-              className="grid grid-cols-3 gap-2 md:gap-4 mt-8 md:mt-12 max-w-xl"
-            >
-              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">100+</div>
-                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Projects</div>
-              </div>
-              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-xl md:text-3xl font-bold text-purple-600 dark:text-purple-400">50+</div>
-                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Clients</div>
-              </div>
-              <div className="text-center p-2 md:p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-100 dark:border-gray-700">
-                <div className="text-xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
-                <div className="text-xs md:text-sm text-gray-600 dark:text-gray-400">Years</div>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="relative mt-8 lg:mt-0"
-          >
-            <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700">
-              <Image
-                src="/worki.jpg"
-                alt="Professional team working on digital solutions"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-
-            {/* Floating elements */}
-            <motion.div
-              className="absolute -top-10 -left-10 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
-            >
-              <Code className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-            </motion.div>
-
-            <motion.div
-              className="absolute top-1/2 -right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", delay: 1 }}
-            >
-              <Zap className="h-8 w-8 text-purple-600 dark:text-purple-400" />
-            </motion.div>
-
-            <motion.div
-              className="absolute -bottom-5 left-1/4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg z-20 border border-gray-200 dark:border-gray-700 hidden md:flex"
-              animate={{ y: [0, -15, 0] }}
-              transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", delay: 0.5 }}
-            >
-              <BarChart className="h-8 w-8 text-blue-600 dark:text-blue-400" />
-            </motion.div>
+              View work
+            </Link>
           </motion.div>
         </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-      >
-        <motion.div
-          className="w-8 h-12 rounded-full border-2 border-gray-400 dark:border-gray-600 flex justify-center"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, repeatType: "loop" }}
+        <motion.dl
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="mt-16 grid max-w-3xl grid-cols-3 gap-3"
         >
-          <motion.div
-            className="w-1 h-3 bg-gray-400 dark:bg-gray-600 rounded-full mt-2"
-            animate={{ y: [0, 4, 0] }}
-            transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY, repeatType: "loop" }}
-          />
-        </motion.div>
-      </motion.div>
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl border border-white/12 bg-white/8 px-4 py-4 backdrop-blur-md md:px-6 md:py-5"
+            >
+              <dt className="text-[10px] uppercase tracking-[0.18em] text-white/55 md:text-xs">{stat.label}</dt>
+              <dd className="mt-2 font-heading text-2xl font-semibold tracking-tight md:text-4xl">{stat.value}</dd>
+            </div>
+          ))}
+        </motion.dl>
+      </Container>
+
+      <div className="absolute inset-x-0 bottom-0 z-10 overflow-hidden border-t border-white/10 bg-black/30 py-3 backdrop-blur-md">
+        <div className="flex w-max animate-marquee gap-10 whitespace-nowrap pr-10 text-[11px] uppercase tracking-[0.28em] text-white/55">
+          {[...capabilities, ...capabilities].map((item, i) => (
+            <span key={`${item}-${i}`} className="inline-flex items-center gap-10">
+              {item}
+              <span className="h-px w-8 bg-white/20" />
+            </span>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }

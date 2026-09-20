@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { ImageVeil } from "@/components/ui/visual"
 
 export default function WhyChooseUs() {
   return (
@@ -29,14 +30,15 @@ export default function WhyChooseUs() {
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-purple-200 dark:bg-purple-900/30 rounded-full filter blur-xl"></div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-blue-200 dark:bg-blue-900/30 rounded-full filter blur-xl"></div>
 
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative overflow-hidden rounded-2xl shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/stock/team.jpg"
                   alt="Codersque Team Collaboration"
                   width={800}
                   height={600}
-                  className="w-full h-auto"
+                  className="photo-media h-auto w-full"
                 />
+                <ImageVeil />
               </div>
             </motion.div>
 
@@ -51,7 +53,7 @@ export default function WhyChooseUs() {
                   <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Expertise That Delivers</h3>
                   <p className="text-gray-600 dark:text-gray-400">
                     Our team brings together decades of combined experience across various technologies and industries.
-                    We don't just build what you ask for—we contribute ideas, identify potential issues, and suggest
+                    We don't just build what you ask for. We contribute ideas, identify potential issues, and suggest
                     improvements to make your project even better.
                   </p>
                 </div>
@@ -69,7 +71,7 @@ export default function WhyChooseUs() {
                   <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Results-Driven Approach</h3>
                   <p className="text-gray-600 dark:text-gray-400">
                     We measure our success by your success. Our focus is on delivering solutions that drive real
-                    business results—whether that's increasing conversions, improving user engagement, or streamlining
+                    business results, whether that's increasing conversions, improving user engagement, or streamlining
                     operations.
                   </p>
                 </div>

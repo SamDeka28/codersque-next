@@ -1,22 +1,20 @@
 "use client"
 
-
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
-import { ThemeToggle } from "./theme-toggle"
 import { Menu, X } from "lucide-react"
+import { Container } from "@/components/ui/container"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
-// Update the navItems array to include "Ready to Fire Us?"
 const navItems = [
-  { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Blog", path: "/blog" },
-  { name: "Future-Ready Partnerships", path: "/future-ready-partnerships" },
-  { name: "Contact", path: "/contact" },
+  { name: "Work", path: "/portfolio" },
+  { name: "Insights", path: "/blog" },
+  { name: "Partnerships", path: "/future-ready-partnerships" },
 ]
 
 export default function Navbar() {
@@ -26,112 +24,120 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
+      setIsScrolled(window.scrollY > 12)
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  return (
-    <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "py-3" : "py-5"}`}>
-      <div className="container mx-auto px-4">
-        <div className="max-w-7xl mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-full shadow-lg border border-gray-100 dark:border-gray-800 px-6 py-3">
-          <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-<div className="flex items-center">
-<motion.img
-  src="/logo.png"
-  alt="Codersque Logo"
-  width={40}
-  height={40}
-  className="mr-2"
-  initial={{ opacity: 0, scale: 0.8 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
-/>
-<motion.div
-  initial={{ opacity: 0, scale: 0.8 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5 }}
-  className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300"
->
-  Codersque
-</motion.div>
-</div>
-</Link>
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-1">
-              {navItems.map((item) => (
+  return (
+    <header
+      className={cn(
+        "fixed top-0 z-50 w-full transition-colors duration-300",
+        isScrolled || isMenuOpen
+          ? "border-b border-border/70 bg-background/80 backdrop-blur-xl"
+          : "border-b border-white/5 bg-background/20 backdrop-blur-md",
+      )}
+    >
+      <div className="h-[2px] w-full brand-gradient" />
+      <Container>
+        <div className="flex h-16 items-center justify-between md:h-[72px]">
+          <Link href="/" className="flex items-center gap-2.5">
+            <motion.img
+              src="/logo.png"
+              alt="Codersque"
+              width={32}
+              height={32}
+              className="h-8 w-8"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4 }}
+            />
+            <motion.span
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.05 }}
+              className="font-heading text-lg font-semibold tracking-tight text-foreground"
+            >
+              Codersque
+            </motion.span>
+          </Link>
+
+          <nav className="hidden items-center gap-1 lg:flex">
+            {navItems.map((item) => {
+              const active = pathname === item.path
+              return (
                 <Link
                   key={item.path}
                   href={item.path}
-                  className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                    pathname === item.path
-                      ? "text-white"
-                      : "text-gray-700 hover:text-purple-600 dark:text-gray-200 dark:hover:text-purple-400"
-                  }`}
+                  className={cn(
+                    "relative px-3 py-2 text-sm transition-colors",
+                    active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                  )}
                 >
-                  {pathname === item.path && (
-                    <motion.div
+                  {item.name}
+                  {active && (
+                    <motion.span
                       layoutId="navbar-indicator"
-                      className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300 rounded-full -z-10"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.3 }}
+                      className="absolute inset-x-3 -bottom-[1px] h-px bg-foreground"
+                      transition={{ duration: 0.25 }}
                     />
                   )}
-                  {item.name}
                 </Link>
-              ))}
-              <div className="pl-2">
-                <ThemeToggle />
-              </div>
-            </nav>
+              )
+            })}
+          </nav>
 
-            {/* Mobile Menu Button */}
-            <div className="flex md:hidden items-center space-x-4">
-              <ThemeToggle />
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 p-2 rounded-full"
-                aria-label="Toggle menu"
-              >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
+          <div className="hidden items-center gap-3 lg:flex">
+            <Link href="/contact" className={cn(buttonVariants({ size: "sm" }))}>
+              Contact
+            </Link>
+          </div>
+
+          <div className="flex items-center lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={18} /> : <Menu size={18} />}
+            </button>
           </div>
         </div>
-      </div>
+      </Container>
 
-      {/* Mobile Navigation */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-800 mt-2"
+            transition={{ duration: 0.25 }}
+            className="overflow-hidden border-t border-border bg-background lg:hidden"
           >
-            <div className="container mx-auto px-4 py-4">
-              <nav className="flex flex-col space-y-4">
+            <Container className="py-4">
+              <nav className="flex flex-col">
                 {navItems.map((item) => (
                   <Link
                     key={item.path}
                     href={item.path}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`text-sm font-medium transition-colors duration-200 px-4 py-2 rounded-full ${
-                      pathname === item.path
-                        ? "bg-gradient-to-r from-purple-600 to-blue-500 text-white"
-                        : "text-gray-700 hover:text-purple-600 dark:text-gray-200 dark:hover:text-purple-400"
-                    }`}
+                    className={cn(
+                      "border-b border-border py-3 text-sm",
+                      pathname === item.path ? "text-foreground" : "text-muted-foreground",
+                    )}
                   >
                     {item.name}
                   </Link>
                 ))}
+                <Link href="/contact" className={cn(buttonVariants(), "mt-4 w-full")}>
+                  Contact
+                </Link>
               </nav>
-            </div>
+            </Container>
           </motion.div>
         )}
       </AnimatePresence>

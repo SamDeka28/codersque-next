@@ -3,65 +3,53 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { Container } from "@/components/ui/container"
+import { ImageVeil } from "@/components/ui/visual"
 
 export default function CompanyIntro() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <section className="py-20 pt-32">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center lg:text-left"
-          >
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300">
-              About Codersque Technologies
-            </h1>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Codersque Technologies is a leading software development company based in Guwahati, Assam. Founded in
-              2022, we specialize in creating innovative digital solutions that help businesses transform and thrive in
-              the digital era.
+    <section className="relative isolate min-h-[78vh] overflow-hidden pb-20 pt-36 md:min-h-[86vh] md:pb-28 md:pt-44">
+      <Image src="/stock/team.jpg" alt="Codersque team" fill priority className="photo-media object-cover" />
+      <ImageVeil />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
+      <Container className="relative z-10">
+        <div className="grid items-end gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
+          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="max-w-2xl text-white">
+            <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.24em] text-white/65">About</p>
+            <h1 className="text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl">Codersque Technologies</h1>
+            <p className="mt-6 text-lg leading-relaxed text-white/75">
+              A software company based in Guwahati, Assam. We design and build digital products for organisations that
+              want a capable partner, and full ownership of what ships.
             </p>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              With a team of expert developers, designers, and strategists, we deliver cutting-edge solutions that
-              address complex business challenges and create exceptional user experiences.
+            <p className="mt-4 leading-relaxed text-white/65">
+              Founded in 2022, the studio works across web, mobile, cloud, and applied AI. The team is small, senior,
+              and close to the delivery.
             </p>
-            <p className="text-gray-600 dark:text-gray-400">
-              We believe in the power of technology to transform businesses and improve lives. Our mission is to empower
-              organizations with innovative digital solutions that drive growth, efficiency, and success.
+            <p className="mt-4 leading-relaxed text-white/65">
+              The point of the work is independence: clear architecture, written knowledge, and a product your people
+              can run.
             </p>
           </motion.div>
 
           <motion.div
             ref={ref}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 24 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
             transition={{ duration: 0.5 }}
-            className="relative mt-8 lg:mt-0"
+            className="rounded-3xl border border-white/12 bg-white/8 p-6 text-white backdrop-blur-md md:p-8"
           >
-            <div className="rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80"
-                alt="Codersque Office"
-                width={800}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-100 dark:border-gray-700 max-w-xs hidden md:block">
-              <p className="text-gray-600 dark:text-gray-400 text-sm italic">
-                "We transform ideas into exceptional digital experiences that drive business growth."
-              </p>
-              <p className="text-right text-sm font-medium text-gray-900 dark:text-white mt-2">
-                - CEO, Codersque Technologies
-              </p>
-            </div>
+            <p className="text-sm uppercase tracking-[0.2em] text-white/55">Operating principle</p>
+            <p className="mt-4 text-2xl font-semibold tracking-tight">
+              Software you can operate after we step back.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-white/70">
+              Guwahati headquarters. Remote-capable delivery. Handover is part of the definition of done.
+            </p>
           </motion.div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

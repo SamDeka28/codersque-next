@@ -10,8 +10,8 @@ interface ScrollProgressProps {
 }
 
 export function ScrollProgress({
-  color = "bg-gradient-to-r from-purple-600 to-blue-500",
-  height = 4,
+  color = "brand-gradient",
+  height = 2,
   zIndex = 50,
 }: ScrollProgressProps) {
   const [isVisible, setIsVisible] = useState(false)

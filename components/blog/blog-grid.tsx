@@ -56,7 +56,7 @@ export default function BlogGrid() {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4">
+      <div className="container">
         <div className="mb-12">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Search Bar */}
@@ -66,7 +66,7 @@ export default function BlogGrid() {
                 placeholder="Search articles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full px-4 py-2 pl-10 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400"
+                className="w-full border border-border bg-background py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
               />
               <Search
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 dark:text-gray-500"
@@ -80,10 +80,10 @@ export default function BlogGrid() {
                 <button
                   key={index}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors duration-200 ${
+                  className={`px-3 py-1.5 text-xs transition-colors ${
                     selectedCategory === category
-                      ? "bg-purple-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
+                      ? "bg-foreground text-background"
+                      : "border border-border text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {category}

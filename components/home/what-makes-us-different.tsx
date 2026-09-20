@@ -1,194 +1,106 @@
 "use client"
+
 import { motion } from "framer-motion"
-import { Rocket, BookOpen, Code, Handshake, Puzzle, Cpu, Shield, Clock, Users, BarChart, Mail, ArrowRight } from "lucide-react"
-import { AnimatedText } from "../ui/animated-text"
+import { KeyRound, BookOpen, Code2, ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+import { Section } from "@/components/ui/section"
+import { SectionHeader } from "@/components/ui/section-header"
+import { IconWell } from "@/components/ui/icon-well"
+import { buttonVariants } from "@/components/ui/button"
+import { ImageVeil } from "@/components/ui/visual"
+import { cn } from "@/lib/utils"
+
+const pillars = [
+  {
+    icon: KeyRound,
+    title: "Client ownership first",
+    description: "You hold the product, the accounts, and the roadmap from day one.",
+    features: ["Full product ownership transfer", "No forced retainers or lock-ins", "Support when you actually need it"],
+  },
+  {
+    icon: BookOpen,
+    title: "Documentation that lasts",
+    description: "Technical and product knowledge written so your team can keep shipping.",
+    features: ["In-product walkthroughs", "Architecture and runbooks", "Handover your engineers can use"],
+  },
+  {
+    icon: Code2,
+    title: "Code your team can run",
+    description: "Clear structure, no hidden dependencies, and nothing you cannot maintain.",
+    features: ["Modular architecture", "Readable implementation", "No legacy traps"],
+  },
+]
 
 export default function Differentiators() {
-  const pillars = [
-    {
-      icon: <Rocket className="w-8 h-8 text-white" />,
-      color: 'purple',
-      gradient: 'from-purple-500 to-purple-700',
-      title: "Client Empowerment First",
-      description: "We prioritize making you self-sufficient with clear ownership from day one",
-      features: [
-        "Full product ownership transfer",
-        "No forced retainers or lock-ins",
-        "Strategic support when you need it"
-      ]
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-white" />,
-      color: 'blue',
-      gradient: 'from-blue-500 to-blue-700',
-      title: "AI-Powered Documentation",
-      description: "Future-proof resources that grow with your product",
-      features: [
-        "Interactive in-app tutorials",
-        "Context-aware technical docs",
-        "Self-updating knowledge base"
-      ]
-    },
-    {
-      icon: <Code className="w-8 h-8 text-white" />,
-      color: 'amber',
-      gradient: 'from-amber-400 to-amber-600',
-      title: "Self-Sufficient Code",
-      description: "Clean architecture designed for your team's independence",
-      features: [
-        "Modular, scalable structure",
-        "Zero legacy code guarantee",
-        "Human-readable implementation"
-      ]
-    }
-  ]
-  
-  
-
-  const values = [
-    {
-      icon: <Handshake className="w-6 h-6" />,
-      title: "No Retainers, Just Results",
-      description: "We deliver complete solutions, not dependencies"
-    },
-    {
-      icon: <Puzzle className="w-6 h-6" />,
-      title: "Tailored Solutions",
-      description: "Custom-built for your unique business needs"
-    },
-    {
-      icon: <Cpu className="w-6 h-6" />,
-      title: "Future-Proof Tech",
-      description: "Built to evolve with your growing requirements"
-    },
-    {
-      icon: <Shield className="w-6 h-6" />,
-      title: "Total Ownership",
-      description: "100% control over your product's direction"
-    },
-    {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Efficient Delivery",
-      description: "On-time, on-budget with zero surprises"
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: "Seamless Team Integration",
-      description: "Easy onboarding for your developers"
-    }
-  ]
-
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="inline-block px-6 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-sm font-medium mb-4"
-          >
-                Why Choose Us
-             </motion.div>
-   
-             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-             <AnimatedText
-                 text="What Makes Us Different"
-                 className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-600 dark:to-blue-300"
-              animationType="reveal"
-              once={true}
-            />
-             </h2>
-   
-             <motion.p
-            className="text-gray-600 dark:text-gray-400"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-               At Codersque, we go beyond being just a service provider. We are your strategic partner in crafting innovative digital solutions.
-             </motion.p>
-           </div>
-
-        {/* Core Pillars */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {pillars.map((pillar, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
-            >
-              <div className="flex items-center gap-4 mb-6">
-              <div 
-  className={`p-3 rounded-lg bg-gradient-to-br ${pillar.gradient} mb-6 shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
->
-  {pillar.icon}
-</div>
-
-
-
-                <h3 className="text-lg mb-4 font-bold text-gray-900 dark:text-white">{pillar.title}</h3>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">{pillar.description}</p>
-              <ul className="space-y-3">
-                {pillar.features.map((feature, i) => (
-                  <li key={i} className="flex items-start text-sm">
-                    <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+    <Section bleed className="py-0">
+      <div className="grid lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="relative min-h-[28rem] overflow-hidden lg:min-h-[46rem]">
+          <Image src="/stock/partnership.jpg" alt="Working as a delivery partner" fill className="photo-media object-cover" />
+          <ImageVeil />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 p-8 text-white md:p-12">
+            <p className="text-[11px] uppercase tracking-[0.24em] text-white/60">Approach</p>
+            <p className="mt-3 max-w-md text-2xl font-semibold tracking-tight md:text-3xl">
+              Built so you do not need us forever.
+            </p>
+          </div>
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link
-            href="/future-ready-partnerships"
-            className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+
+        <div className="flex flex-col justify-center bg-muted/35 px-5 py-16 sm:px-10 lg:px-14 lg:py-20">
+          <SectionHeader
+            eyebrow="Partnership"
+            title="A studio, not a lock-in"
+            description="We act as a delivery partner, not a permanent dependency. The work is yours to operate."
+            className="mb-10"
+          />
+
+          <div className="space-y-4">
+            {pillars.map((pillar, index) => (
+              <motion.div
+                key={pillar.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: index * 0.08 }}
+                viewport={{ once: true }}
+                className="rounded-3xl border border-border/70 bg-background/80 p-6 backdrop-blur-sm"
+              >
+                <div className="flex items-start gap-4">
+                  <IconWell size="sm">
+                    <pillar.icon />
+                  </IconWell>
+                  <div>
+                    <h3 className="text-lg font-semibold tracking-tight">{pillar.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
+                    <ul className="mt-4 space-y-2">
+                      {pillar.features.map((feature) => (
+                        <li key={feature} className="flex items-start gap-2 text-sm">
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="mt-8"
           >
-            Learn More About Our Approach
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Link>
-        </motion.div>
-        {/* Supporting Values */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {values.map((value, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="flex items-start">
-                <div className="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4 mt-1">
-                  {value.icon}
-                </div>
-                <div>
-                  <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-1">{value.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{value.description}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div> */}
+            <Link href="/future-ready-partnerships" className={cn(buttonVariants({ variant: "outline" }))}>
+              How the partnership works
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </motion.div>
+        </div>
       </div>
-    </section>
+    </Section>
   )
 }

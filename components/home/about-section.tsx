@@ -2,82 +2,80 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { Section } from "@/components/ui/section"
+import { ImageVeil } from "@/components/ui/visual"
+
+const notes = [
+  {
+    title: "Mission",
+    body: "Give businesses software they can operate, extend, and own.",
+  },
+  {
+    title: "Team",
+    body: "Engineers, designers, and delivery leads who stay close to the work.",
+  },
+  {
+    title: "Vision",
+    body: "Be a durable partner for product teams in India and beyond.",
+  },
+  {
+    title: "Values",
+    body: "Clarity, craft, independence, and measured delivery.",
+  },
+]
 
 export default function AboutSection() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <Section bleed className="py-0">
+      <div className="relative min-h-[40rem] overflow-hidden lg:min-h-[52rem]">
+        <Image src="/stock/team.jpg" alt="Codersque team collaborating" fill className="photo-media object-cover" />
+        <ImageVeil />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
+
+        <div className="relative z-10 mx-auto grid min-h-[40rem] w-full max-w-[1440px] items-end gap-10 px-5 py-20 sm:px-8 lg:min-h-[52rem] lg:grid-cols-[1fr_0.85fr] lg:items-center lg:px-16 lg:py-24">
           <motion.div
             ref={ref}
             initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.5 }}
+            className="max-w-xl text-white"
           >
-            <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300">
-              About Codersque Technologies
-            </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              Founded in 2022, Codersque Technologies is a leading software development company based in Guwahati,
-              Assam. We specialize in creating innovative digital solutions that help businesses transform and thrive in
-              the digital era.
+            <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.24em] text-white/65">Studio</p>
+            <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">A software company, not a retainer trap</h2>
+            <p className="mt-6 text-base leading-relaxed text-white/75 md:text-lg">
+              Founded in 2022 in Guwahati, Codersque builds web products, mobile apps, and internal systems for companies
+              that need a serious engineering partner without giving up ownership.
             </p>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">
-              Our team of expert developers, designers, and strategists work collaboratively to deliver cutting-edge
-              solutions that address complex business challenges and create exceptional user experiences.
+            <p className="mt-4 text-base leading-relaxed text-white/65">
+              We work in small, senior teams. Ship something production-ready, document it properly, and leave you able
+              to run it.
             </p>
-            <Link
-              href="/about"
-              className="inline-flex items-center text-purple-600 dark:text-purple-400 font-medium hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
-            >
-              Learn more about us
-              <ArrowRight className="ml-2 h-4 w-4" />
+            <Link href="/about" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-white hover:underline">
+              About the company
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-            transition={{ duration: 0.5 }}
-            className="relative"
+            initial={{ opacity: 0, y: 24 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="grid grid-cols-2 gap-3"
           >
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform hover:rotate-2 transition-transform duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Our Mission</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    To empower businesses with innovative digital solutions that drive growth and success.
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform hover:rotate-2 transition-transform duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Our Team</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    A diverse group of talented professionals passionate about technology and innovation.
-                  </p>
-                </div>
+            {notes.map((note) => (
+              <div key={note.title} className="rounded-3xl border border-white/12 bg-white/8 p-5 text-white backdrop-blur-md md:p-6">
+                <h3 className="text-sm font-semibold tracking-tight">{note.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/70">{note.body}</p>
               </div>
-              <div className="space-y-4 mt-8">
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform hover:rotate-2 transition-transform duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Our Vision</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    To be at the forefront of technological innovation and digital transformation.
-                  </p>
-                </div>
-                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transform hover:rotate-2 transition-transform duration-300">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Our Values</h3>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    Excellence, integrity, innovation, collaboration, and client satisfaction.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </motion.div>
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

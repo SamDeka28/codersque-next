@@ -3,195 +3,162 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { Code, Smartphone, Palette, Database, CloudLightning, TrendingUp, ArrowRight, FileText } from "lucide-react"
-import { TiltCard } from "@/components/ui/tilt-card"
+import { Code, Smartphone, Palette, Brain, Cloud, LineChart, Scale, ArrowRight, Check } from "lucide-react"
+import { Section } from "@/components/ui/section"
+import { IconWell } from "@/components/ui/icon-well"
+import { ImageVeil, isStudioSrc, photoMediaClass } from "@/components/ui/visual"
+import { cn } from "@/lib/utils"
 
 const services = [
   {
-    icon: <Code className="h-10 w-10" />,
+    icon: Code,
     title: "Web Development",
     description:
-      "We build responsive, scalable, and high-performance web applications using the latest technologies and frameworks like React, Next.js, and Node.js. Our web solutions are designed to provide exceptional user experiences and achieve your business goals.",
+      "Responsive, scalable web applications using React, Next.js, and Node.js. Built for performance, maintainability, and a clear ownership model.",
     features: [
-      "Custom web application development",
-      "E-commerce websites",
-      "Progressive Web Apps (PWAs)",
-      "Content Management Systems",
-      "API development and integration",
+      "Custom web applications",
+      "E-commerce platforms",
+      "Progressive Web Apps",
+      "Content management systems",
+      "API design and integration",
     ],
-    image:
-      "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    image: "/stock/web.jpg",
     link: "/services/web-development",
   },
   {
-    icon: <Smartphone className="h-10 w-10" />,
+    icon: Smartphone,
     title: "Mobile App Development",
     description:
-      "Our mobile app development team creates native and cross-platform applications that deliver seamless experiences across all devices. We focus on intuitive interfaces, optimal performance, and scalable architectures for iOS and Android platforms.",
+      "Native and cross-platform apps with a focus on reliability, store-ready quality, and a codebase your team can extend.",
     features: [
-      "Native iOS and Android development",
-      "Cross-platform apps using React Native",
-      "App UI/UX design",
-      "Mobile app testing and optimization",
-      "App maintenance and support",
+      "Native iOS and Android",
+      "React Native",
+      "App UI and UX",
+      "Testing and performance",
+      "Release and support",
     ],
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    image: "/stock/mobile.jpg",
     link: "/services/mobile-apps",
   },
   {
-    icon: <Palette className="h-10 w-10" />,
+    icon: Palette,
     title: "UI/UX Design",
     description:
-      "We create visually stunning and user-friendly interfaces that enhance user engagement and satisfaction. Our design process is centered around understanding user behaviors, needs, and motivations to create intuitive and enjoyable experiences.",
+      "Interface and product design grounded in how people actually work, not decoration. Systems your team can keep using.",
     features: [
-      "User research and persona development",
-      "Wireframing and prototyping",
-      "Visual design and branding",
+      "Research and flows",
+      "Wireframes and prototypes",
+      "Visual design",
       "Usability testing",
-      "Design systems creation",
+      "Design systems",
     ],
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    image: "/stock/design.jpg",
     link: "/services/ui-ux-design",
   },
   {
-    icon: <Database className="h-10 w-10" />,
+    icon: Brain,
     title: "AI Solutions",
     description:
-      "We leverage artificial intelligence and machine learning technologies to build intelligent systems that automate processes, analyze data, and provide valuable insights for your business. Our AI solutions are designed to solve complex problems and drive innovation.",
+      "Practical machine learning and automation inside existing operations: models, pipelines, and product surfaces that can be maintained.",
     features: [
-      "Machine learning models development",
-      "Natural Language Processing (NLP)",
-      "Computer Vision applications",
+      "Model development",
+      "Natural language processing",
+      "Computer vision",
       "Predictive analytics",
-      "Chatbots and virtual assistants",
+      "Assistants and automation",
     ],
-    image:
-      "https://images.unsplash.com/photo-1710770563074-6d9cc0d3e338?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D=80",
+    image: "/generated/ai.png",
     link: "/services/ai-solutions",
   },
   {
-    icon: <CloudLightning className="h-10 w-10" />,
+    icon: Cloud,
     title: "Cloud Services",
     description:
-      "Our cloud expertise enables businesses to leverage scalable, secure, and cost-effective infrastructure. We provide cloud migration, architecture design, and management services to optimize your operations and ensure reliability.",
+      "Migration, architecture, and operations on infrastructure you control. Designed for cost, security, and scale.",
     features: [
-      "Cloud migration and deployment",
-      "Infrastructure as Code (IaC)",
-      "Microservices architecture",
-      "Serverless applications",
-      "Cloud security and compliance",
+      "Cloud migration",
+      "Infrastructure as code",
+      "Microservices",
+      "Serverless workloads",
+      "Security and compliance",
     ],
-    image:
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    image: "/stock/cloud.jpg",
     link: "/services/cloud-services",
   },
   {
-    icon: <TrendingUp className="h-10 w-10" />,
+    icon: LineChart,
     title: "Digital Marketing",
     description:
-      "We help businesses establish a strong online presence and reach their target audience through strategic digital marketing services. Our data-driven approach ensures measurable results and continuous improvement of your marketing efforts.",
-    features: [
-      "Search Engine Optimization (SEO)",
-      "Social Media Marketing",
-      "Content Marketing",
-      "Email Marketing Campaigns",
-      "Analytics and Reporting",
-    ],
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+      "Technical and content work that can be measured: search, channels, and reporting your team can run.",
+    features: ["SEO", "Social programs", "Content", "Email programs", "Analytics"],
+    image: "/stock/marketing.jpg",
     link: "/services/digital-marketing",
   },
   {
-    icon: <FileText className="h-10 w-10" />,
+    icon: Scale,
     title: "IP Services",
     description:
-      "We provide comprehensive intellectual property services to protect your innovations, brands, and creative works. Our expert team helps you navigate the complex world of patents, trademarks, copyrights, and trade secrets to safeguard your competitive advantage.",
+      "Patents, trademarks, and copyright support so the product you ship is also protected.",
     features: [
-      "Patent filing and prosecution",
-      "Trademark registration and protection",
+      "Patent filing",
+      "Trademark registration",
       "Copyright registration",
-      "IP portfolio management",
-      "IP litigation and enforcement",
+      "Portfolio management",
+      "Enforcement support",
     ],
-    image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80",
+    image: "/stock/legal.jpg",
     link: "/services/ip-services",
   },
 ]
 
 export default function ServicesList() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="space-y-32">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-            >
-              <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                <TiltCard className="h-full" glareEnabled={true} glareMaxOpacity={0.1} scale={1.02}>
-                  <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-purple-100 dark:border-purple-700">
-                    <div className="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-6 text-purple-600 dark:text-purple-400">
-                      {service.icon}
-                    </div>
-                    <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{service.title}</h2>
-                    <p className="text-gray-600 dark:text-gray-400 mb-6">{service.description}</p>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Key Features</h3>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, fIndex) => (
-                          <li key={fIndex} className="flex items-start">
-                            <span className="text-purple-600 dark:text-purple-400 mr-2">•</span>
-                            <span className="text-gray-600 dark:text-gray-400">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="mt-6">
-                      <Link
-                        href={service.link}
-                        className="inline-flex items-center text-purple-600 dark:text-purple-400 font-medium hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
-                      >
-                        Learn more
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </TiltCard>
-              </div>
+    <Section size="wide">
+      <div className="space-y-24 md:space-y-32">
+        {services.map((service, index) => (
+          <motion.div
+            key={service.title}
+            initial={{ opacity: 0, y: 36 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
+          >
+            <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+              <IconWell>
+                <service.icon />
+              </IconWell>
+              <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-4xl">{service.title}</h2>
+              <p className="mt-3 text-muted-foreground leading-relaxed">{service.description}</p>
+              <ul className="mt-6 space-y-2">
+                {service.features.map((feature) => (
+                  <li key={feature} className="flex items-start gap-2 text-sm">
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link href={service.link} className="mt-6 inline-flex items-center gap-2 text-sm font-medium hover:underline">
+                Service details
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
 
-              <div className={`${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                <Link href={service.link}>
-                  <div className="relative rounded-xl overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
-                    <Image
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      width={600}
-                      height={400}
-                      className="w-full h-auto object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                        <p className="text-white/80 text-sm">
-                          Learn more about our {service.title.toLowerCase()} services
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+            <Link href={service.link} className={index % 2 === 1 ? "lg:order-1" : ""}>
+              <div className="relative overflow-hidden rounded-[1.75rem] border border-border/70">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={960}
+                  height={640}
+                  className={cn("h-auto w-full object-cover", photoMediaClass(service.image))}
+                />
+                <ImageVeil tone={isStudioSrc(service.image) ? "studio" : "photo"} />
               </div>
-            </motion.div>
-          ))}
-        </div>
+            </Link>
+          </motion.div>
+        ))}
       </div>
-    </section>
+    </Section>
   )
 }

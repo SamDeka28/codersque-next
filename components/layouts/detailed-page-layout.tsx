@@ -4,8 +4,12 @@ import type React from "react"
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { ChevronRight, ArrowLeft } from "lucide-react"
 import PageTransition from "@/components/page-transition"
+import { Container } from "@/components/ui/container"
+import { ImageVeil, isStudioSrc, photoMediaClass } from "@/components/ui/visual"
+import { cn } from "@/lib/utils"
 
 interface BreadcrumbItem {
   label: string
@@ -21,6 +25,7 @@ interface DetailedPageLayoutProps {
     href: string
   }
   children: React.ReactNode
+  image?: string
 }
 
 export default function DetailedPageLayout({
@@ -29,24 +34,27 @@ export default function DetailedPageLayout({
   breadcrumbs,
   backLink,
   children,
+  image = "/generated/hero-studio.png",
 }: DetailedPageLayoutProps) {
   return (
     <PageTransition>
-      <div className="bg-gray-50 dark:bg-gray-900 pt-32 pb-10">
-        <div className="container mx-auto px-4">
-          {/* Breadcrumbs */}
-          <nav className="flex mb-6" aria-label="Breadcrumb">
-            <ol className="inline-flex items-center space-x-1 md:space-x-3">
+      <div className="relative isolate overflow-hidden pb-16 pt-32 md:pb-24 md:pt-40">
+        <Image src={image} alt="" fill className={cn("object-cover", photoMediaClass(image))} />
+        <ImageVeil tone={isStudioSrc(image) ? "studio" : "photo"} />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background to-transparent" />
+        <Container className="relative z-10">
+          <nav className="mb-6 flex" aria-label="Breadcrumb">
+            <ol className="inline-flex flex-wrap items-center gap-1 text-sm">
               {breadcrumbs.map((item, index) => (
-                <li key={index} className="inline-flex items-center">
-                  {index > 0 && <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />}
+                <li key={item.href} className="inline-flex items-center">
+                  {index > 0 && <ChevronRight className="mx-1 h-3.5 w-3.5 text-muted-foreground" />}
                   <Link
                     href={item.href}
-                    className={`inline-flex items-center text-sm font-medium ${
+                    className={
                       index === breadcrumbs.length - 1
-                        ? "text-purple-600 dark:text-purple-400"
-                        : "text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
-                    }`}
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
+                    }
                   >
                     {item.label}
                   </Link>
@@ -55,41 +63,35 @@ export default function DetailedPageLayout({
             </ol>
           </nav>
 
-          {/* Back link if provided */}
           {backLink && (
-            <Link
-              href={backLink.href}
-              className="inline-flex items-center text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 mb-6"
-            >
+            <Link href={backLink.href} className="mb-6 inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
               <ArrowLeft className="mr-2 h-4 w-4" />
               {backLink.label}
             </Link>
           )}
 
-          {/* Page header */}
-          <div className="max-w-3xl mb-12">
+          <div className="max-w-3xl">
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 dark:from-purple-400 dark:to-blue-300"
+              className="text-4xl font-semibold tracking-tight md:text-6xl"
             >
               {title}
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-lg text-gray-600 dark:text-gray-400"
+              transition={{ duration: 0.5, delay: 0.08 }}
+              className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl"
             >
               {subtitle}
             </motion.p>
           </div>
-        </div>
+        </Container>
       </div>
 
-      {/* Page content */}
-      <div className="py-16 bg-white dark:bg-gray-950">{children}</div>
+      <div className="py-16">{children}</div>
     </PageTransition>
   )
 }

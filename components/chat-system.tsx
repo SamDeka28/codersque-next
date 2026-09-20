@@ -35,7 +35,7 @@ export default function ChatSystem() {
     <>
       {/* Chat Toggle Button */}
       <motion.button
-        className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-purple-600 text-white shadow-lg flex items-center justify-center z-50"
+        className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center bg-foreground text-background shadow-lg"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
@@ -55,7 +55,7 @@ export default function ChatSystem() {
             className="fixed bottom-24 right-6 w-full max-w-sm bg-white dark:bg-gray-900 rounded-lg shadow-xl z-50 overflow-hidden border border-gray-200 dark:border-gray-800"
           >
             {/* Chat Header */}
-            <div className="p-4 bg-gradient-to-r from-purple-600 to-blue-500 text-white">
+            <div className="border-b border-border bg-foreground p-4 text-background">
               <h3 className="font-medium">Codersque Support</h3>
               <p className="text-sm opacity-90">We typically reply within a few minutes</p>
             </div>
@@ -67,7 +67,7 @@ export default function ChatSystem() {
                   <div
                     className={`max-w-[80%] p-3 rounded-lg ${
                       message.sender === "user"
-                        ? "bg-purple-600 text-white rounded-tr-none"
+                        ? "bg-foreground text-background rounded-tr-none"
                         : "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 rounded-tl-none"
                     }`}
                   >
@@ -84,12 +84,12 @@ export default function ChatSystem() {
                 value={newMessage}
                 onChange={(e) => setNewMessage(e.target.value)}
                 placeholder="Type your message..."
-                className="flex-1 px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 dark:focus:ring-purple-400"
+                className="flex-1 border border-border bg-muted/50 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
               />
               <motion.button
                 type="submit"
                 whileTap={{ scale: 0.95 }}
-                className="p-2 rounded-full bg-purple-600 text-white"
+                className="bg-foreground p-2 text-background"
                 aria-label="Send message"
               >
                 <Send size={20} />

@@ -11,15 +11,22 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1.25rem",
+        sm: "2rem",
+        lg: "3rem",
+        xl: "4rem",
+      },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1440px",
       },
     },
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        lato: ["var(--font-lato)"],
+        sans: ["var(--font-inter)"],
+        heading: ["var(--font-manrope)"],
+        poppins: ["var(--font-manrope)"],
+        lato: ["var(--font-inter)"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -94,6 +101,14 @@ const config: Config = {
           "0%": { width: "0%" },
           "100%": { width: "100%" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-50%)" },
+        },
+        "drift-slow": {
+          "0%, 100%": { transform: "translate3d(0,0,0) scale(1)" },
+          "50%": { transform: "translate3d(2%, -3%, 0) scale(1.04)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -104,6 +119,8 @@ const config: Config = {
         "bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
         "text-shimmer": "text-shimmer 2.5s ease-out infinite",
         "code-typing": "code-typing 3s steps(40, end) forwards",
+        marquee: "marquee 42s linear infinite",
+        "drift-slow": "drift-slow 18s ease-in-out infinite",
       },
       transitionTimingFunction: {
         "bounce-in": "cubic-bezier(0.175, 0.885, 0.32, 1.275)",

@@ -102,8 +102,7 @@ export const blogPosts: BlogPost[] = [
         guide you through the process.
       </p>
     `,
-    image:
-      "https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    image: "/stock/web.jpg",
     date: "June 15, 2023",
     author: "Rahul Sharma",
     authorImage: "/placeholder.svg?height=100&width=100",
@@ -193,8 +192,7 @@ export const blogPosts: BlogPost[] = [
         At Codersque Technologies, we specialize in creating user-centered digital experiences that drive business results. Our team of UX designers and researchers work closely with clients to understand their users' needs and design solutions that delight and engage.
       </p>
     `,
-    image:
-      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    image: "/stock/design.jpg",
     date: "May 28, 2023",
     author: "Priya Singh",
     authorImage: "/placeholder.svg?height=100&width=100",
@@ -215,7 +213,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>The Challenge of Scalability</h2>
       <p>
-        Scalability in mobile applications refers to the ability of an app to handle growth—whether in terms of users, features, or data—without compromising performance or user experience. As React Native applications evolve, they often face challenges such as:
+        Scalability in mobile applications refers to the ability of an app to handle growth, whether in terms of users, features, or data, without compromising performance or user experience. As React Native applications evolve, they often face challenges such as:
       </p>
       <ul>
         <li>Increased bundle size leading to longer load times</li>
@@ -339,8 +337,7 @@ export const blogPosts: BlogPost[] = [
         At Codersque Technologies, we specialize in developing high-performance, scalable mobile applications using React Native. Our team of experienced developers follows industry best practices to ensure that your application can handle growth and maintain excellent performance over time.
       </p>
     `,
-    image:
-      "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    image: "/stock/mobile.jpg",
     date: "May 12, 2023",
     author: "Amit Das",
     authorImage: "/placeholder.svg?height=100&width=100",
@@ -356,7 +353,7 @@ export const blogPosts: BlogPost[] = [
       "Explore practical ways to integrate artificial intelligence into your business operations to improve efficiency and drive innovation.",
     content: `
       <p>
-        Artificial Intelligence (AI) is no longer just a buzzword or a technology of the future—it's a practical tool that businesses of all sizes can leverage today to improve operations, enhance customer experiences, and drive innovation. This article explores practical applications of AI that can deliver tangible benefits to your business.
+        Artificial Intelligence (AI) is no longer just a buzzword or a technology of the future. It is a practical tool that businesses of all sizes can leverage today to improve operations, enhance customer experiences, and drive innovation. This article explores practical applications of AI that can deliver tangible benefits to your business.
       </p>
 
       <h2>Understanding AI in a Business Context</h2>
@@ -486,8 +483,7 @@ export const blogPosts: BlogPost[] = [
         At Codersque Technologies, we help businesses identify and implement AI solutions that deliver tangible results. Our approach focuses on practical applications that solve real business problems, using existing tools and platforms where possible to minimize cost and complexity.
       </p>
     `,
-    image:
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    image: "/generated/ai.png",
     date: "April 30, 2023",
     author: "Meera Patel",
     authorImage: "/placeholder.svg?height=100&width=100",
@@ -633,8 +629,7 @@ export const blogPosts: BlogPost[] = [
         At Codersque Technologies, we help organizations at all stages of their cloud-native journey, from initial strategy and architecture to implementation and optimization. Our experienced team can guide you through the transition, ensuring you realize the full benefits of cloud-native while minimizing disruption to your business.
       </p>
     `,
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    image: "/stock/cloud.jpg",
     date: "April 15, 2023",
     author: "Vikram Choudhury",
     authorImage: "/placeholder.svg?height=100&width=100",

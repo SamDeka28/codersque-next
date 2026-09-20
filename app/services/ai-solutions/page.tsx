@@ -15,11 +15,12 @@ export default function AiSolutionsPage() {
         { label: "AI Solutions", href: "/services/ai-solutions" },
       ]}
       backLink={{ label: "Back to Services", href: "/services" }}
+      image="/generated/ai.png"
     >
       <ContentSection
         title="Transforming Businesses with AI"
         description="We leverage artificial intelligence and machine learning technologies to build intelligent systems that automate processes, analyze data, and provide valuable insights for your business. Our AI solutions are designed to solve complex problems and drive innovation."
-        image="https://images.unsplash.com/photo-1677442135968-6bd241f8dd36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/generated/ai.png"
         imageAlt="AI and machine learning visualization"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
@@ -53,13 +54,13 @@ export default function AiSolutionsPage() {
       <ContentSection
         title="Our AI Development Process"
         description="We follow a systematic approach to AI solution development that ensures high-quality results and business value."
-        image="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/generated/ai.png"
         imageAlt="AI development process"
         imagePosition="left"
       >
         <div className="space-y-4">
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               1
             </div>
             <div>
@@ -70,7 +71,7 @@ export default function AiSolutionsPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               2
             </div>
             <div>
@@ -81,7 +82,7 @@ export default function AiSolutionsPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               3
             </div>
             <div>
@@ -92,7 +93,7 @@ export default function AiSolutionsPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               4
             </div>
             <div>
@@ -103,7 +104,7 @@ export default function AiSolutionsPage() {
             </div>
           </div>
           <div className="flex items-start">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center text-purple-600 dark:text-purple-400 mr-4">
+            <div className="mr-4 flex h-8 w-8 shrink-0 items-center justify-center border border-border text-foreground">
               5
             </div>
             <div>
@@ -125,21 +126,21 @@ export default function AiSolutionsPage() {
             description:
               "An intelligent customer service chatbot that uses natural language processing to answer customer queries.",
             image:
-              "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/generated/ai.png",
           },
           {
             title: "Predictive Maintenance System",
             description:
               "An AI system that predicts equipment failures before they occur, reducing downtime and maintenance costs.",
             image:
-              "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/generated/ai.png",
           },
           {
             title: "Recommendation Engine",
             description:
               "A personalized recommendation system for an e-commerce platform that increases conversion rates.",
             image:
-              "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80",
+              "/generated/ai.png",
           },
         ]}
       />
@@ -147,7 +148,7 @@ export default function AiSolutionsPage() {
       <ContentSection
         title="Technologies We Use"
         description="We leverage the latest AI and machine learning technologies to build innovative solutions."
-        image="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80"
+        image="/generated/ai.png"
         imageAlt="AI technologies"
       >
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
